@@ -1,0 +1,66 @@
+<Info>
+  <BoundingBox>
+    <Name>BoundingBox</Name>
+    <Position>
+      <yf>0.12559107</yf>
+      <zf>-0.15310219</zf>
+      <xf>0.031547457</xf>
+    </Position>
+    <Rotation>
+      <Direction>0</Direction>
+      <xf>0</xf>
+      <yf>0</yf>
+      <zf>0</zf>
+      <wf>1</wf>
+    </Rotation>
+    <Extents>
+      <xf>0.63154745</xf>
+      <yf>0.37559107</yf>
+      <zf>0.7531022</zf>
+    </Extents>
+    <Transform>
+      <Pivot>
+        <xf>0</xf>
+        <yf>0</yf>
+        <zf>0</zf>
+      </Pivot>
+    </Transform>
+    <Transformer>
+      <BBoxCenter />
+      <BBoxXExtents />
+      <BBoxZExtents />
+    </Transformer>
+  </BoundingBox>
+  <MeshBoundingBox>
+    <Position>
+      <xf>0.13489996</xf>
+      <yf>0.23687488</yf>
+      <zf>-0.41013196</zf>
+    </Position>
+    <Rotation>
+      <xf>0</xf>
+      <yf>0</yf>
+      <zf>0</zf>
+      <wf>1</wf>
+    </Rotation>
+    <Extents>
+      <xf>0.52819496</xf>
+      <yf>0.26430726</yf>
+      <zf>0.49607244</zf>
+    </Extents>
+    <Transform>
+      <Pivot>
+        <xf>0</xf>
+        <yf>0</yf>
+        <zf>0</zf>
+      </Pivot>
+    </Transform>
+    <Transformer>
+      <BBoxCenter />
+      <BBoxXExtents />
+      <BBoxZExtents />
+    </Transformer>
+  </MeshBoundingBox>
+  <DisableFeedbackArea>0</DisableFeedbackArea>
+  <VersionNumber>2.0.9369.30913</VersionNumber>
+</Info>

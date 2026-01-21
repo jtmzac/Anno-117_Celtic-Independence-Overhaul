@@ -1,0 +1,515 @@
+<ModOps>
+
+    <!-- Celtic mines asset pool used to determine what the mealhouse buff targets -->
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300610</GUID>
+                <Name>Celtic Mines</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>5290</Asset></Item>
+                    <Item><Asset>5291</Asset></Item>
+                    <Item><Asset>5295</Asset></Item>
+                    <Item><Asset>1400300611</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6903204273226852953</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Remove aqueduct support from copper and tin mines -->
+    <ModOp GUID="5290,5291" Remove="AqueductConsumer"></ModOp>
+
+    <!-- Add celtic symbol to copper, tin and granite mines/quarries. This is a visual aid to help tell what the mealhouse works with -->
+    <ModOp Merge="@5290/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_celtic_copper_ore_goods.png</IconFilename>
+    </ModOp>
+    <ModOp Merge="@5291/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_celtic_tin_ore_goods.png</IconFilename>
+    </ModOp>
+    <ModOp Merge="@5295/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_celtic_granite_goods.png</IconFilename>
+    </ModOp>
+
+
+
+
+
+    <!-- <GUID>5982</GUID> -->
+    <!-- New celtic iron mine for use with mealhouse -->
+    <Asset>
+        <Template>SlotFactoryBuilding7</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300611</GUID>
+                <Name>Production Mountain Celtic Iron Ore</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_iron_ore_goods.png</IconFilename>
+                <InfoDescription>-6914866712853882780</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6916216392245996000</BuildingCategoryName>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99102</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking>
+                <RemoveGrass>1</RemoveGrass>
+                <CreateBorderRect />
+            </Blocking>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/celtic_iron_mine/base_station_neutral_01.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+                <Colors>
+                    <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                </Colors>
+            </Selection>
+            <Text>
+                <OasisId>-6900695561511355430</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>36521</Sound>
+                    </Item>
+                </OBJ_Active>
+                <MaterialType>BLDStone</MaterialType>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7>
+                <NeededFertility>4049</NeededFertility>
+                <RawResourceType>Mountain</RawResourceType>
+            </Factory7>
+            <FactoryBase>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2080</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>6</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode />
+            <Slot>
+                <SlotType>Mountain</SlotType>
+                <WorkArea>26680</WorkArea>
+            </Slot>
+            <AmbientMoodProvider>
+                <Murmur>Mine</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>10</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2192</Product>
+                        <Amount>5</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>400</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>900000</PassiveRuinRepairTime>
+                <DestructionWarScore>25</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <Culture />
+            <IncidentInfectable>
+                <Infectable>
+                    <Fire>
+                        <HeatValue>2</HeatValue>
+                    </Fire>
+                    <Riot>
+                        <HeatValue>2</HeatValue>
+                    </Riot>
+                </Infectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Attributes>
+                    <Health>
+                        <Value>-2</Value>
+                    </Health>
+                </Attributes>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>20</RadiusDistance>
+                <StreetDistance>24</StreetDistance>
+            </EffectSource>
+            <Threatable />
+        </Values>
+    </Asset>
+
+
+    <!-- Add celtic iron mine to mountain slot menu after standard roman celtic iron mine -->
+    <ModOp Merge="@40495/ObjectMenuSlotBuilding/SlotTypes/Mountain/Buildings">
+          <ModItem Merge="Building" Append="Building='5982'">
+            <Building>1400300611</Building>
+        </ModItem>
+    </ModOp>
+
+
+
+    <!-- Currently unused pools -->
+    <!-- <GUID>40237</GUID> -->
+    <!-- <GUID>81424</GUID> -->
+
+    <!-- Add to all the asset pools -->
+    <!-- <GUID>80564</GUID> -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>50237</GUID> -->
+    <!-- <GUID>107522</GUID> -->
+    <!-- <GUID>81258</GUID> This is very poorly named and should be "Albion mines", used for the 12 mines in Albion inspiration unlock -->
+    <!-- <GUID>50620</GUID> -->
+    <!-- <GUID>50225</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <!-- <GUID>32002</GUID> -->
+    <ModOp GUID="80564,38370,50237,107522,81258,50620,50225,64413,32002" Add="AssetPool/AssetList">
+        <Item><Asset>1400300611</Asset></Item>
+    </ModOp>
+
+    <!-- Add to the weapons and armour unlock pools -->
+    <!-- <GUID>50621</GUID> -->
+    <!-- <GUID>13890</GUID> -->
+    <ModOp GUID="50621,13890" Add="AssetPool/AssetList">
+        <Item><Asset>1400300611</Asset></Item>
+    </ModOp>
+
+
+
+    <!-- Change roman celtic iron mine icon to include roman symbol -->
+    <ModOp Merge="@5982/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_iron_ore_goods.png</IconFilename>
+    </ModOp>
+
+
+
+    <!-- Add celtic iron mine to weapons and armour production chains next to roman celtic equivalent -->
+    <ModOp Replace="@13889/ProductionChain">
+        <ProductionChain>
+            <Building>5954</Building>
+            <Tier1>
+                <Item>
+                    <Building>5969</Building>
+                    <Tier2>
+                        <Item>
+                            <Building>5982</Building>
+                        </Item>
+                        <Item>
+                            <Building>1400300611</Building>
+                        </Item>
+                    </Tier2>
+                </Item>
+            </Tier1>
+        </ProductionChain>
+    </ModOp>
+    <ModOp Replace="@80613/ProductionChain">
+        <ProductionChain>
+            <Building>55945</Building>
+            <Tier1>
+                <Item>
+                    <Building>5969</Building>
+                    <Tier2>
+                        <Item>
+                            <Building>5982</Building>
+                        </Item>
+                        <Item>
+                            <Building>1400300611</Building>
+                        </Item>
+                    </Tier2>
+                </Item>
+                <Item>
+                    <Building>80612</Building>
+                    <Tier2>
+                        <Item>
+                            <Building>5974</Building>
+                        </Item>
+                        <Item>
+                            <Building>5976</Building>
+                        </Item>
+                    </Tier2>
+                </Item>
+            </Tier1>
+        </ProductionChain>
+    </ModOp>
+
+
+
+
+    <!-- Additional retroactive unlock triggers even though mod is only meant to be used on new save -->
+
+    <!-- unhide celtic iron mine from either type of t2 population -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300612</GUID>
+                <Name>Trigger unhide celtic iron mine</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionAlwaysTrue</Template>
+                    <Values>
+                        <Condition>
+                            <SubConditionCompletionOrder>MutuallyExclusive</SubConditionCompletionOrder>
+                        </Condition>
+                        <ConditionAlwaysTrue />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300611</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+                <SubTriggers>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                                <Context>1501</Context>
+                                                <CounterAmount>1</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                                <Context>1503</Context>
+                                                <CounterAmount>1</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                </SubTriggers>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+    <!-- unlock celtic iron mine from either type of t2 population -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300613</GUID>
+                <Name>Trigger unlock celtic iron mine</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionAlwaysTrue</Template>
+                    <Values>
+                        <Condition>
+                            <SubConditionCompletionOrder>MutuallyExclusive</SubConditionCompletionOrder>
+                        </Condition>
+                        <ConditionAlwaysTrue />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300611</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+                <SubTriggers>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                                <Context>1501</Context>
+                                                <CounterAmount>100</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                                <Context>1503</Context>
+                                                <CounterAmount>100</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                </SubTriggers>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+    <!-- Probably unneeded extra unlock in case armour tech is researched -->
+    <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300614</GUID>
+                <Name>Trigger Tech Unlock celtic iron mine</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionUnlocked</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionUnlocked>
+                            <UnlockNeeded>81220</UnlockNeeded>
+                        </ConditionUnlocked>
+                        <ConditionPropsNegatable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300611</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+
+</ModOps>

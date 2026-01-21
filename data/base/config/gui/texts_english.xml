@@ -1,0 +1,162 @@
+<ModOps>
+
+    <ModOp Add="/TextExport/Texts[1]">
+        <Text>
+            <LineId>1400300500</LineId>
+            <Text>Wicker Baskets</Text>
+        </Text>
+        <Text>
+            <LineId>1400300501</LineId>
+            <Text>You can't go wrong with a sturdy, practical woven basket.</Text>
+        </Text>
+        <Text>
+            <LineId>1400300502</LineId>
+            <Text>Basket Weaver</Text>
+        </Text>
+        <Text>
+            <LineId>1400300503</LineId>
+            <Text>Weaves Baskets</Text>
+        </Text>
+
+
+
+        <Text>
+            <LineId>1400300510</LineId>
+            <Text>Ornamented Ponies</Text>
+        </Text>
+        <Text>
+            <LineId>1400300511</LineId>
+            <Text>Intricate bronze decorations demonstrates the prestige of these ponies owners.</Text>
+        </Text>
+        <Text>
+            <LineId>1400300512</LineId>
+            <Text>Pony Decorator</Text>
+        </Text>
+        <Text>
+            <LineId>1400300513</LineId>
+            <Text>Decorates Ponies</Text>
+        </Text>
+
+
+        <Text>
+            <LineId>1400300530</LineId>
+            <Text>Wickerman</Text>
+        </Text>
+        <Text>
+            <LineId>1400300531</LineId>
+            <Text>The fear of accidently being the one to set the wickerman on fire causes this giant fire hazard to actually increase fire safety!</Text>
+        </Text>
+        <Text>
+            <LineId>1400300532</LineId>
+            <Text>Nearby Wickerman</Text>
+        </Text>
+        <Text>
+            <LineId>1400300533</LineId>
+            <Text>Increases the distance at which residences and other buildings benefit from a nearby Theatre/Wickerman.</Text>
+        </Text>
+
+
+        <Text>
+            <LineId>1400300590</LineId>
+            <Text>Celtic Meal</Text>
+        </Text>
+        <Text>
+            <LineId>1400300591</LineId>
+            <Text>Celtic Meal Kitchen</Text>
+        </Text>
+        <Text>
+            <LineId>1400300592</LineId>
+            <Text>A hearty meal to support hardworking Celts</Text>
+        </Text>
+        <Text>
+            <LineId>1400300594</LineId>
+            <Text>Celtic Mealhouse</Text>
+        </Text>
+        <Text>
+            <LineId>1400300595</LineId>
+            <Text>Functional Mealhouse</Text>
+        </Text>
+        <Text>
+            <LineId>1400300596</LineId>
+            <Text>Mine Boosts: Aqueduct and Mealhouse</Text>
+        </Text>
+        <Text>
+            <LineId>1400300597</LineId>
+            <Text>Allows all Celtic mines to benefit from mealhouses, and non-Celtic mines from aqueduct hydraulics, increasing their productivity.</Text>
+        </Text>
+
+
+
+        <Text>
+            <LineId>1400300620</LineId>
+            <Text>Fertiliser</Text>
+        </Text>
+        <Text>
+            <LineId>1400300621</LineId>
+            <Text>Fertiliser Pit</Text>
+        </Text>
+        <Text>
+            <LineId>1400300622</LineId>
+            <Text>Extracts fertiliser from rich marsh mud</Text>
+        </Text>
+        <Text>
+            <LineId>1400300623</LineId>
+            <Text>Fertiliser Output</Text>
+        </Text>
+        <Text>
+            <LineId>1400300624</LineId>
+            <Text>Fertiliser Silo</Text>
+        </Text>
+        <Text>
+            <LineId>1400300625</LineId>
+            <Text>Functional Fertiliser Silo</Text>
+        </Text>
+        <Text>
+            <LineId>1400300626</LineId>
+            <Text>Unlocks the ability to construct animal pasture Silos, farm and plantation fertiliser Silos, produce fertiliser from och pastures as an additional output, and produce fertiliser in marshes.</Text>
+        </Text>
+
+
+
+        <Text>
+            <LineId>1400300650</LineId>
+            <Text>Rye Farm</Text>
+        </Text>
+        <Text>
+            <LineId>1400300651</LineId>
+            <Text>Produces Grain</Text>
+        </Text>
+        <Text>
+            <LineId>1400300652</LineId>
+            <Text>Grain</Text>
+        </Text>
+
+
+
+
+        <Text>
+            <LineId>1400300670</LineId>
+            <Text>Sacred Tree</Text>
+        </Text>
+        <Text>
+            <LineId>1400300671</LineId>
+            <Text></Text>
+        </Text>
+        <Text>
+            <LineId>1400300672</LineId>
+            <Text>Nearby Sacred Tree</Text>
+        </Text>
+        <Text>
+            <LineId>1400300673</LineId>
+            <Text>Adds the Gambling House/Sacred Tree and causes it to become a need for all third tier residents and beyond.</Text>
+        </Text>
+
+
+        <Text>
+            <LineId>1400300725</LineId>
+            <Text>Store at least 5t of Concrete or Granite.</Text>
+        </Text>
+    </ModOp>
+
+
+</ModOps>

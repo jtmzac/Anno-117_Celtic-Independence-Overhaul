@@ -1,0 +1,335 @@
+<ModOps>
+
+<!-- <GUID>77955</GUID> -->
+<!-- <GUID>3171</GUID> -->
+<!-- <GUID>80861</GUID> -->
+<!-- <GUID>2786</GUID> -->
+<!-- <GUID>30743</GUID> -->
+
+
+
+    <!-- Asset pool used for targeting the new fertiliser silo buff -->
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300640</GUID>
+                <Name>Celtic Farms</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>2799</Asset></Item>
+                    <Item><Asset>2800</Asset></Item>
+                    <Item><Asset>1400300643</Asset></Item>
+                    <Item><Asset>1400300650</Asset></Item>
+                    <Item><Asset>1400300700</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6903204273226852953</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+
+
+    <!-- Remove aqueduct support from celtic farms/plantations -->
+    <ModOp GUID="2799,2800" Remove="AqueductConsumer"></ModOp>
+
+    <!-- Add new fertiliser silo to celtic farms/plantations -->
+    <ModOp GUID="2799,2800" Merge="ModuleOwner">
+        <AdditionalModule>1400300624</AdditionalModule>
+        <ModuleBuildRadius>8</ModuleBuildRadius>
+    </ModOp>
+
+    <!-- Add celtic symbol to celtic farm/plantation icons to indicate they support fertiliser silos -->
+    <ModOp Merge="@2799/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_celtic_barley_goods.png</IconFilename>
+    </ModOp>
+    <ModOp Merge="@2800/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_celtic_dye_plants_goods.png</IconFilename>
+    </ModOp>
+
+
+    <!-- The ceres extra fields buff targets the "all farm" and "all plantations" asset pools by default. Because these pools are also used by other buffs, they need to be swapped out for new, different asset pools -->
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300641</GUID>
+                <Name>Asset Pool Production All Farms EXCEPT Celtic</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList />
+            </AssetPool>
+            <Text>
+                <OasisId>-6908999943213506085</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300642</GUID>
+                <Name>Asset Pool Production All Plantations EXCEPT Celtic</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList />
+            </AssetPool>
+            <Text>
+                <OasisId>-6911450256402636112</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Instead of hardcoding the above asset pools, the following modops copy the all farms/plantations pools from the game and then removes the undesired celtic farms/plantations. This should be more resilient to future game updates. -->
+    <!-- NOTE: The following couple of modops will throw path not found errors if you're using the vscode plugin, but do work properly based on my testing.  -->
+    <ModOp  Replace="@1400300641/AssetPool/AssetList" Content="@42602/AssetPool/AssetList" ></ModOp>
+    <ModOp  Remove="@1400300641/AssetPool/AssetList/Item[Asset = '2799']"></ModOp>
+    <ModOp  Replace="@1400300642/AssetPool/AssetList" Content="@51905/AssetPool/AssetList" ></ModOp>
+    <ModOp  Remove="@1400300642/AssetPool/AssetList/Item[Asset = '2800']"></ModOp>
+
+    <!-- Change ceres extra fields buff targets to new asset pools -->
+    <ModOp Replace="@43620/Effect/Targets">
+        <Targets>
+            <Item><GUID>1400300641</GUID></Item>
+            <Item><GUID>1400300642</GUID></Item>
+        </Targets>
+    </ModOp>
+
+
+
+
+
+    <!-- <GUID>31762</GUID> -->
+    <!-- Add celtic hemp farm without aqueduct and with fertiliser silo -->
+    <Asset>
+        <Template>Production Field</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300643</GUID>
+                <Name>Production Field Celtic Hemp</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_hemp_goods.png</IconFilename>
+                <InfoDescription>-6913876847801524327</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6913619028388886843</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2176</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2178</Ingredient>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/celtic_hemp/field_hemp.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+                <Colors>
+                    <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                </Colors>
+            </Selection>
+            <Text>
+                <OasisId>-6915599367707194042</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>42236</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>31694</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>60</CycleTime>
+                <MaxTransporterRange>40</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode />
+            <ModuleOwner>
+                <ModuleLimits>
+                    <Main>
+                        <Limit>80</Limit>
+                    </Main>
+                </ModuleLimits>
+                <ConstructionOptions>
+                    <Item>
+                        <ModuleGUID>31763</ModuleGUID>
+                    </Item>
+                </ConstructionOptions>
+                <AdditionalModule>1400300624</AdditionalModule>
+                <ModuleBuildRadius>8</ModuleBuildRadius>
+                <FarmType>PlantFarm</FarmType>
+            </ModuleOwner>
+            <AmbientMoodProvider>
+                <Murmur>Farms</Murmur>
+                <DynamicEnvironmentType>BuildingIndustry</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>4</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2192</Product>
+                        <Amount>3</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>450</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>900000</PassiveRuinRepairTime>
+                <DestructionWarScore>36</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <Threatable />
+        </Values>
+    </Asset>
+
+
+<!-- <GUID>30948</GUID> -->
+<!-- <GUID>38370</GUID> -->
+<!-- <GUID>107521</GUID> -->
+<!-- <GUID>50572</GUID> -->
+<!-- <GUID>50568</GUID> -->
+<!-- <GUID>42602</GUID> -->
+<!-- <GUID>64413</GUID> -->
+<!-- <GUID>31996</GUID> -->
+
+    <!-- add to all asset pools -->
+    <ModOp GUID="30948,38370,107521,50572,50568,42602,64413,31996" Add="AssetPool/AssetList">
+        <Item><Asset>1400300643</Asset></Item>
+    </ModOp>
+
+    <!-- <GUID>8031</GUID> -->
+    <!-- Add to tunics unlock pool -->
+    <ModOp Add="@8031/AssetPool/AssetList">
+        <Item><Asset>1400300643</Asset></Item>
+    </ModOp>
+
+
+<!-- <GUID>6662</GUID> -->
+<!-- <GUID>13888</GUID> -->
+
+    <!-- Add celtic hemp farm to tunics and rope production chains -->
+    <ModOp Merge="@6662/ProductionChain/Tier1">
+        <ModItem Merge="Building" Append="Building='31762'">
+            <Building>1400300643</Building>
+        </ModItem>
+    </ModOp>
+    <ModOp Merge="@13888/ProductionChain/Tier1">
+        <ModItem Merge="Building" Append="Building='31762'">
+            <Building>1400300643</Building>
+        </ModItem>
+    </ModOp>
+
+
+    <!-- Change roman celtic hemp farm icon to include roman symbol -->
+    <ModOp Merge="@31762/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_hemp_goods.png</IconFilename>
+    </ModOp>
+
+
+    <!-- Additional retroactive unlock for celtic hemp farm -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300644</GUID>
+                <Name>Trigger Intermediate Level Celtic 1.2 celtic hemp</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1500</Context>
+                            <CounterAmount>50</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300643</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+</ModOps>

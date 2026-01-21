@@ -1,0 +1,659 @@
+<ModOps>
+
+    <!-- <GUID>5972</GUID> -->
+    <Asset>
+        <Template>Production Field</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300650</GUID>
+                <Name>Production Field Celtic Rye</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_rye_goods.png</IconFilename>
+                <InfoDescription>1400300651</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6913619028388886843</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/rye/field_wheat.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+                <Colors>
+                    <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                </Colors>
+            </Selection>
+            <Text>
+                <OasisId>1400300650</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>35987</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2069</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>60</CycleTime>
+            </FactoryBase>
+            <LogisticNode />
+            <ModuleOwner>
+                <ModuleLimits>
+                    <Main>
+                        <Limit>140</Limit>
+                    </Main>
+                </ModuleLimits>
+                <ConstructionOptions>
+                    <Item>
+                        <ModuleGUID>1400300651</ModuleGUID>
+                    </Item>
+                </ConstructionOptions>
+                <AdditionalModule>1400300624</AdditionalModule>
+                <ModuleBuildRadius>8</ModuleBuildRadius>
+                <FarmType>PlantFarm</FarmType>
+            </ModuleOwner>
+            <AmbientMoodProvider>
+                <Murmur>Farms</Murmur>
+                <DynamicEnvironmentType>BuildingIndustry</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>6</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2192</Product>
+                        <Amount>4</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>650</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1200000</PassiveRuinRepairTime>
+                <DestructionWarScore>72</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Module Polygon Field</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300651</GUID>
+                <Name>Module Field Celtic Rye</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/infrastructure/icon_3d_farm_fields.png</IconFilename>
+            </Standard>
+            <Building>
+                <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <VariationControl>ByPlayer</VariationControl>
+            </Building>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Text>
+                <OasisId>1400300652</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>35991</Sound>
+                    </Item>
+                </OBJ_Active>
+                <IncidentSounds>
+                    <BLD_IncidentFire>
+                        <Item>
+                            <Sound>36704</Sound>
+                        </Item>
+                    </BLD_IncidentFire>
+                </IncidentSounds>
+            </SoundEmitter>
+            <BuildingModule>
+                <PlazaSize>20</PlazaSize>
+                <Is1x1Sized>1</Is1x1Sized>
+            </BuildingModule>
+            <AmbientMoodProvider>
+                <Murmur>Farms</Murmur>
+            </AmbientMoodProvider>
+            <Polygon>
+                <Path>data/jtmzac/graphics/production/rye/field/modules/</Path>
+                <FencePath>data/base/graphics/library/props/fences/polygon_field_fence_albion/</FencePath>
+                <Category>Field</Category>
+            </Polygon>
+        </Values>
+    </Asset>
+
+
+
+
+<!-- <GUID>43602</GUID> -->
+<!-- <GUID>38370</GUID> -->
+<!-- <GUID>107521</GUID> -->
+<!-- <GUID>50569</GUID> -->
+<!-- <GUID>42602</GUID> -->
+<!-- <GUID>64413</GUID> -->
+<!-- <GUID>31996</GUID> -->
+
+
+    <!-- add to all asset pools -->
+    <ModOp GUID="43602,38370,107521,50569,42602,64413,31996" Add="AssetPool/AssetList">
+        <Item><Asset>1400300650</Asset></Item>
+    </ModOp>
+
+
+
+
+<!-- <GUID>5967</GUID> -->
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300652</GUID>
+                <Name>Production Ingredient Celtic Flour</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_flour_goods.png</IconFilename>
+                <InfoDescription>-6914539580755394095</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6909922705650088932</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/celtic_flour/ingredient_flour.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27086</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>-6899962567781630248</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>35807</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2069</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>4</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2119</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>60</CycleTime>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>8</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2196</Product>
+                        <Amount>3</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>500</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>900000</PassiveRuinRepairTime>
+                <DestructionWarScore>50</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1501</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <Threatable />
+        </Values>
+    </Asset>
+
+<!-- <GUID>43602</GUID> -->
+<!-- <GUID>38370</GUID> -->
+<!-- <GUID>107521</GUID> -->
+<!-- <GUID>50569</GUID> -->
+<!-- <GUID>50607</GUID> -->
+<!-- <GUID>64413</GUID> -->
+<!-- <GUID>32008</GUID> -->
+
+    <!-- add to all asset pools -->
+    <ModOp GUID="43602,38370,107521,50569,50607,64413,32008" Add="AssetPool/AssetList">
+        <Item><Asset>1400300652</Asset></Item>
+    </ModOp>
+
+
+
+
+
+<!-- <GUID>5960</GUID> -->
+
+
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300653</GUID>
+                <Name>Production Food Celtic Bread</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_bread_goods.png</IconFilename>
+                <InfoDescription>-6906855111794813421</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6899933895972982645</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99011</FunctionalEffect>
+                    </Item>
+                    <Item>
+                        <FunctionalEffect>98405</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/celtic_bread/food_bakery.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27086</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>-6900507597837562981</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>36385</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2119</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>4</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2137</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <NeedsFuelInput>1</NeedsFuelInput>
+                <CycleTime>60</CycleTime>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>14</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2196</Product>
+                        <Amount>3</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>700</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1200000</PassiveRuinRepairTime>
+                <DestructionWarScore>80</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Attributes>
+                    <FireSafety>
+                        <Value>-2</Value>
+                    </FireSafety>
+                </Attributes>
+                <Population>1501</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <Threatable />
+        </Values>
+    </Asset>
+
+
+
+<!-- <GUID>43602</GUID> -->
+<!-- <GUID>38370</GUID> -->
+
+<!-- <GUID>50235</GUID> -->
+
+<!-- <GUID>107521</GUID> -->
+<!-- <GUID>71197</GUID> -->
+<!-- <GUID>50569</GUID> -->
+<!-- <GUID>50610</GUID> -->
+<!-- <GUID>64413</GUID> -->
+<!-- <GUID>31996</GUID> -->
+
+    <!-- add to all asset pools -->
+    <ModOp GUID="43602,38370,50235,107521,71197,50569,50610,64413,31996" Add="AssetPool/AssetList">
+        <Item><Asset>1400300653</Asset></Item>
+    </ModOp>
+
+
+
+
+
+
+
+<!-- <GUID>6582</GUID> -->
+
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300654</GUID>
+                <Name>Production Chain Celtic Bread</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_bread_goods.png</IconFilename>
+                <InfoDescription>-6903481816347163941</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>1400300653</Building>
+                <Tier1>
+                    <Item>
+                        <Building>1400300652</Building>
+                        <Tier2>
+                            <Item>
+                                <Building>1400300650</Building>
+                            </Item>
+                        </Tier2>
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked />
+            <Text>
+                <OasisId>-6908149442005986805</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+<!-- <GUID>8455</GUID> -->
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300655</GUID>
+                <Name>Unlock Pool Celtic Bread</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>1400300654</Asset></Item>
+                    <Item><Asset>2069</Asset></Item>
+                    <Item><Asset>1400300650</Asset></Item>
+                    <Item><Asset>2119</Asset></Item>
+                    <Item><Asset>1400300652</Asset></Item>
+                    <Item><Asset>2137</Asset></Item>
+                    <Item><Asset>1400300653</Asset></Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+
+
+
+    <!-- add to smith construction menu before cheese -->
+    <ModOp Merge="@41330/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Prepend="Building='6587'">
+            <Building>1400300654</Building>
+        </ModItem>
+    </ModOp>
+
+    <!-- Change roman celtic donkey mill icon to include roman symbol -->
+    <ModOp Merge="@5967/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_flour_goods.png</IconFilename>
+    </ModOp>
+
+    <!-- Change roman celtic bakery icon to include roman symbol -->
+    <ModOp Merge="@5960/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_bread_goods.png</IconFilename>
+    </ModOp>
+
+
+
+
+
+
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300656</GUID>
+                <Name>Trigger Intermediate Level Celtic 2.0 bread</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1501</Context>
+                            <CounterAmount>1</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300655</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+
+
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                          Change existing wheat good to grain                            -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+    <!-- change wheat icon and name to grain -->
+    <ModOp Merge="@2069">
+        <Standard>
+            <IconFilename>data/jtmzac/icons/icon_3d_grain_goods.png</IconFilename>
+        </Standard>
+        <Text>
+            <OasisId>1400300652</OasisId>
+        </Text>
+    </ModOp>
+
+    <!-- Change wheat farm descriptions to "produces grain" -->
+    <ModOp GUID="2693,5972" Merge="Standard">
+        <InfoDescription>1400300651</InfoDescription>
+    </ModOp>
+
+
+</ModOps>

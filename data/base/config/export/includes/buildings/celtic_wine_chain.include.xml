@@ -1,0 +1,761 @@
+<ModOps>
+
+
+
+    <!-- <GUID>23723</GUID> -->
+    <Asset>
+        <Template>Production Field</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300700</GUID>
+                <Name>Production Field Celtic Grapes</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_grapes_goods.png</IconFilename>
+                <InfoDescription>-6915735501763939674</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6908408657842733452</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/celtic_grapes/field_grapes.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+                <Colors>
+                    <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                </Colors>
+            </Selection>
+            <Text>
+                <OasisId>-6914336954265147234</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>35971</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7>
+                <NeededFertility>2205</NeededFertility>
+            </Factory7>
+            <FactoryBase>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2070</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>90</CycleTime>
+            </FactoryBase>
+            <LogisticNode />
+            <ModuleOwner>
+                <ModuleLimits>
+                    <Main>
+                        <Limit>100</Limit>
+                    </Main>
+                </ModuleLimits>
+                <ConstructionOptions>
+                    <Item>
+                        <ModuleGUID>1400300701</ModuleGUID>
+                    </Item>
+                </ConstructionOptions>
+                <AdditionalModule>1400300624</AdditionalModule>
+                <ModuleBuildRadius>8</ModuleBuildRadius>
+                <FarmType>PlantFarm</FarmType>
+            </ModuleOwner>
+            <AmbientMoodProvider>
+                <Murmur>Farms</Murmur>
+                <DynamicEnvironmentType>BuildingIndustry</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>8</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2192</Product>
+                        <Amount>3</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>580</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1200000</PassiveRuinRepairTime>
+                <DestructionWarScore>60</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <Threatable />
+        </Values>
+    </Asset>
+
+
+    <Asset>
+        <Template>Module Polygon Field</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300701</GUID>
+                <Name>Module Field Celtic Grapes</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/infrastructure/icon_3d_farm_fields.png</IconFilename>
+            </Standard>
+            <Building>
+                <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <VariationControl>ByPlayer</VariationControl>
+            </Building>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Text>
+                <OasisId>-6910993472146965403</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>35975</Sound>
+                    </Item>
+                </OBJ_Active>
+                <IncidentSounds>
+                    <BLD_IncidentFire>
+                        <Item>
+                            <Sound>36704</Sound>
+                        </Item>
+                    </BLD_IncidentFire>
+                </IncidentSounds>
+            </SoundEmitter>
+            <BuildingModule>
+                <PlazaSize>20</PlazaSize>
+                <Is1x1Sized>1</Is1x1Sized>
+            </BuildingModule>
+            <AmbientMoodProvider>
+                <Murmur>Farms</Murmur>
+            </AmbientMoodProvider>
+            <Polygon>
+                <Path>data/jtmzac/graphics/production/celtic_grapes/modules/</Path>
+                <PathDiagonal>data/jtmzac/graphics/production/celtic_grapes/modules_diagonal/</PathDiagonal>
+                <FencePath>data/base/graphics/library/props/fences/polygon_field_fence_albion/</FencePath>
+                <IsDirected>1</IsDirected>
+                <Category>Field</Category>
+            </Polygon>
+        </Values>
+    </Asset>
+
+
+
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>43602</GUID> -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>82513</GUID> -->
+    <!-- <GUID>50578</GUID> -->
+    <!-- <GUID>107521</GUID> -->
+    <!-- <GUID>51905</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="43602,38370,82513,50578,107521,51905,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300700</Asset></Item>
+    </ModOp>
+
+    <!-- add to effect target -->
+    <!-- <GUID>106571</GUID> -->
+    <ModOp Add="@106571/Effect/Targets">
+        <Item><GUID>1400300700</GUID></Item>
+    </ModOp>
+
+    <!-- <GUID>8427</GUID> -->
+    <Asset>
+        <Template>Production Area</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300702</GUID>
+                <Name>Production Meadow Celtic Honycombs</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_honeycombs_goods.png</IconFilename>
+                <InfoDescription>-6909067971096372830</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6915305109069898727</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/celtic_beehives/meadow_beehives.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+                <Colors>
+                    <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                </Colors>
+            </Selection>
+            <Text>
+                <OasisId>-6909897847421218603</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>36509</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51734</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51729</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51734</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51728</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7>
+                <IsAgriculture>1</IsAgriculture>
+                <RawResourceType>Meadow</RawResourceType>
+            </Factory7>
+            <FactoryBase>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2076</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>4</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>45</CycleTime>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Farms</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>14</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2192</Product>
+                        <Amount>3</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>670</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1200000</PassiveRuinRepairTime>
+                <DestructionWarScore>75</DestructionWarScore>
+            </Health>
+            <FreeAreaProductivity>
+                <InfluenceRadius>8</InfluenceRadius>
+                <NeededArea>80</NeededArea>
+                <FreeAreaType>Beehive</FreeAreaType>
+                <CutTree>0</CutTree>
+            </FreeAreaProductivity>
+            <Pausable />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <Threatable />
+        </Values>
+    </Asset>
+
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>43602</GUID> -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>68720</GUID> -->
+    <!-- <GUID>107521</GUID> -->
+    <!-- <GUID>50578</GUID> -->
+    <!-- <GUID>50602</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="43602,38370,,68720,107521,50578,50602,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300702</Asset></Item>
+    </ModOp>
+
+
+
+
+
+<!-- <GUID>23753</GUID> -->
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300703</GUID>
+                <Name>Production Food Celtic Wine</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_celtic_wine_goods.png</IconFilename>
+                <InfoDescription>-6910319122504798403</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6912770209059714441</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99013</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>4</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/celtic_wine/food_wine.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27088</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>-6900887194663822225</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>36401</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51727</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_Build>
+                    <BLD_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_MoveSuccess>
+                </ConstructionSounds>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51726</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2070</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>6</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>2076</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>6</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2138</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>4</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>90</CycleTime>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>30</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2197</Product>
+                        <Amount>14</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>1750</BaseHealth>
+                <SelfHealPerHealTick>2</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1800000</PassiveRuinRepairTime>
+                <DestructionWarScore>270</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1502</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>30</RadiusDistance>
+                <StreetDistance>34</StreetDistance>
+            </EffectSource>
+            <Threatable />
+        </Values>
+    </Asset>
+
+
+
+
+
+
+<!-- <GUID>43602</GUID> -->
+<!-- <GUID>38370</GUID> -->
+<!-- <GUID>50234</GUID> -->
+<!-- <GUID>107521</GUID> -->
+<!-- <GUID>50578</GUID> -->
+<!-- <GUID>50606</GUID> -->
+<!-- <GUID>64413</GUID> -->
+<!-- <GUID>32008</GUID> -->
+
+    <!-- add to all asset pools -->
+    <ModOp GUID="43602,38370,50234,107521,50578,50606,64413,32008" Add="AssetPool/AssetList">
+        <Item><Asset>1400300703</Asset></Item>
+    </ModOp>
+
+    <!-- add to effect target -->
+    <!-- <GUID>106571</GUID> -->
+    <ModOp Add="@106571/Effect/Targets">
+        <Item><GUID>1400300703</GUID></Item>
+    </ModOp>
+
+
+
+<!-- <GUID>6668</GUID> -->
+
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300704</GUID>
+                <Name>Production Chain Celtic Wine</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_wine_goods.png</IconFilename>
+                <InfoDescription>-6908859879980197509</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>1400300703</Building>
+                <Tier1>
+                    <Item>
+                        <Building>1400300700</Building>
+                    </Item>
+                    <Item>
+                        <Building>1400300702</Building>
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked />
+            <Text>
+                <OasisId>-6912126616732376988</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- <GUID>41927</GUID> -->
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300705</GUID>
+                <Name>Unlock Pool Celtic Wine</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>1400300704</Asset></Item>
+                    <Item><Asset>2070</Asset></Item>
+                    <Item><Asset>1400300700</Asset></Item>
+                    <Item><Asset>2076</Asset></Item>
+                    <Item><Asset>1400300702</Asset></Item>
+                    <Item><Asset>2138</Asset></Item>
+                    <Item><Asset>1400300703</Asset></Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+
+
+
+    <!-- Add to celtic wine chain to aldermen menu after roast beef -->
+    <ModOp Merge="@41331/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='6581'">
+            <Building>1400300704</Building>
+        </ModItem>
+    </ModOp>
+    <!-- Remove roman celtic wine chain from aldermen menu -->
+    <ModOp Remove="@41331/ConstructionCategory/BuildingList/Item[Building = '6668']"></ModOp>
+
+
+    <!-- Change roman celtic vineyard icon to include roman symbol -->
+    <ModOp Merge="@23723/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_grapes_goods.png</IconFilename>
+    </ModOp>
+
+    <!-- Change roman celtic apiary icon to include roman symbol -->
+    <ModOp Merge="@8427/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_honeycombs_goods.png</IconFilename>
+    </ModOp>
+
+    <!-- Change roman celtic vintner icon to include roman symbol -->
+    <ModOp Merge="@23753/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_wine_goods.png</IconFilename>
+    </ModOp>
+
+
+    <!-- Remove roman celtic wine from existing unlock trigger -->
+    <ModOp Remove="@8073/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '41927']"></ModOp>
+
+
+
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300706</GUID>
+                <Name>Trigger Intermediate Level Celtic 3.0 wine</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1502</Context>
+                            <CounterAmount>1</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300705</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup />
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+
+
+
+</ModOps>

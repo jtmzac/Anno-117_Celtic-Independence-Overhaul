@@ -1,0 +1,547 @@
+<ModOps>
+
+<!-- <GUID>88309</GUID> -->
+<!-- <GUID>37178</GUID> -->
+<!-- <GUID>55980</GUID> -->
+
+    <!-- Celtic theatre replacement building -->
+    <Asset>
+        <Template>PublicServiceBuilding</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300530</GUID>
+                <Name>Public Celtic Wickerman</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_wickerman.png</IconFilename>
+                <InfoDescription>1400300531</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingType>Public</BuildingType>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>1400300531</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+                <SteepnessMaxHeightDiff>5</SteepnessMaxHeightDiff>
+            </Building>
+            <Blocking>
+                <SuppressesRoundStreetCurves>1</SuppressesRoundStreetCurves>
+            </Blocking>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>15000</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>10</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>20</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                        <Amount>10</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/wicker_man/wicker_man_01.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh>
+                <DefaultSequence>
+                    <SequenceAction>Work</SequenceAction>
+                    <SequenceInfo>Neutral</SequenceInfo>
+                </DefaultSequence>
+            </Mesh>
+            <Selection>
+                <GUIType>PublicService</GUIType>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+            </Selection>
+            <Text>
+                <OasisId>1400300530</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>72036</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController>
+                <DefaultFeedbackSequence>Work</DefaultFeedbackSequence>
+                <NightBehavior>HideNone</NightBehavior>
+                <ShouldDisableFeedbackOnThreat>0</ShouldDisableFeedbackOnThreat>
+            </FeedbackController>
+            <Infolayer />
+            <PublicService>
+                <MoodImage>data/ui/fhd/base/features/ompublicservices/image_watermark_publicservice_celtic_278x156.png</MoodImage>
+                <PublicServiceEffect>1400300533</PublicServiceEffect>
+            </PublicService>
+            <AmbientMoodProvider>
+                <Murmur>Public_Barrow</Murmur>
+                <DynamicEnvironmentType>BuildingResidence</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>60</Amount>
+                    </Item>
+                </Maintenances>
+                <ConsumerPriority>3</ConsumerPriority>
+            </Maintenance>
+            <Health>
+                <BaseHealth>4500</BaseHealth>
+                <SelfHealPerHealTick>4</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>2400000</PassiveRuinRepairTime>
+                <DestructionWarScore>770</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <IncidentInfectable>
+                <Infectable>
+                    <Fire>
+                        <HeatValue>2</HeatValue>
+                    </Fire>
+                    <Riot>
+                        <HeatValue>2</HeatValue>
+                    </Riot>
+                    <Illness>
+                        <HeatValue>2</HeatValue>
+                    </Illness>
+                </Infectable>
+                <DestructionScore>115</DestructionScore>
+            </IncidentInfectable>
+            <Culture />
+            <AqueductConsumer />
+            <Buffable />
+            <AttributeProvider>
+                <Population>1502</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>46</RadiusDistance>
+                <StreetDistance>50</StreetDistance>
+            </EffectSource>
+            <StreetActivation />
+            <LogisticNode />
+            <DynamicVariation />
+            <Romanization>
+                <RomanizationType>Regional</RomanizationType>
+                <RomanizationValue>50</RomanizationValue>
+            </Romanization>
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300531</GUID>
+                <Name>Effect Wickerman Building</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_wickerman.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300532</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300543</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>1400300532</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Mixed with aqueduct cistern -->
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300532</GUID>
+                <Name>Buff Wickerman Building</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_wickerman.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300532</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Knowledge>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Knowledge>
+                    <Prestige>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Prestige>
+                    <FireSafety>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </FireSafety>
+                    <Happiness>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Happiness>
+                    <Health>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Health>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300533</GUID>
+                <Name>Effect Celtic Wickerman Service</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/icon_3d_removed.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300534</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300550</GUID>
+                    </Item>
+                </Targets>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300534</GUID>
+                <Name>Buff Celtic Wickerman Service</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_wickerman.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300532</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade />
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade>
+                <ProvidedNeedUpgrade>
+                    <Item>
+                        <ProvidedNeed>1400300535</ProvidedNeed>
+                    </Item>
+                </ProvidedNeedUpgrade>
+            </ResidenceUpgrade>
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <!-- Mixed with aqueduct cistern -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300535</GUID>
+                <Name>Need Celtic Public Wickerman</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_wickerman.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>1400300536</NeedProduct>
+                <SupplyWeight>4</SupplyWeight>
+                <NeedAttributes>
+                    <Knowledge>
+                        <Value>1</Value>
+                    </Knowledge>
+                    <Prestige>
+                        <Value>1</Value>
+                    </Prestige>
+                    <FireSafety>
+                        <Value>3</Value>
+                    </FireSafety>
+                    <Happiness>
+                        <Value>3</Value>
+                    </Happiness>
+                    <Health>
+                        <Value>3</Value>
+                    </Health>
+                </NeedAttributes>
+                <NeedDescription>1400300531</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300536</GUID>
+                <Name>Service Celtic Wickerman</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_wickerman.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300530</OasisId>
+            </Text>
+            <Locked />
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6914369542672157320</ProductCategory>
+                <IsAbstract>1</IsAbstract>
+                <AssociatedRegion>Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+            </Product>
+        </Values>
+    </Asset>
+
+
+    <!-- Remove theatre from aldermen construction menu -->
+    <ModOp Remove="@41331/ConstructionCategory/BuildingList/Item[Building = '37178']" Condition="@41331/ConstructionCategory/BuildingList/Item[Building = '37178']"></ModOp>
+
+    <!-- Add wickerman to aldermen construction menu after alder council -->
+    <ModOp Merge="@41331/ConstructionCategory/BuildingList">
+          <ModItem Merge="Building" Append="Building='6726'">
+            <Building>1400300530</Building>
+        </ModItem>
+    </ModOp>
+
+
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>43100</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="43100,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300530</Asset></Item>
+    </ModOp>
+
+
+    <!-- Create unlock pool -->
+    <!-- <GUID>37180</GUID> -->
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300537</GUID>
+                <Name>Unlock Pool Celtic Wickerman</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item>
+                        <Asset>1400300530</Asset>
+                    </Item>
+                    <Item>
+                        <Asset>1400300536</Asset>
+                    </Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+    <!-- Update theatre range tech node description to include wickerman -->
+    <ModOp Merge="@81444/Standard">
+        <InfoDescription>1400300533</InfoDescription>
+    </ModOp>
+
+
+
+    <!-- TODO: update tech node icon and large tech image with sacred tree -->
+
+    <!-- <GUID>71726</GUID> -->
+    <!-- <GUID>81444</GUID> -->
+    <!-- <GUID>81445</GUID> -->
+    <!-- <GUID>81446</GUID> -->
+
+    <!-- Change tech icon -->
+    <!-- <ModOp Merge="@71726/Standard">
+        <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png</IconFilename>
+    </ModOp> -->
+
+    <!-- Change main tech node image -->
+    <!-- <ModOp Merge="@126417/Standard">
+        <IconFilename>data/ui/fhd/base/features/techtree/infotipimages/image_techtree_tech_gambling_house_484x242.png</IconFilename>
+    </ModOp> -->
+
+
+
+
+
+
+    <!-- Remove theatre unhide from celts progression trigger -->
+    <ModOp Remove="@8073/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '37180']"></ModOp>
+    <!-- Remove theatre unlock from celts progression trigger -->
+    <ModOp Remove="@8074/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '37180']"></ModOp>
+
+    <!-- Independent unhide and unlock triggers -->
+    <!-- <GUID>8073</GUID> -->
+    <!-- <GUID>8074</GUID> -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300538</GUID>
+                <Name>Trigger Intermediate Level Celtic 3.0 wickerman</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1502</Context>
+                            <CounterAmount>1</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300537</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300539</GUID>
+                <Name>Trigger Intermediate Level Celtic 3.1 wickerman</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1502</Context>
+                            <CounterAmount>250</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300537</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+</ModOps>

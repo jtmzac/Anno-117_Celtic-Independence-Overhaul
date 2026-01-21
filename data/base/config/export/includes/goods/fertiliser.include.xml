@@ -1,0 +1,791 @@
+
+<ModOps>
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300620</GUID>
+                <Name>Good fertiliser</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_fertiliser_goods.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300620</OasisId>
+            </Text>
+            <Locked />
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6904287318739488511</ProductCategory>
+                <BasePrice>6</BasePrice>
+                <AssociatedRegion>Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+            </Product>
+        </Values>
+    </Asset>
+
+    <!-- <GUID>130659</GUID> -->
+    <!-- <GUID>91326</GUID> -->
+
+
+    <!-- Add new good to all categories -->
+    <!-- <GUID>3415</GUID> -->
+    <ModOp Add="@3415/ProductStorageList/ProductList">
+        <Item><Product>1400300620</Product></Item>
+    </ModOp>
+
+    <!-- <GUID>28750</GUID> -->
+    <!-- <GUID>37672</GUID> -->
+    <!-- <GUID>3409</GUID> -->
+    <!-- <GUID>28754</GUID> -->
+    <!-- <GUID>8497</GUID> -->
+    <!-- <GUID>29328</GUID> -->
+    <ModOp GUID="28750,37672,3409,28754,8497,29328" Add="ProductList/List">
+        <Item><Product>1400300620</Product></Item>
+    </ModOp>
+
+
+    <!-- Additional building for producing fertiliser -->
+    <!-- <GUID>5848</GUID> -->
+    <Asset>
+        <Template>Production Marsh</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300621</GUID>
+                <Name>Production Marsh Celtic Fertiliser</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_fertiliser_goods.png</IconFilename>
+                <InfoDescription>1400300622</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6906246851866924272</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+            </Building>
+            <Threatable />
+            <Blocking>
+                <CreateBorderRect />
+            </Blocking>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>5</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/fertiliser/marsh_mud.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+                <Colors>
+                    <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                </Colors>
+            </Selection>
+            <Text>
+                <OasisId>1400300621</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>36031</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <Sound>51735</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <Sound>51731</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <OBJ_Select>
+                    <Item>
+                        <Sound>43751</Sound>
+                    </Item>
+                </OBJ_Select>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <Sound>43696</Sound>
+                        </Item>
+                    </BLD_Build>
+                    <BLD_BuildFail>
+                        <Item>
+                            <Sound>43975</Sound>
+                        </Item>
+                    </BLD_BuildFail>
+                    <BLD_MoveStart>
+                        <Item>
+                            <Sound>43888</Sound>
+                        </Item>
+                    </BLD_MoveStart>
+                    <BLD_MoveSuccess>
+                        <Item>
+                            <Sound>43696</Sound>
+                        </Item>
+                    </BLD_MoveSuccess>
+                    <BLD_Cancel>
+                        <Item>
+                            <Sound>43981</Sound>
+                        </Item>
+                    </BLD_Cancel>
+                    <BLD_Upgrade>
+                        <Item>
+                            <Sound>43978</Sound>
+                        </Item>
+                    </BLD_Upgrade>
+                    <BLD_UpgradeFailed>
+                        <Item>
+                            <Sound>43977</Sound>
+                        </Item>
+                    </BLD_UpgradeFailed>
+                    <BLD_BuildNewUnique>
+                        <Item>
+                            <Sound>43980</Sound>
+                        </Item>
+                    </BLD_BuildNewUnique>
+                    <BLD_Downgrade>
+                        <Item>
+                            <Sound>43976</Sound>
+                        </Item>
+                    </BLD_Downgrade>
+                    <BLD_Rotate>
+                        <Item>
+                            <Sound>43979</Sound>
+                        </Item>
+                    </BLD_Rotate>
+                    <BLD_Copy>
+                        <Item>
+                            <Sound>43982</Sound>
+                        </Item>
+                    </BLD_Copy>
+                </ConstructionSounds>
+                <ConstructionStreetSounds>
+                    <BLD_StreetWaypointAdd>
+                        <Item>
+                            <Sound>43811</Sound>
+                        </Item>
+                    </BLD_StreetWaypointAdd>
+                    <BLD_StreetWaypointCancel>
+                        <Item>
+                            <Sound>43812</Sound>
+                        </Item>
+                    </BLD_StreetWaypointCancel>
+                </ConstructionStreetSounds>
+                <IncidentSounds>
+                    <BLD_IncidentFire>
+                        <Item>
+                            <Sound>36704</Sound>
+                        </Item>
+                        <Item>
+                            <Sound>54168</Sound>
+                        </Item>
+                    </BLD_IncidentFire>
+                    <BLD_IncidentIllness>
+                        <Item>
+                            <Sound>38666</Sound>
+                        </Item>
+                        <Item>
+                            <Sound>54747</Sound>
+                        </Item>
+                    </BLD_IncidentIllness>
+                </IncidentSounds>
+                <OBJ_RuinedOwned>
+                    <Item>
+                        <Sound>43750</Sound>
+                    </Item>
+                </OBJ_RuinedOwned>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <Sound>51735</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <OBJ_Repaired>
+                    <Item>
+                        <Sound>43749</Sound>
+                    </Item>
+                </OBJ_Repaired>
+                <OBJ_Repairing>
+                    <Item>
+                        <Sound>43877</Sound>
+                    </Item>
+                </OBJ_Repairing>
+                <OBJ_ConnectedToStreet>
+                    <Item>
+                        <Sound>50302</Sound>
+                    </Item>
+                </OBJ_ConnectedToStreet>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <Sound>51760</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <Sound>51760</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Upgrade>
+                        <Item>
+                            <Sound>51771</Sound>
+                        </Item>
+                    </BLD_MP_Upgrade>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <Sound>51730</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                    <BLD_MP_RuinRepaired>
+                        <Item>
+                            <Sound>51733</Sound>
+                        </Item>
+                    </BLD_MP_RuinRepaired>
+                    <BLD_MP_Downgrade>
+                        <Item>
+                            <Sound>51770</Sound>
+                        </Item>
+                    </BLD_MP_Downgrade>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7>
+                <IsAgriculture>1</IsAgriculture>
+                <RawResourceType>Marsh</RawResourceType>
+            </Factory7>
+            <FactoryBase>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>1400300620</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>120</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>MarshBuildings</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>20</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2192</Product>
+                        <Amount>5</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>1000</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>2100000</PassiveRuinRepairTime>
+                <DestructionWarScore>150</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <MarshBuilding />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <TileConnector />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource />
+        </Values>
+    </Asset>
+
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>50605</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="38370,50605,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300621</Asset></Item>
+    </ModOp>
+
+
+
+
+    <!-- Add fertiliser pit to aldermen construction menu  -->
+    <ModOp Add="@41331/ConstructionCategory/BuildingList">
+        <Item><Building>1400300621</Building></Item>
+    </ModOp>
+
+
+
+
+
+    <!-- Fertiliser from auroch pastures buff -->
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300622</GUID>
+                <Name>Effect FertiliserFromAurochs</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_fertiliser_goods.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>ObjectsInMeta</EffectScope>
+                <SourceCategory>Generic</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300623</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>5847</GUID>
+                    </Item>
+                </Targets>
+                <HideInGovernorsBar>1</HideInGovernorsBar>
+            </Effect>
+            <Text>
+                <OasisId>1400300623</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300623</GUID>
+                <Name>Buff FertiliserFromAurochs</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_fertiliser_goods.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300623</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade />
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Generic</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade>
+                <AdditionalOutput>
+                    <Item>
+                        <Product>1400300620</Product>
+                        <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                        <Amount>1</Amount>
+                    </Item>
+                </AdditionalOutput>
+            </FactoryUpgrade>
+            <ModuleOwnerUpgrade />
+            <MaintenanceUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+        </Values>
+    </Asset>
+
+
+
+
+
+
+
+    <!-- <GUID>77955</GUID> -->
+    <Asset>
+        <Template>ProductionModuleSilo</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300624</GUID>
+                <Name>Module Fertiliser Silo Celtic</Name>
+                <IconFilename>data/jtmzac/icons/fertiliser_silo.png</IconFilename>
+            </Standard>
+            <Building>
+                <BuildingType>BuildingModule</BuildingType>
+                <BuildingCategoryName>-6902682678281266822</BuildingCategoryName>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>1400300625</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+                <VariationControl>ByPlayer</VariationControl>
+            </Building>
+            <BuildingModule>
+                <ModuleType>AdditionalModule</ModuleType>
+            </BuildingModule>
+            <Constructable />
+            <Blocking />
+            <StreetActivation />
+            <LogisticNode />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>1400300620</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>5</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <CycleTime>300</CycleTime>
+                <OverrideMaxTransporterRange>1</OverrideMaxTransporterRange>
+                <MaxTransporterRange>40</MaxTransporterRange>
+            </FactoryBase>
+            <Factory7 />
+            <Maintenance />
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/fertiliser_silo/production_module_silo_01.cfg</Filename>
+                    </Item>
+                    <!-- I did create the second fenced version of the fertiliser silo from the normal silo variant, but it looks very roman so I've disabled it -->
+                    <!-- <Item>
+                        <Filename>data/jtmzac/graphics/production/fertiliser_silo/production_module_silo_02.cfg</Filename>
+                    </Item> -->
+                </Variations>
+            </Object>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Amount>750</Amount>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>1</InheritedIndex>
+                        </VectorElement>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>20</Amount>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>2</InheritedIndex>
+                        </VectorElement>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>10</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Mesh />
+            <FeedbackController />
+            <Text>
+                <OasisId>1400300624</OasisId>
+            </Text>
+            <Selection>
+                <GUIType>Production</GUIType>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+            </Selection>
+            <Locked />
+            <SoundEmitter />
+            <Infolayer />
+            <AmbientMoodProvider>
+                <Murmur>Farms</Murmur>
+                <DynamicEnvironmentType>BuildingIndustry</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Health />
+            <Pausable>
+                <CanPauseManually>1</CanPauseManually>
+            </Pausable>
+            <EffectSource>
+                <RadiusDistance>4</RadiusDistance>
+                <StreetDistance>4</StreetDistance>
+            </EffectSource>
+            <Buffable />
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300625</GUID>
+                <Name>Effect Fertiliser Silo Celtic</Name>
+                <IconFilename>data/jtmzac/icons/fertiliser_silo.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300626</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300640</GUID>
+                    </Item>
+                </Targets>
+            </Effect>
+            <Text>
+                <OasisId>1400300625</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300626</GUID>
+                <Name>BuildingBuff Fertiliser Silo</Name>
+                <IconFilename>data/jtmzac/icons/fertiliser_silo.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300625</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade />
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade>
+                <ProductivityUpgrade>
+                    <Value>100</Value>
+                    <Percental>1</Percental>
+                </ProductivityUpgrade>
+            </FactoryUpgrade>
+            <ModuleOwnerUpgrade />
+            <MaintenanceUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+        </Values>
+    </Asset>
+
+
+
+
+    <!-- Unlock fertiliser, fertiliser pit, fertiliser silo, and apply fertiliser from aurochs buff above 4k epona devotion -->
+    <Asset>
+        <Template>Trigger</Template>
+        <Values>
+        <Standard>
+            <GUID>1400300627</GUID>
+            <Name>Fertiliser Unlock</Name>
+        </Standard>
+        <Trigger>
+            <TriggerCondition>
+                <Template>ConditionPlayerCounter</Template>
+                <Values>
+                    <Condition />
+                    <ConditionPlayerCounter>
+                        <PlayerCounter>PatronDevotion</PlayerCounter>
+                        <Context>80861</Context>
+                        <ComparisonOp>MoreThan</ComparisonOp>
+                        <CounterAmount>3999</CounterAmount>
+                    </ConditionPlayerCounter>
+                    <ConditionLocationProps />
+                    <ConditionCounterProps />
+                </Values>
+            </TriggerCondition>
+            <TriggerActions>
+                <Item>
+                    <TriggerAction>
+                        <Template>ActionUnlockAsset</Template>
+                        <Values>
+                            <Action />
+                            <ActionUnlockAsset>
+                                <UnlockAssets>
+                                    <Item>
+                                        <Asset>1400300620</Asset>
+                                    </Item>
+                                    <Item>
+                                        <Asset>1400300621</Asset>
+                                    </Item>
+                                    <Item>
+                                        <Asset>1400300624</Asset>
+                                    </Item>
+                                </UnlockAssets>
+                            </ActionUnlockAsset>
+                        </Values>
+                    </TriggerAction>
+                </Item>
+                <Item>
+                    <TriggerAction>
+                        <Template>ActionEffect</Template>
+                            <Values>
+                            <Action />
+                            <ActionEffect>
+                                <EffectAsset>1400300622</EffectAsset>
+                                <StartEffect>1</StartEffect>
+                            </ActionEffect>
+                        </Values>
+                    </TriggerAction>
+                </Item>
+                <Item>
+                    <TriggerAction>
+                        <Template>ActionRegisterTrigger</Template>
+                        <Values>
+                            <Action />
+                            <ActionRegisterTrigger>
+                                <TriggerAsset>1400300628</TriggerAsset>
+                            </ActionRegisterTrigger>
+                        </Values>
+                    </TriggerAction>
+                </Item>
+            </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+            <AutoRegisterTrigger>1</AutoRegisterTrigger>
+            <UsedByFirstParties>1</UsedByFirstParties>
+        </TriggerSetup>
+        </Values>
+    </Asset>
+
+    <!-- Lock fertiliser pit, fertiliser silo, and remove fertiliser from aurochs buff under 3.5k epona devotion -->
+    <Asset>
+        <Template>Trigger</Template>
+        <Values>
+        <Standard>
+            <GUID>1400300628</GUID>
+            <Name>Fertiliser Re lock</Name>
+        </Standard>
+        <Trigger>
+            <TriggerCondition>
+                <Template>ConditionPlayerCounter</Template>
+                <Values>
+                    <Condition />
+                    <ConditionPlayerCounter>
+                        <PlayerCounter>PatronDevotion</PlayerCounter>
+                        <Context>80861</Context>
+                        <ComparisonOp>LessThan</ComparisonOp>
+                        <CounterAmount>3500</CounterAmount>
+                    </ConditionPlayerCounter>
+                    <ConditionLocationProps />
+                    <ConditionCounterProps />
+                </Values>
+            </TriggerCondition>
+            <TriggerActions>
+                <Item>
+                    <TriggerAction>
+                        <Template>ActionLockAsset</Template>
+                        <Values>
+                            <Action />
+                            <ActionLockAsset>
+                                <LockAssets>
+                                    <Item>
+                                        <Asset>1400300621</Asset>
+                                    </Item>
+                                    <Item>
+                                        <Asset>1400300624</Asset>
+                                    </Item>
+                                </LockAssets>
+                            </ActionLockAsset>
+                        </Values>
+                    </TriggerAction>
+                </Item>
+                <Item>
+                    <TriggerAction>
+                        <Template>ActionEffect</Template>
+                            <Values>
+                            <Action />
+                            <ActionEffect>
+                                <EffectAsset>1400300622</EffectAsset>
+                                <StartEffect>0</StartEffect>
+                            </ActionEffect>
+                        </Values>
+                    </TriggerAction>
+                </Item>
+                <Item>
+                    <TriggerAction>
+                        <Template>ActionRegisterTrigger</Template>
+                        <Values>
+                            <Action />
+                            <ActionRegisterTrigger>
+                                <TriggerAsset>1400300627</TriggerAsset>
+                            </ActionRegisterTrigger>
+                        </Values>
+                    </TriggerAction>
+                </Item>
+            </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+            <AutoRegisterTrigger>1</AutoRegisterTrigger>
+            <UsedByFirstParties>1</UsedByFirstParties>
+        </TriggerSetup>
+        </Values>
+    </Asset>
+
+
+
+
+
+
+    <!-- TODO: change epona 4k icon and text to include fertiliser -->
+    <!-- <GUID>80861</GUID> -->
+
+
+    <ModOp Merge="@80861/Patron">
+        <WonderDescription>1400300626</WonderDescription>
+        <WonderIcon>1400300629</WonderIcon>
+        <!-- <Wonder>83609</Wonder> -->
+    </ModOp>
+
+    <!-- <ModOp Merge="@83609/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_epona_veneration.png</IconFilename>
+    </ModOp> -->
+
+    <Asset>
+        <Template>Text</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300629</GUID>
+                <Name>Icon Wonder Epona</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_epona_veneration.png</IconFilename>
+                <InfoDescription>-6914030943601122801</InfoDescription>
+            </Standard>
+            <Text>
+                <OasisId>-6915658454423464064</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+
+</ModOps>

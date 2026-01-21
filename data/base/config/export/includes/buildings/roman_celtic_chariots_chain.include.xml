@@ -1,0 +1,595 @@
+<ModOps>
+
+
+    <!-- <GUID>5616</GUID> -->
+
+
+    <!-- <GUID>6452</GUID> -->
+    <!-- <GUID>6454</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300690</GUID>
+                <Name>Need Roman Celtic Household Chariots</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_chariot_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>2163</NeedProduct>
+                <NeedCategoryType>Household</NeedCategoryType>
+                <SupplyWeight>4</SupplyWeight>
+                <NeedAttributes>
+                    <Money>
+                        <Value>5</Value>
+                    </Money>
+                    <Prestige>
+                        <Value>3</Value>
+                    </Prestige>
+                </NeedAttributes>
+                <NeedDescription>-6906884469672466819</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+
+
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300691</GUID>
+                <Name>Production Culture Roman Celtic Chariots</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_chariot_goods.png</IconFilename>
+                <InfoDescription>-6913580631298288228</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99049</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2176</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2178</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/roman_celtic_chariots/culture_chariots.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <ParticipantMessageArcheType>27089</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>-6907034401183499168</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>35855</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51727</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_Build>
+                    <BLD_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_MoveSuccess>
+                </ConstructionSounds>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51726</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2075</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>2128</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2163</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>120</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>24</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2199</Product>
+                        <Amount>12</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>1600</BaseHealth>
+                <SelfHealPerHealTick>2</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
+                <DestructionWarScore>240</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1504</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>26</RadiusDistance>
+                <StreetDistance>30</StreetDistance>
+            </EffectSource>
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>50576</GUID> -->
+    <!-- <GUID>50612</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="38370,50576,50612,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300691</Asset></Item>
+    </ModOp>
+
+    <!-- add to effect target -->
+    <!-- <GUID>51474</GUID> -->
+    <ModOp Add="@51474/Effect/Targets">
+        <Item><GUID>1400300691</GUID></Item>
+    </ModOp>
+
+
+
+
+
+    <!-- <GUID>5611</GUID> -->
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300692</GUID>
+                <Name>Production Craft Roman Celtic Chassis</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_chassis_goods.png</IconFilename>
+                <InfoDescription>-6908748193657493650</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2176</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2178</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/roman_celtic_chassis/craft_chassis.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <ParticipantMessageArcheType>27089</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>-6905445632879009847</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <Sound>35755</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2077</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>2115</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>2128</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>90</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>16</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2199</Product>
+                        <Amount>10</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>1050</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>2100000</PassiveRuinRepairTime>
+                <DestructionWarScore>150</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1504</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>107522</GUID> -->
+    <!-- <GUID>50576</GUID> -->
+    <!-- <GUID>50612</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <!-- <GUID>31996</GUID> -->
+    <ModOp GUID="38370,107522,50576,50612,64413,31996" Add="AssetPool/AssetList">
+        <Item><Asset>1400300692</Asset></Item>
+    </ModOp>
+
+
+
+    <!-- <GUID>6675</GUID> -->
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300693</GUID>
+                <Name>Production Chain Roman Celtic Chariots</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_chariot_goods.png</IconFilename>
+                <InfoDescription>-6906884469672466819</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>1400300691</Building>
+                <Tier1>
+                    <Item>
+                        <Building>15514</Building>
+                    </Item>
+                    <Item>
+                        <Building>1400300692</Building>
+                        <Tier2>
+                            <Item>
+                                <Building>5976</Building>
+                            </Item>
+                            <Item>
+                                <Building>5969</Building>
+                                <Tier3>
+                                    <Item>
+                                        <Building>5982</Building>
+                                    </Item>
+                                    <Item>
+                                        <Building>1400300611</Building>
+                                    </Item>
+                                </Tier3>
+                            </Item>
+                        </Tier2>
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked />
+            <Text>
+                <OasisId>-6916541108636548432</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Add new iron requirement to existing buff pool for specialists -->
+    <!-- <GUID>50576</GUID> -->
+    <ModOp Add="@50576/AssetPool/AssetList">
+        <Item><Asset>5969</Asset></Item>
+        <Item><Asset>5982</Asset></Item>
+        <Item><Asset>1400300611</Asset></Item>
+    </ModOp>
+
+
+
+    <!-- <GUID>8044</GUID> -->
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300694</GUID>
+                <Name>Unlock Pool Roman Celtic Chariots</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>1400300693</Asset></Item>
+                    <Item><Asset>2075</Asset></Item>
+                    <Item><Asset>15514</Asset></Item>
+                    <Item><Asset>2128</Asset></Item>
+                    <Item><Asset>1400300692</Asset></Item>
+                    <Item><Asset>2163</Asset></Item>
+                    <Item><Asset>1400300691</Asset></Item>
+
+                    <Item><Asset>2080</Asset></Item>
+                    <Item><Asset>5982</Asset></Item>
+                    <Item><Asset>1400300611</Asset></Item>
+                    <Item><Asset>2115</Asset></Item>
+                    <Item><Asset>5969</Asset></Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+
+    <!-- Add roman celtic chariot chain to nobles after handmirrors -->
+    <ModOp Merge="@41327/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='31804'">
+            <Building>1400300693</Building>
+        </ModItem>
+    </ModOp>
+    <!-- Remove fine glass chain it replaces -->
+    <ModOp Remove="@41327/ConstructionCategory/BuildingList/Item[Building = '8437']"></ModOp>
+
+
+
+
+    <!-- Remove fine glass unhide from nobles progression trigger -->
+    <ModOp Remove="@8482/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8470']"></ModOp>
+    <!-- Remove fine glass unlock from nobles progression trigger -->
+    <ModOp Remove="@8483/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '8470']"></ModOp>
+
+    <!-- Independent unhide and unlock triggers -->
+    <!-- <GUID>8482</GUID> -->
+    <!-- <GUID>8483</GUID> -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300695</GUID>
+                <Name>Trigger Intermediate Level Roman Celtic 3.2 chariots</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1504</Context>
+                            <CounterAmount>700</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300694</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300696</GUID>
+                <Name>Trigger Intermediate Level Roman Celtic 3.3 chariots</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1504</Context>
+                            <CounterAmount>1050</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300694</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+
+
+
+
+</ModOps>

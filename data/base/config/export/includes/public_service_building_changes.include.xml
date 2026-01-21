@@ -1,0 +1,1192 @@
+<ModOps>
+
+
+<!-- List of sections:                                                                                                      -->
+<!-- 1. New asset pools used to split buffs up                                                                              -->
+<!-- 2. New buffs to split up the roman and roman celtic public service building buffs                                      -->
+<!--        This includes rebalancing the provided stats for these specific roman celtic buildings                          -->
+<!-- 3. Rebalance all other roman celtic and celtic public service building stats                                           -->
+<!-- 4. Replace remaining public service building pools with new ones                                                       -->
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                       New asset pools for public service buildings                      -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <!-- Area affect buff pools -->
+    <!-- <GUID>68472</GUID> -->
+    <!-- <GUID>68476</GUID> -->
+    <!-- <GUID>68475</GUID> -->
+    <!-- <GUID>68474</GUID> -->
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300540</GUID>
+                <Name>Asset Pool Roman Celtic Public Attribute Buff Tier 2</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>44584</Asset></Item>
+                    <Item><Asset>53359</Asset></Item>
+                    <Item><Asset>38564</Asset></Item>
+                    <Item><Asset>38370</Asset></Item>
+                    <Item><Asset>43099</Asset></Item>
+                    <Item><Asset>32363</Asset></Item>
+                    <Item><Asset>43102</Asset></Item>
+                    <Item><Asset>50228</Asset></Item>
+                    <Item><Asset>53358</Asset></Item>
+                    <Item><Asset>50226</Asset></Item>
+                    <Item><Asset>1400300520</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300541</GUID>
+                <Name>Asset Pool Roman Celtic Public Attribute Buff Tier 3</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>44584</Asset></Item>
+                    <Item><Asset>53359</Asset></Item>
+                    <Item><Asset>38564</Asset></Item>
+                    <Item><Asset>38370</Asset></Item>
+                    <Item><Asset>43099</Asset></Item>
+                    <Item><Asset>32363</Asset></Item>
+                    <Item><Asset>43102</Asset></Item>
+                    <Item><Asset>50228</Asset></Item>
+                    <Item><Asset>53358</Asset></Item>
+                    <Item><Asset>50226</Asset></Item>
+                    <Item><Asset>1400300520</Asset></Item>
+                    <Item><Asset>6475</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300542</GUID>
+                <Name>Asset Pool Celtic Public Attribute Buff Tier 2</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>44584</Asset></Item>
+                    <Item><Asset>53359</Asset></Item>
+                    <Item><Asset>38564</Asset></Item>
+                    <Item><Asset>38370</Asset></Item>
+                    <Item><Asset>43099</Asset></Item>
+                    <Item><Asset>32363</Asset></Item>
+                    <Item><Asset>43102</Asset></Item>
+                    <Item><Asset>50228</Asset></Item>
+                    <Item><Asset>53358</Asset></Item>
+                    <Item><Asset>50226</Asset></Item>
+                    <Item><Asset>6414</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300543</GUID>
+                <Name>Asset Pool Celtic Public Attribute Buff Tier 3</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>44584</Asset></Item>
+                    <Item><Asset>53359</Asset></Item>
+                    <Item><Asset>38564</Asset></Item>
+                    <Item><Asset>38370</Asset></Item>
+                    <Item><Asset>43099</Asset></Item>
+                    <Item><Asset>32363</Asset></Item>
+                    <Item><Asset>43102</Asset></Item>
+                    <Item><Asset>50228</Asset></Item>
+                    <Item><Asset>53358</Asset></Item>
+                    <Item><Asset>50226</Asset></Item>
+                    <Item><Asset>6414</Asset></Item>
+                    <Item><Asset>6471</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Public service need pools -->
+    <!-- <GUID>68477</GUID> -->
+    <!-- <GUID>68478</GUID> -->
+    <!-- <GUID>68479</GUID> -->
+    <!-- <GUID>68480</GUID> -->
+
+    <!-- Special pool used for the single overlap building, the market -->
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300544</GUID>
+                <Name>Asset Pool Roman Celtic AND Celtic Public Service Need Tier 1</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>1400300520</Asset></Item>
+                    <Item><Asset>6475</Asset></Item>
+                    <Item><Asset>6514</Asset></Item>
+                    <Item><Asset>6414</Asset></Item>
+                    <Item><Asset>6471</Asset></Item>
+                    <Item><Asset>6472</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300545</GUID>
+                <Name>Asset Pool Roman Celtic Public Service Need Tier 1</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>1400300520</Asset></Item>
+                    <Item><Asset>6475</Asset></Item>
+                    <Item><Asset>6514</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300546</GUID>
+                <Name>Asset Pool Roman Celtic Public Service Need Tier 2</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>6475</Asset></Item>
+                    <Item><Asset>6514</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300547</GUID>
+                <Name>Asset Pool Roman Celtic Public Service Need Tier 3</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>6514</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300548</GUID>
+                <Name>Asset Pool Celtic Public Service Need Tier 1</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>6414</Asset></Item>
+                    <Item><Asset>6471</Asset></Item>
+                    <Item><Asset>6472</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300549</GUID>
+                <Name>Asset Pool Celtic Public Service Need Tier 2</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>6471</Asset></Item>
+                    <Item><Asset>6472</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>AssetPoolNamed</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300550</GUID>
+                <Name>Asset Pool Celtic Public Service Need Tier 3</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>6472</Asset></Item>
+                </AssetList>
+            </AssetPool>
+            <Text>
+                <OasisId>-6905197213145912196</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--          Split roman and roman celtic area buffs for public service buildings           -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <!--   Some of these do already exist but are unused, so I've replaced them all for safety   -->
+    <!--   Buffs provided by these buildings also have to be rebalanced here to avoid vscode plugin errors  -->
+
+    <!-- Split roman and roman celtic grammaticus area buffs -->
+    <ModOp Merge="@6730/Building/FunctionalEffects">
+        <Item><FunctionalEffect>1400300551</FunctionalEffect></Item>
+    </ModOp>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300551</GUID>
+                <Name>Effect Roman Celtic Grammaticus Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_grammaticus.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300552</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300540</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>-6905209550753101807</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Mixed with celtic recreation ground -->
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300552</GUID>
+                <Name>Buff Roman Celtic Grammaticus Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_celtic_grammaticus.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6905209550753101807</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Knowledge>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Knowledge>
+                    <Prestige>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Prestige>
+                    <Happiness>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Happiness>
+                    <Health>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Health>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+
+    <!-- Split roman and roman celtic aqueduct cistern area buffs -->
+    <ModOp Merge="@29526/Building/FunctionalEffects">
+        <Item><FunctionalEffect>1400300553</FunctionalEffect></Item>
+    </ModOp>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300553</GUID>
+                <Name>Effect Roman Celtic Aqueduct Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/infrastructure/icon_3d_aqueduct_cistern.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Aqueduct</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300554</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300541</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+            </Effect>
+            <Text>
+                <OasisId>-6910420592225450642</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Buff values unchanged because buffs are mixed with theatre/wickerman to avoid making aqueduct too strong when used outside residential areas -->
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300554</GUID>
+                <Name>Buff Roman Celtic Aqueduct Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/infrastructure/icon_3d_aqueduct_cistern.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6910420592225450642</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Health>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Health>
+                    <FireSafety>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </FireSafety>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Aqueduct</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <MaintenanceUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+        </Values>
+    </Asset>
+
+    <!-- Split roman and roman celtic theatre area buffs -->
+    <ModOp Merge="@37178/Building/FunctionalEffects">
+        <Item><FunctionalEffect>1400300555</FunctionalEffect></Item>
+    </ModOp>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300555</GUID>
+                <Name>Effect Roman Celtic Theater Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300556</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300541</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>-6901568519394920046</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Mixed with alder council to avoid making aqueduct too strong -->
+    <Asset>
+    <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300556</GUID>
+                <Name>Buff Roman Celtic Theater Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6901568519394920046</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Population>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Population>
+                    <Knowledge>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Knowledge>
+                    <Belief>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Belief>
+                    <Prestige>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Prestige>
+                    <Happiness>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Happiness>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+
+    <!-- Split roman and roman celtic temple area buffs -->
+    <ModOp Merge="@6729/Building/FunctionalEffects">
+        <Item><FunctionalEffect>1400300555</FunctionalEffect></Item>
+    </ModOp>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300557</GUID>
+                <Name>Effect Roman Celtic Temple Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_temple.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300558</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300541</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>-6909062589263070362</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Mixed with celtic barrow -->
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300558</GUID>
+                <Name>Buff Roman Celtic Temple Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_temple.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6909062589263070362</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Population>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Population>
+                    <Belief>
+                        <AmountOrPercent>
+                            <Value>9</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Belief>
+                    <Prestige>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Prestige>
+                    <Health>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Health>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+
+
+    <!-- Split roman and roman celtic baths area buffs -->
+    <ModOp Merge="@8062/Building/FunctionalEffects">
+        <Item><FunctionalEffect>1400300559</FunctionalEffect></Item>
+    </ModOp>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300559</GUID>
+                <Name>Effect Roman Celtic Baths Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_wonder_roman_bathhouse.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300560</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300541</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>-6905078595730146306</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Mixed with celtic sacred grove -->
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300560</GUID>
+                <Name>Buff Roman Celtic Baths Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_wonder_roman_bathhouse.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6905078595730146306</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Population>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Population>
+                    <Knowledge>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Knowledge>
+                    <Belief>
+                        <AmountOrPercent>
+                            <Value>4</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Belief>
+                    <FireSafety>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </FireSafety>
+                    <Health>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Health>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <!-- Split roman and roman celtic gambling house area buffs -->
+    <ModOp Merge="@37177/Building/FunctionalEffects">
+        <Item><FunctionalEffect>1400300561</FunctionalEffect></Item>
+    </ModOp>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300561</GUID>
+                <Name>Effect Roman Celtic Gambling House Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_gambling_house.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300562</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300541</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>-6900453330506152180</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300562</GUID>
+                <Name>Buff Roman Celtic Gambling House Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_wonder_roman_bathhouse.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6900453330506152180</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Population>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Population>
+                    <Money>
+                        <AmountOrPercent>
+                            <Value>3</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Money>
+                    <Happiness>
+                        <AmountOrPercent>
+                            <Value>-2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Happiness>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--      Rebalance other public building buffs that weren't changed in previous section     -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+    <!-- <GUID>1400300552</GUID> -->
+    <!-- <GUID>50433</GUID> -->
+    <ModOp Replace="@50433/BuildingUpgrade/AdditionalAttributes">
+        <AdditionalAttributes>
+            <Knowledge>
+                <AmountOrPercent>
+                    <Value>3</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Knowledge>
+            <Prestige>
+                <AmountOrPercent>
+                    <Value>1</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Prestige>
+            <Happiness>
+                <AmountOrPercent>
+                    <Value>1</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Happiness>
+            <Health>
+                <AmountOrPercent>
+                    <Value>1</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Health>
+        </AdditionalAttributes>
+    </ModOp>
+
+    <!-- <GUID>6723</GUID> -->
+    <!-- <GUID>6718</GUID> -->
+    <ModOp Replace="@6723/Need/NeedAttributes">
+        <NeedAttributes>
+            <Knowledge>
+                <Value>3</Value>
+            </Knowledge>
+            <Prestige>
+                <Value>1</Value>
+            </Prestige>
+            <Happiness>
+                <Value>1</Value>
+            </Happiness>
+            <Health>
+                <Value>1</Value>
+            </Health>
+        </NeedAttributes>
+    </ModOp>
+    <ModOp Replace="@6718/Need/NeedAttributes">
+        <NeedAttributes>
+            <Knowledge>
+                <Value>3</Value>
+            </Knowledge>
+            <Prestige>
+                <Value>1</Value>
+            </Prestige>
+            <Happiness>
+                <Value>1</Value>
+            </Happiness>
+            <Health>
+                <Value>1</Value>
+            </Health>
+        </NeedAttributes>
+    </ModOp>
+
+    <!-- Cistern buffs to wickerman but alder council buffs to theatre to avoid cistern being too strong -->
+    <!-- <GUID>68748</GUID> -->
+    <!-- <GUID>1400300535</GUID> -->
+    <!-- <GUID>37175</GUID> -->
+    <!-- <GUID>6719</GUID> -->
+    <ModOp Replace="@37175/Need/NeedAttributes">
+        <NeedAttributes>
+            <Population>
+                <Value>2</Value>
+            </Population>
+            <Knowledge>
+                <Value>3</Value>
+            </Knowledge>
+            <Belief>
+                <Value>1</Value>
+            </Belief>
+            <Prestige>
+                <Value>1</Value>
+            </Prestige>
+            <Happiness>
+                <Value>3</Value>
+            </Happiness>
+        </NeedAttributes>
+    </ModOp>
+
+
+    <!-- <GUID>55984</GUID> -->
+    <!-- <GUID>1400300558</GUID> -->
+    <ModOp Replace="@55984/BuildingUpgrade/AdditionalAttributes">
+        <AdditionalAttributes>
+            <Population>
+                <AmountOrPercent>
+                    <Value>2</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Population>
+            <Belief>
+                <AmountOrPercent>
+                    <Value>9</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Belief>
+            <Prestige>
+                <AmountOrPercent>
+                    <Value>2</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Prestige>
+            <Health>
+                <AmountOrPercent>
+                    <Value>2</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Health>
+        </AdditionalAttributes>
+    </ModOp>
+
+    <!-- <GUID>55950</GUID> -->
+    <!-- <GUID>6722</GUID> -->
+    <ModOp Replace="@6722/Need/NeedAttributes">
+        <NeedAttributes>
+            <Population>
+                <Value>2</Value>
+            </Population>
+            <Belief>
+                <Value>9</Value>
+            </Belief>
+            <Prestige>
+                <Value>2</Value>
+            </Prestige>
+            <Health>
+                <Value>2</Value>
+            </Health>
+        </NeedAttributes>
+    </ModOp>
+    <ModOp Replace="@55950/Need/NeedAttributes">
+        <NeedAttributes>
+            <Population>
+                <Value>2</Value>
+            </Population>
+            <Belief>
+                <Value>9</Value>
+            </Belief>
+            <Prestige>
+                <Value>2</Value>
+            </Prestige>
+            <Health>
+                <Value>2</Value>
+            </Health>
+        </NeedAttributes>
+    </ModOp>
+
+
+    <!-- <GUID>55985</GUID> -->
+    <!-- <GUID>1400300560</GUID> -->
+    <ModOp Replace="@55985/BuildingUpgrade/AdditionalAttributes">
+        <AdditionalAttributes>
+            <Population>
+                <AmountOrPercent>
+                    <Value>2</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Population>
+            <Knowledge>
+                <AmountOrPercent>
+                    <Value>3</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Knowledge>
+            <Belief>
+                <AmountOrPercent>
+                    <Value>4</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Belief>
+            <FireSafety>
+                <AmountOrPercent>
+                    <Value>3</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </FireSafety>
+            <Health>
+                <AmountOrPercent>
+                    <Value>2</Value>
+                    <Percental>0</Percental>
+                </AmountOrPercent>
+            </Health>
+        </AdditionalAttributes>
+    </ModOp>
+
+
+    <!-- <GUID>55951</GUID> -->
+    <!-- <GUID>6458</GUID> -->
+    <ModOp Replace="@6458/Need/NeedAttributes">
+        <NeedAttributes>
+            <Population>
+                <Value>2</Value>
+            </Population>
+            <Knowledge>
+                <Value>3</Value>
+            </Knowledge>
+            <Belief>
+                <Value>4</Value>
+            </Belief>
+            <FireSafety>
+                <Value>3</Value>
+            </FireSafety>
+            <Health>
+                <Value>2</Value>
+            </Health>
+        </NeedAttributes>
+    </ModOp>
+
+    <ModOp Replace="@55951/Need/NeedAttributes">
+        <NeedAttributes>
+            <Population>
+                <Value>2</Value>
+            </Population>
+            <Knowledge>
+                <Value>3</Value>
+            </Knowledge>
+            <Belief>
+                <Value>4</Value>
+            </Belief>
+            <FireSafety>
+                <Value>3</Value>
+            </FireSafety>
+            <Health>
+                <Value>2</Value>
+            </Health>
+        </NeedAttributes>
+    </ModOp>
+
+
+
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                  Replace all other public building pools with new ones                  -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+    <!-- Need targets -->
+    <!-- Bardic hall -->
+    <ModOp Merge="@99327/Effect/Targets">
+        <Item><GUID>1400300548</GUID></Item>
+    </ModOp>
+    <!-- Fanum, recreation ground -->
+    <ModOp GUID="99326,99328" Merge="Effect/Targets">
+        <Item><GUID>1400300549</GUID></Item>
+    </ModOp>
+    <!-- Alder council, barrow, sacred grove -->
+    <ModOp GUID="99329,99335,99336" Merge="Effect/Targets">
+        <Item><GUID>1400300550</GUID></Item>
+    </ModOp>
+
+    <!-- Area buff targets -->
+    <!-- Fanum, recreation ground -->
+    <ModOp GUID="99073,99075" Merge="Effect/Targets">
+        <Item><GUID>1400300542</GUID></Item>
+    </ModOp>
+    <!-- Alder council, barrow, sacred grove -->
+    <ModOp GUID="99076,99097,99098" Merge="Effect/Targets">
+        <Item><GUID>1400300543</GUID></Item>
+    </ModOp>
+
+
+
+
+    <!-- Need targets -->
+    <!-- Market -->
+    <ModOp Merge="@99322/Effect/Targets">
+        <Item><GUID>1400300544</GUID></Item>
+    </ModOp>
+    <!-- Grammaticus (New roman celtic sanctuary definined in its own include file) -->
+    <ModOp  Merge="@99323/Effect/Targets">
+        <Item><GUID>1400300546</GUID></Item>
+    </ModOp>
+    <!-- Theatre, gambling house, aqueduct, temple, baths -->
+    <ModOp GUID="99324,99325,99331,99338,99337" Merge="Effect/Targets">
+        <Item><GUID>1400300547</GUID></Item>
+    </ModOp>
+
+
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                       Change icons to include roman/celtic symbols                      -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <ModOp Merge="@6727/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_bardic_hall.png</IconFilename>
+    </ModOp>
+
+
+
+
+    <!-- <GUID>6728</GUID> -->
+    <ModOp Replace="@6728/Cost/Costs">
+        <Costs>
+            <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>1500</Amount>
+            </Item>
+            <Item>
+                <Ingredient>2174</Ingredient>
+                <Amount>10</Amount>
+            </Item>
+            <Item>
+                <Ingredient>2169</Ingredient>
+                <Amount>5</Amount>
+            </Item>
+            <Item>
+                <Ingredient>2178</Ingredient>
+            </Item>
+        </Costs>
+    </ModOp>
+
+    <!-- <ModOp Merge="@50428">
+        <BuildingUpgrade>
+            <AdditionalAttributes>
+                <Belief>
+                    <AmountOrPercent>
+                        <Value>2</Value>
+                        <Percental>0</Percental>
+                    </AmountOrPercent>
+                </Belief>
+                <Knowledge>
+                    <AmountOrPercent>
+                        <Value>1000</Value>
+                        <Percental>0</Percental>
+                    </AmountOrPercent>
+                </Knowledge>
+            </AdditionalAttributes>
+        </BuildingUpgrade>
+    </ModOp> -->
+
+
+</ModOps>

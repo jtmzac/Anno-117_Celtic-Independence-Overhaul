@@ -1,0 +1,258 @@
+<ModOps>
+
+    <!-- Remove clan shields from smiths construction menu -->
+    <ModOp Remove="@41330/ConstructionCategory/BuildingList/Item[Building = '31810']" Condition="@41330/ConstructionCategory/BuildingList/Item[Building = '31810']"></ModOp>
+
+    <!-- Remove fine glass from aldermen construction menu -->
+    <ModOp Remove="@41331/ConstructionCategory/BuildingList/Item[Building = '8437']" Condition="@41331/ConstructionCategory/BuildingList/Item[Building = '8437']"></ModOp>
+
+    <!-- Add clan shields to aldermen construction menu after chariots if chariots still there -->
+    <ModOp Merge="@41331/ConstructionCategory/BuildingList" Condition="@41331/ConstructionCategory/BuildingList/Item[Building = '6675']">
+        <ModItem Merge="Building" Append="Building='6675'">
+            <Building>31810</Building>
+        </ModItem>
+    </ModOp>
+    <!-- Else add clan shields to aldermen construction menu after ornamented ponies if that is there instead -->
+    <ModOp Merge="@41331/ConstructionCategory/BuildingList" Condition="@41331/ConstructionCategory/BuildingList/Item[Building = '1400300514']">
+        <ModItem Merge="Building" Append="Building='1400300514'">
+            <Building>31810</Building>
+        </ModItem>
+    </ModOp>
+
+
+    <!-- <GUID>8900</GUID> -->
+    <!-- Change clan shields production chain to use iron instead of bronze and add wood no longer used by chariots -->
+    <ModOp Replace="@31810/ProductionChain">
+        <ProductionChain>
+            <Building>31773</Building>
+            <Tier1>
+                <Item>
+                    <Building>5976</Building>
+                </Item>
+                <Item>
+                    <Building>2800</Building>
+                </Item>
+                <Item>
+                    <Building>5969</Building>
+                    <Tier2>
+                        <Item>
+                            <Building>5982</Building>
+                        </Item>
+                        <Item>
+                            <Building>1400300611</Building>
+                        </Item>
+                    </Tier2>
+                </Item>
+            </Tier1>
+        </ProductionChain>
+    </ModOp>
+
+    <!-- swap bronze to iron at shield beater -->
+    <ModOp Merge="@31773/FactoryBase/FactoryInputs/Item[Product = '2127']">
+        <Product>2115</Product>
+    </ModOp>
+    <!-- Add wood as first input at shield beater -->
+    <ModOp Merge="@31773/FactoryBase/FactoryInputs">
+        <ModItem Merge="Product" Prepend="Product='2094'">
+            <Product>2077</Product>
+            <Amount>1</Amount>
+            <StorageAmount>3</StorageAmount>
+          </ModItem>
+    </ModOp>
+
+    <!-- Swap building cost to tier 3 -->
+    <ModOp Replace="@31773/Cost/Costs">
+        <Costs>
+            <Item>
+                <Ingredient>1010017</Ingredient>
+            </Item>
+            <Item>
+                <Ingredient>2174</Ingredient>
+                <Amount>3</Amount>
+            </Item>
+            <Item>
+                <Ingredient>2169</Ingredient>
+                <Amount>2</Amount>
+            </Item>
+            <Item>
+                <Ingredient>31709</Ingredient>
+                <Amount>2</Amount>
+            </Item>
+        </Costs>
+    </ModOp>
+
+    <!-- Change upkeep and workforce to tier 3 -->
+    <ModOp Replace="@31773/Maintenance/Maintenances">
+        <Maintenances>
+            <Item>
+                <Product>1010017</Product>
+                <Amount>20</Amount>
+            </Item>
+            <Item>
+                <Product>2197</Product>
+                <Amount>10</Amount>
+            </Item>
+        </Maintenances>
+    </ModOp>
+    <ModOp Replace="@31773/AttributeProvider">
+		<AttributeProvider>
+			<Population>1502</Population>
+		</AttributeProvider>
+    </ModOp>
+    <ModOp Replace="@31773/Selection/ParticipantMessageArcheType">
+        <ParticipantMessageArcheType>27088</ParticipantMessageArcheType>
+    </ModOp>
+
+
+
+
+    <!-- Change clan shields to 4 segment tier 3 need -->
+    <ModOp Merge="@6453/Need">
+        <SupplyWeight>4</SupplyWeight>
+    </ModOp>
+
+    <!-- Replace clan shields need attributes with that of fine glass -->
+    <!-- <Need>6452</Need> -->
+    <ModOp Replace="@6453/Need/NeedAttributes">
+        <NeedAttributes>
+            <Money>
+                <Value>5</Value>
+            </Money>
+            <Prestige>
+                <Value>3</Value>
+            </Prestige>
+        </NeedAttributes>
+    </ModOp>
+
+
+
+    <!-- <GUID>8043</GUID> -->
+
+
+    <!-- Add new iron and wood requirement to existing buff pool for specialists -->
+    <!-- <GUID>50576</GUID> -->
+    <!-- <ModOp Add="@50576/AssetPool/AssetList">
+        <Item><Asset>5969</Asset></Item>
+        <Item><Asset>5982</Asset></Item>
+        <Item><Asset>1400300611</Asset></Item>
+    </ModOp> -->
+
+
+
+
+    <!-- TODO: change specialists and asset pools -->
+
+
+
+
+
+
+    <!-- Remove fine glass unhide from existing trigger -->
+    <ModOp Remove="@8075/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8470']"></ModOp>
+    <!-- Remove fine glass unlock from existing trigger -->
+    <ModOp Remove="@8076/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '8470']"></ModOp>
+
+
+    <!-- <GUID>8075</GUID> -->
+    <!-- <GUID>8076</GUID> -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300720</GUID>
+                <Name>Trigger Intermediate Level Celtic 3.2 clan shields</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1502</Context>
+                            <CounterAmount>500</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>8043</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300721</GUID>
+                <Name>Trigger Intermediate Level Celtic 3.3 clan shields</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1502</Context>
+                            <CounterAmount>750</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>8043</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+
+
+
+
+</ModOps>

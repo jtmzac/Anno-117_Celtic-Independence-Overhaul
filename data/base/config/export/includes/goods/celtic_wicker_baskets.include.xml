@@ -1,0 +1,390 @@
+
+<ModOps>
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300500</GUID>
+                <Name>Good Wicker Baskets</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_wicker_baskets_goods.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300500</OasisId>
+            </Text>
+            <Locked />
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6902506696591556648</ProductCategory>
+                <BasePrice>18</BasePrice>
+                <AssociatedRegion>Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+                <TransportGoodsType>Needs</TransportGoodsType>
+            </Product>
+        </Values>
+    </Asset>
+
+    <!-- <GUID>3415</GUID> -->
+    <!-- <GUID>29326</GUID> -->
+    <!-- <GUID>8497</GUID> -->
+    <!-- <GUID>37670</GUID> -->
+    <!-- <GUID>28750</GUID> -->
+    <!-- <GUID>3409</GUID> -->
+    <!-- <GUID>28752</GUID> -->
+
+    <!-- <GUID>130659</GUID> -->
+    <!-- <GUID>91326</GUID> -->
+    <!-- <GUID>93817</GUID> -->
+
+
+    <!-- Add to global good list after drinking horns -->
+    <ModOp Merge="@3415/ProductStorageList/ProductList">
+        <ModItem Merge="Product" Append="Product='55954'">
+            <Product>1400300500</Product>
+        </ModItem>
+    </ModOp>
+
+    <!-- Add new good to all categories -->
+    <ModOp GUID="29326,8497,37670,28750,3409,28752" Add="ProductList/List">
+        <Item><Product>1400300500</Product></Item>
+    </ModOp>
+
+
+    <!-- <GUID>6453</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300501</GUID>
+                <Name>Need Celtic Household Wicker Baskets</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_wicker_baskets_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>1400300500</NeedProduct>
+                <NeedCategoryType>Household</NeedCategoryType>
+                <SupplyWeight>2</SupplyWeight>
+                <NeedAttributes>
+                    <Belief>
+                        <Value>1</Value>
+                    </Belief>
+                    <Prestige>
+                        <Value>2</Value>
+                    </Prestige>
+                </NeedAttributes>
+                <NeedDescription>1400300501</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+    <!-- <GUID>5935</GUID> -->
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300502</GUID>
+                <Name>Production Culture Celtic Wicker Baskets</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_wicker_baskets_goods.png</IconFilename>
+                <InfoDescription>1400300503</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
+                <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99048</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/wicker_baskets/construction_wattle_and_daub_no_marsh.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+                <ParticipantMessageArcheType>27086</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>1400300502</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>50366</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>2094</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>2103</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>1400300500</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>90</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>14</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2196</Product>
+                        <Amount>4</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>800</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
+                <DestructionWarScore>100</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1501</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>24</RadiusDistance>
+                <StreetDistance>28</StreetDistance>
+            </EffectSource>
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>107522</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <!-- <GUID>32002</GUID> -->
+    <ModOp GUID="38370,107522,64413,32002" Add="AssetPool/AssetList">
+        <Item><Asset>1400300502</Asset></Item>
+    </ModOp>
+
+
+
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300503</GUID>
+                <Name>Unlock Pool Celtic Wicker Baskets</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_wicker_baskets_goods.png</IconFilename>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item>
+                        <Asset>1400300504</Asset>
+                    </Item>
+                    <Item>
+                        <Asset>1400300500</Asset>
+                    </Item>
+                    <Item>
+                        <Asset>1400300502</Asset>
+                    </Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300504</GUID>
+                <Name>Production Chain Celtic Wicker Baskets</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_wicker_baskets_goods.png</IconFilename>
+                <InfoDescription>1400300501</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>1400300502</Building>
+                <Tier1>
+                    <Item>
+                        <Building>2800</Building>
+                    </Item>
+                    <Item>
+                        <Building>5849</Building>
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked />
+            <Text>
+                <OasisId>1400300500</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+
+    <!-- Remove clan shields from smiths construction menu -->
+    <ModOp Remove="@41330/ConstructionCategory/BuildingList/Item[Building = '31810']" Condition="@41330/ConstructionCategory/BuildingList/Item[Building = '31810']"></ModOp>
+
+    <!-- Add wicker baskets to smiths construction menu after drinking horns -->
+    <ModOp Merge="@41330/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='55974'">
+            <Building>1400300504</Building>
+        </ModItem>
+    </ModOp>
+
+
+
+    <!-- Remove clan shields unhide from existing trigger -->
+    <ModOp Remove="@8071/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8043']"></ModOp>
+    <!-- Remove clan shield unlock from existing trigger -->
+    <ModOp Remove="@62067/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '8043']"></ModOp>
+
+    <!-- <GUID>8071</GUID> -->
+    <!-- <GUID>62067</GUID> -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300505</GUID>
+                <Name>Trigger Intermediate Level Celtic 2.2 wicker baskets</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1501</Context>
+                            <CounterAmount>125</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300503</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup />
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300506</GUID>
+                <Name>Trigger Intermediate Level Celtic 2.3 wicker baskets</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1501</Context>
+                            <CounterAmount>200</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300503</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup />
+            <TrackingData />
+        </Values>
+    </Asset>
+
+</ModOps>

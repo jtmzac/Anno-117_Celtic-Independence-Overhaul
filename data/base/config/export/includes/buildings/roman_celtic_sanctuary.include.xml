@@ -1,0 +1,505 @@
+<ModOps>
+
+    <!-- <GUID>6728</GUID> -->
+    <!-- <GUID>3615</GUID> -->
+    <Asset>
+        <Template>PublicServiceBuilding</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300580</GUID>
+                <Name>Public Roman Celtic Sanctuary</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png</IconFilename>
+                <InfoDescription>-6900369333422171193</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingType>Public</BuildingType>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>1400300581</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+                <VariationControl>Religion</VariationControl>
+            </Building>
+            <Blocking>
+                <SuppressesRoundStreetCurves>1</SuppressesRoundStreetCurves>
+            </Blocking>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>1500</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>10</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2176</Ingredient>
+                        <Amount>5</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_default/sanctuary_default.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_ceres/sanctuary_ceres.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_neptun/sanctuary_neptun.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_mars/sanctuary_mars.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_minerva/sanctuary_minerva.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_mercury/sanctuary_mercury.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_epona/sanctuary_epona.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/sanctuary/sanctuary_cernunnos/sanctuary_cernunnos.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <GUIType>Religion</GUIType>
+            </Selection>
+            <Text>
+                <OasisId>-6912818596067413426</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>36609</Sound>
+                    </Item>
+                </OBJ_Active>
+            </SoundEmitter>
+            <FeedbackController>
+                <NightBehavior>HideNone</NightBehavior>
+            </FeedbackController>
+            <Infolayer />
+            <PublicService>
+                <MoodImage>data/ui/fhd/base/features/ompublicservices/image_watermark_publicservice_roman_278x156.png</MoodImage>
+                <PublicServiceEffect>1400300583</PublicServiceEffect>
+            </PublicService>
+            <AmbientMoodProvider>
+                <Murmur>Public_Temple</Murmur>
+                <DynamicEnvironmentType>BuildingResidence</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>26</Amount>
+                    </Item>
+                </Maintenances>
+                <ConsumerPriority>3</ConsumerPriority>
+            </Maintenance>
+            <Health>
+                <BaseHealth>3250</BaseHealth>
+                <DefenseByAIFactor>1580</DefenseByAIFactor>
+                <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
+                <DestructionWarScore>240</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <IncidentInfectable>
+                <Infectable>
+                    <Fire>
+                        <HeatValue>2</HeatValue>
+                    </Fire>
+                    <Riot>
+                        <HeatValue>2</HeatValue>
+                    </Riot>
+                    <Illness>
+                        <HeatValue>2</HeatValue>
+                    </Illness>
+                </Infectable>
+                <DestructionScore>115</DestructionScore>
+            </IncidentInfectable>
+            <Culture />
+            <AqueductConsumer />
+            <Buffable />
+            <AttributeProvider>
+                <Population>1503</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>34</RadiusDistance>
+                <StreetDistance>38</StreetDistance>
+            </EffectSource>
+            <StreetActivation />
+            <LogisticNode />
+            <DynamicVariation />
+            <Romanization />
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300581</GUID>
+                <Name>Effect Roman Celtic Sanctuary Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300582</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300540</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>-6900013686860699994</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300582</GUID>
+                <Name>Buff Roman Celtic Sanctuary Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6900013686860699994</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Knowledge>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Knowledge>
+                    <Belief>
+                        <AmountOrPercent>
+                            <Value>2</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Belief>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300583</GUID>
+                <Name>Effect Roman Celtic Sanctuary Service</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/icon_3d_removed.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300584</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300546</GUID>
+                    </Item>
+                </Targets>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300584</GUID>
+                <Name>Buff Roman Celtic Sanctuary Service</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6900013686860699994</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade />
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade>
+                <ProvidedNeedUpgrade>
+                    <Item>
+                        <ProvidedNeed>1400300585</ProvidedNeed>
+                    </Item>
+                </ProvidedNeedUpgrade>
+            </ResidenceUpgrade>
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300585</GUID>
+                <Name>Need Roman Celtic Public Sanctuary</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>1400300586</NeedProduct>
+                <SupplyWeight>2</SupplyWeight>
+                <NeedAttributes>
+                    <Knowledge>
+                        <Value>1</Value>
+                    </Knowledge>
+                    <Belief>
+                        <Value>2</Value>
+                    </Belief>
+                </NeedAttributes>
+                <NeedDescription>-6900369333422171193</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300586</GUID>
+                <Name>Service Roman Celtic Sanctuary</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_sanctuary.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6901795700060004796</OasisId>
+            </Text>
+            <Locked />
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6914369542672157320</ProductCategory>
+                <IsAbstract>1</IsAbstract>
+                <AssociatedRegion>Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+            </Product>
+        </Values>
+    </Asset>
+
+
+
+    <!-- Remove fanum from mercator construction menu -->
+    <ModOp Remove="@41328/ConstructionCategory/BuildingList/Item[Building = '6728']" Condition="@41328/ConstructionCategory/BuildingList/Item[Building = '6728']"></ModOp>
+
+    <!-- Add sanctuary to mercator construction menu after grammaticus -->
+    <ModOp Merge="@41328/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='6730'">
+            <Building>1400300580</Building>
+        </ModItem>
+    </ModOp>
+
+    <!-- Add roman celtic sanctuary to religion variation buildings list -->
+    <ModOp Add="@30743/ReligionBalancing/PatronBasedVariationBuildings">
+        <Item><Building>1400300580</Building></Item>
+    </ModOp>
+
+
+
+
+
+    <!-- Create unlock pool -->
+    <!-- <GUID>8471</GUID> -->
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300587</GUID>
+                <Name>Unlock Pool Roman Celtic Sanctuary</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item>
+                        <Asset>1400300580</Asset>
+                    </Item>
+                    <Item>
+                        <Asset>1400300586</Asset>
+                    </Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+
+
+    <!-- <GUID>6728</GUID> -->
+    <!-- <GUID>3615</GUID> -->
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>43101</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="43101,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300580</Asset></Item>
+    </ModOp>
+
+    <!-- Add to specialist buff target  -->
+    <!-- <GUID>42050</GUID> -->
+    <ModOp Add="@42050/Effect/Targets">
+        <Item><GUID>1400300580</GUID></Item>
+    </ModOp>
+
+
+    <!-- Remove fanum unhide from roman celts progression trigger -->
+    <ModOp Remove="@8474/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8471']"></ModOp>
+    <!-- Remove fanum unlock from roman celts progression trigger -->
+    <ModOp Remove="@8475/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '8471']"></ModOp>
+
+    <!-- Independent unhide and unlock triggers -->
+    <!-- <GUID>8474</GUID> -->
+    <!-- <GUID>8475</GUID> -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300588</GUID>
+                <Name>Trigger Intermediate Level Roman Celtic 2.0 sanctuary</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1503</Context>
+                            <CounterAmount>1</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300587</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300589</GUID>
+                <Name>Trigger Intermediate Level Roman Celtic 2.1 sanctuary</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1503</Context>
+                            <CounterAmount>100</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300587</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+</ModOps>

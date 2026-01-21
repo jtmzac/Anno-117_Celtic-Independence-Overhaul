@@ -1,0 +1,552 @@
+<ModOps>
+
+<!-- <GUID>41330</GUID> -->
+<!-- <GUID>6471</GUID> -->
+
+<!-- <GUID>3528</GUID> -->
+
+    <Asset>
+        <Template>PublicServiceBuilding</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300570</GUID>
+                <Name>Public Roman Celtic Tavern</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_roman_celtic_tavern.png</IconFilename>
+                <InfoDescription>-6907671331812195114</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingType>Public</BuildingType>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>1400300571</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>250</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>5</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/tavern/tavern_01.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <GUIType>PublicService</GUIType>
+            </Selection>
+            <Text>
+                <OasisId>-6910873794547294408</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>42887</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51727</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_Build>
+                </ConstructionSounds>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51727</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController>
+                <NightBehavior>HideNone</NightBehavior>
+            </FeedbackController>
+            <Infolayer />
+            <PublicService>
+                <MoodImage>data/ui/fhd/base/features/ompublicservices/image_watermark_publicservice_roman_278x156.png</MoodImage>
+                <PublicServiceEffect>1400300573</PublicServiceEffect>
+            </PublicService>
+            <AmbientMoodProvider>
+                <Murmur>Public_Tavern</Murmur>
+                <DynamicEnvironmentType>BuildingResidence</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>10</Amount>
+                    </Item>
+                </Maintenances>
+                <ConsumerPriority>3</ConsumerPriority>
+            </Maintenance>
+            <Health>
+                <BaseHealth>3250</BaseHealth>
+                <DefenseByAIFactor>650</DefenseByAIFactor>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1200000</PassiveRuinRepairTime>
+                <DestructionWarScore>70</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <IncidentInfectable>
+                <Infectable>
+                    <Fire>
+                        <HeatValue>2</HeatValue>
+                    </Fire>
+                    <Riot>
+                        <HeatValue>2</HeatValue>
+                    </Riot>
+                    <Illness>
+                        <HeatValue>2</HeatValue>
+                    </Illness>
+                </Infectable>
+                <DestructionScore>115</DestructionScore>
+            </IncidentInfectable>
+            <Culture />
+            <AqueductConsumer />
+            <Buffable />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource />
+            <StreetActivation />
+            <LogisticNode />
+            <DynamicVariation />
+            <Romanization />
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300571</GUID>
+                <Name>Effect Roman Celtic Tavern Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_tavern.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300572</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>68472</GUID>
+                    </Item>
+                </Targets>
+                <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text>
+                <OasisId>-6905475731411524003</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300572</GUID>
+                <Name>Buff Roman Celtic Tavern Building</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_tavern.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6905475731411524003</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade>
+                <AdditionalAttributes>
+                    <Population>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Population>
+                    <Happiness>
+                        <AmountOrPercent>
+                            <Value>1</Value>
+                            <Percental>0</Percental>
+                        </AmountOrPercent>
+                    </Happiness>
+                </AdditionalAttributes>
+            </BuildingUpgrade>
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade />
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Effect</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300573</GUID>
+                <Name>Effect Roman Tavern Service</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/icon_3d_removed.png</IconFilename>
+            </Standard>
+            <Effect>
+                <EffectScope>StreetDistance</EffectScope>
+                <SourceCategory>Adjacency</SourceCategory>
+                <Buffs>
+                    <Item>
+                        <GUID>1400300574</GUID>
+                    </Item>
+                </Buffs>
+                <Targets>
+                    <Item>
+                        <GUID>1400300545</GUID>
+                    </Item>
+                </Targets>
+                <HideInStatisticScreen>1</HideInStatisticScreen>
+            </Effect>
+            <Text />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>BuildingBuff</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300574</GUID>
+                <Name>Buff Roman Celtic Tavern Service</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_tavern.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6905475731411524003</OasisId>
+            </Text>
+            <HealthUpgrade />
+            <BuildingUpgrade />
+            <DistributionUpgrade />
+            <Buff>
+                <SourceCategory>Adjacency</SourceCategory>
+            </Buff>
+            <ResidenceUpgrade>
+                <ProvidedNeedUpgrade>
+                    <Item>
+                        <ProvidedNeed>1400300575</ProvidedNeed>
+                    </Item>
+                </ProvidedNeedUpgrade>
+            </ResidenceUpgrade>
+            <FactoryUpgrade />
+            <ModuleOwnerUpgrade />
+            <CityInstitutionUpgrade />
+            <IncidentInfectableUpgrade />
+            <RecruitmentUpgrade />
+            <AqueductUpgrade />
+            <WarehouseUpgrade />
+            <IrrigationUpgrade />
+            <MaintenanceUpgrade />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300575</GUID>
+                <Name>Need Roman Celtic Public Tavern</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_tavern.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>1400300576</NeedProduct>
+                <SupplyWeight>1</SupplyWeight>
+                <NeedAttributes>
+                    <Population>
+                        <Value>1</Value>
+                    </Population>
+                    <Happiness>
+                        <Value>1</Value>
+                    </Happiness>
+                </NeedAttributes>
+                <NeedDescription>-6907671331812195114</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300576</GUID>
+                <Name>Service Roman Celtic Tavern</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_tavern.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>-6915019912740030125</OasisId>
+            </Text>
+            <Locked />
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6914369542672157320</ProductCategory>
+                <IsAbstract>1</IsAbstract>
+                <AssociatedRegion>Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+            </Product>
+        </Values>
+    </Asset>
+
+    <!-- Create unlock pool -->
+    <!-- <GUID>8056</GUID> -->
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300577</GUID>
+                <Name>Unlock Pool Roman Celtic Tavern</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item>
+                        <Asset>1400300570</Asset>
+                    </Item>
+                    <Item>
+                        <Asset>1400300576</Asset>
+                    </Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+    <!-- Add tavern to wader construction menu after bardic hall  -->
+    <ModOp Merge="@41329/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='6727'">
+            <Building>1400300570</Building>
+        </ModItem>
+    </ModOp>
+
+
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>43101</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="43101,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300570</Asset></Item>
+    </ModOp>
+
+
+    <!-- Independent unhide and unlock triggers -->
+    <!-- <GUID>8066</GUID> -->
+    <!-- <GUID>8067</GUID> -->
+
+    <!-- unhide from either type of wader residence -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300578</GUID>
+                <Name>Trigger Intermediate Level Celtic 1.0 tavern</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionAlwaysTrue</Template>
+                    <Values>
+                        <Condition>
+                            <SubConditionCompletionOrder>MutuallyExclusive</SubConditionCompletionOrder>
+                        </Condition>
+                        <ConditionAlwaysTrue />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300577</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+                <SubTriggers>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <Context>6414</Context>
+                                                <CounterAmount>1</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <Context>1400300520</Context>
+                                                <CounterAmount>1</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                </SubTriggers>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300579</GUID>
+                <Name>Trigger Intermediate Level Celtic 1.1 tavern</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1500</Context>
+                            <CounterAmount>20</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300577</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+</ModOps>

@@ -1,0 +1,471 @@
+
+<ModOps>
+
+    <!-- <GUID>2163</GUID> -->
+    <Asset>
+        <Template>Product</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300510</GUID>
+                <Name>Good Ornamented Ponies</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_ornamented_ponies_goods.png</IconFilename>
+            </Standard>
+            <Text>
+                <OasisId>1400300510</OasisId>
+            </Text>
+            <Locked />
+            <Product>
+                <StorageLevel>Building</StorageLevel>
+                <ProductCategory>-6902506696591556648</ProductCategory>
+                <BasePrice>18</BasePrice>
+                <AssociatedRegion>Celtic</AssociatedRegion>
+                <ProductionRegions>
+                    <Item>
+                        <RegionType>Celtic</RegionType>
+                    </Item>
+                </ProductionRegions>
+                <TransportGoodsType>Needs</TransportGoodsType>
+            </Product>
+        </Values>
+    </Asset>
+
+    <!-- <GUID>3415</GUID> -->
+    <!-- <GUID>29326</GUID> -->
+    <!-- <GUID>8497</GUID> -->
+    <!-- <GUID>37670</GUID> -->
+    <!-- <GUID>28750</GUID> -->
+    <!-- <GUID>3409</GUID> -->
+    <!-- <GUID>28752</GUID> -->
+
+    <!-- <GUID>130659</GUID> -->
+    <!-- <GUID>91326</GUID> -->
+    <!-- <GUID>93817</GUID> -->
+
+    <!-- Add to global good list after chariots -->
+    <ModOp Merge="@3415/ProductStorageList/ProductList">
+        <ModItem Merge="Product" Append="Product='2163'">
+            <Product>1400300510</Product>
+        </ModItem>
+    </ModOp>
+
+    <!-- Add new good to all categories -->
+    <ModOp GUID="29326,8497,37670,28750,3409,28752" Add="ProductList/List">
+        <Item><Product>1400300510</Product></Item>
+    </ModOp>
+
+    <!-- <GUID>6454</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300511</GUID>
+                <Name>Need Celtic Household Ornamented Ponies</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_ornamented_ponies_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>1400300510</NeedProduct>
+                <NeedCategoryType>Household</NeedCategoryType>
+                <SupplyWeight>4</SupplyWeight>
+                <NeedAttributes>
+                    <Money>
+                        <Value>3</Value>
+                    </Money>
+                    <Happiness>
+                        <Value>1</Value>
+                    </Happiness>
+                    <Prestige>
+                        <Value>2</Value>
+                    </Prestige>
+                </NeedAttributes>
+                <NeedDescription>1400300511</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+    <!-- <GUID>5616</GUID> -->
+    <Asset>
+        <Template>Production</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300512</GUID>
+                <Name>Production Culture Celtic Ornamented Ponies</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_ornamented_ponies_goods.png</IconFilename>
+                <InfoDescription>1400300513</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingCategoryName>-6917222605070339216</BuildingCategoryName>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99049</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>3</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                        <Amount>2</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/production/ornamented_ponies/culture_chariots.cfg</Filename>
+                    </Item>
+                </Variations>
+            </Object>
+            <Mesh />
+            <Selection>
+                <ParticipantMessageArcheType>27088</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>1400300512</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>35855</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51727</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_Build>
+                    <BLD_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_MoveSuccess>
+                </ConstructionSounds>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51726</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController />
+            <Infolayer />
+            <Factory7 />
+            <FactoryBase>
+                <FactoryInputs>
+                    <Item>
+                        <Product>8404</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                    <Item>
+                        <Product>2127</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>3</StorageAmount>
+                    </Item>
+                </FactoryInputs>
+                <FactoryOutputs>
+                    <Item>
+                        <Product>1400300510</Product>
+                        <Amount>1</Amount>
+                        <StorageAmount>2</StorageAmount>
+                    </Item>
+                </FactoryOutputs>
+                <CycleTime>120</CycleTime>
+                <IsMainFactory>1</IsMainFactory>
+                <MaxTransporterRange>30</MaxTransporterRange>
+            </FactoryBase>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>Workshop</Murmur>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>24</Amount>
+                    </Item>
+                    <Item>
+                        <Product>2197</Product>
+                        <Amount>12</Amount>
+                    </Item>
+                </Maintenances>
+            </Maintenance>
+            <Health>
+                <BaseHealth>1600</BaseHealth>
+                <SelfHealPerHealTick>2</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
+                <DestructionWarScore>240</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <AqueductConsumer />
+            <IncidentInfectable>
+                <DestructionScore>100</DestructionScore>
+            </IncidentInfectable>
+            <Buffable />
+            <AttributeProvider>
+                <Population>1502</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>26</RadiusDistance>
+                <StreetDistance>30</StreetDistance>
+            </EffectSource>
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>38370</GUID> -->
+    <!-- <GUID>50612</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="38370,50612,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300512</Asset></Item>
+    </ModOp>
+
+
+
+
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300513</GUID>
+                <Name>Unlock Pool Celtic Ornamented Ponies</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_ornamented_ponies_goods.png</IconFilename>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item><Asset>1400300514</Asset></Item>
+                    <Item><Asset>8404</Asset></Item>
+                    <Item><Asset>5975</Asset></Item>
+                    <Item><Asset>5291</Asset></Item>
+                    <Item><Asset>5290</Asset></Item>
+                    <Item><Asset>2100</Asset></Item>
+                    <Item><Asset>2099</Asset></Item>
+                    <Item><Asset>2127</Asset></Item>
+                    <Item><Asset>5470</Asset></Item>
+                    <Item><Asset>1400300510</Asset></Item>
+                    <Item><Asset>1400300512</Asset></Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+    <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300514</GUID>
+                <Name>Production Chain Celtic Ornamented Ponies</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_ornamented_ponies_goods.png</IconFilename>
+                <InfoDescription>1400300511</InfoDescription>
+            </Standard>
+            <ProductionChain>
+                <Building>1400300512</Building>
+                <Tier1>
+                    <Item>
+                        <Building>5975</Building>
+                    </Item>
+                    <Item>
+                    <Building>5470</Building>
+                        <Tier2>
+                            <Item>
+                                <Building>5291</Building>
+                            </Item>
+                            <Item>
+                                <Building>5290</Building>
+                            </Item>
+                        </Tier2>
+                    </Item>
+                </Tier1>
+            </ProductionChain>
+            <Locked />
+            <Text>
+                <OasisId>1400300510</OasisId>
+            </Text>
+        </Values>
+    </Asset>
+
+    <!-- Remove chariots from aldermen construction menu -->
+    <ModOp Remove="@41331/ConstructionCategory/BuildingList/Item[Building = '6675']" Condition="@41331/ConstructionCategory/BuildingList/Item[Building = '6675']"></ModOp>
+
+    <!-- Add ornamented ponies to aldermen construction menu after beaver pelt hats -->
+    <ModOp Merge="@41331/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='31811'">
+            <Building>1400300514</Building>
+        </ModItem>
+    </ModOp>
+
+
+
+    <!-- Remove chariots unhide from existing trigger -->
+    <ModOp Remove="@8075/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8044']"></ModOp>
+    <!-- Remove chariots unlock from existing trigger -->
+    <ModOp Remove="@8076/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '8044']"></ModOp>
+
+    <!-- <GUID>8075</GUID> -->
+    <!-- <GUID>8076</GUID> -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300515</GUID>
+                <Name>Trigger Intermediate Level Celtic 3.2 ornamented ponies</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1502</Context>
+                            <CounterAmount>500</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300513</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup />
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300516</GUID>
+                <Name>Trigger Intermediate Level Celtic 3.3 ornamented ponies</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1502</Context>
+                            <CounterAmount>750</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300513</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup />
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+
+
+
+
+
+</ModOps>

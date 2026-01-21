@@ -1,0 +1,30 @@
+{
+    "Anno": 8,
+    "ModID": "celtic-independence-overhaul-jtmzac",
+    "Version": "0.9.0",
+    "Difficulty": "unchanged",
+    "GameSetup": {
+        "RequiresNewGame": true,
+        "SafeToRemove": false,
+        "Multiplayer": true,
+        "Campaign": false
+    },
+    "Dependencies": {
+        "Require": [],
+        "Optional": [],
+        "LoadAfter": [
+            "rocky-patron-of-construction-jtmzac"
+        ],
+        "Deprecate": [],
+        "Incompatible": []
+    },
+    "Category": {
+        "English": "Gameplay"
+    },
+    "ModName": {
+        "English": "Celtic Independence Overhaul"
+    },
+    "Description": {
+        "English": ""
+    }
+}

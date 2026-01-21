@@ -1,0 +1,384 @@
+<ModOps>
+
+<!-- <GUID>3527</GUID> -->
+<!-- <GUID>6724</GUID> -->
+
+    <Asset>
+        <Template>PublicServiceBuilding</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300680</GUID>
+                <Name>Public Roman Celtic Market</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_public_roman_celtic_marketplace.png</IconFilename>
+                <InfoDescription>-6902558748271806581</InfoDescription>
+            </Standard>
+            <Building>
+                <BuildingType>Public</BuildingType>
+                <BuildModeRandomRotation>180</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <FunctionalEffects>
+                    <Item>
+                        <FunctionalEffect>99065</FunctionalEffect>
+                    </Item>
+                </FunctionalEffects>
+            </Building>
+            <Blocking />
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                        <Amount>250</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>5</Amount>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/public_service/roman_celtic_market/cattle_market_01.cfg</Filename>
+                    </Item>
+                </Variations>
+                <Skins>
+                    <SkinList>
+                        <Item>
+                            <SkinAssetGuid>99591</SkinAssetGuid>
+                        </Item>
+                    </SkinList>
+                </Skins>
+            </Object>
+            <Mesh />
+            <Selection>
+                <GUIType>PublicService</GUIType>
+                <OnSelection>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                        <ActionList />
+                    </Values>
+                </OnSelection>
+            </Selection>
+            <Text>
+                <OasisId>-6915896516756226365</OasisId>
+            </Text>
+            <Constructable />
+            <Locked />
+            <SoundEmitter>
+                <OBJ_Active>
+                    <Item>
+                        <Sound>36163</Sound>
+                    </Item>
+                </OBJ_Active>
+                <OBJ_DestroyOrKill>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_DestroyOrKill>
+                <OBJ_SelfDestroy>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51727</Sound>
+                    </Item>
+                </OBJ_SelfDestroy>
+                <ConstructionSounds>
+                    <BLD_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_Build>
+                    <BLD_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51718</Sound>
+                        </Item>
+                    </BLD_MoveSuccess>
+                </ConstructionSounds>
+                <OBJ_RuinedByCombat>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                        <Sound>51732</Sound>
+                    </Item>
+                </OBJ_RuinedByCombat>
+                <MultiplayerBuildingSounds>
+                    <BLD_MP_Build>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_Build>
+                    <BLD_MP_MoveSuccess>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51756</Sound>
+                        </Item>
+                    </BLD_MP_MoveSuccess>
+                    <BLD_MP_Destroy>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>51726</Sound>
+                        </Item>
+                    </BLD_MP_Destroy>
+                </MultiplayerBuildingSounds>
+            </SoundEmitter>
+            <FeedbackController>
+                <NightBehavior>HideAll</NightBehavior>
+            </FeedbackController>
+            <Infolayer />
+            <PublicService>
+                <MoodImage>data/ui/fhd/base/features/ompublicservices/image_watermark_publicservice_celtic_278x156.png</MoodImage>
+                <PublicServiceEffect>99322</PublicServiceEffect>
+            </PublicService>
+            <AmbientMoodProvider>
+                <Murmur>Public_Market</Murmur>
+                <DynamicEnvironmentType>BuildingResidence</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Maintenance>
+                <Maintenances>
+                    <Item>
+                        <Product>1010017</Product>
+                        <Amount>10</Amount>
+                    </Item>
+                </Maintenances>
+                <ConsumerPriority>3</ConsumerPriority>
+            </Maintenance>
+            <Health>
+                <BaseHealth>750</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>1500000</PassiveRuinRepairTime>
+                <DestructionWarScore>90</DestructionWarScore>
+            </Health>
+            <Pausable />
+            <Culture />
+            <IncidentInfectable>
+                <Infectable>
+                    <Fire>
+                        <HeatValue>2</HeatValue>
+                    </Fire>
+                    <Riot>
+                        <HeatValue>2</HeatValue>
+                    </Riot>
+                    <Illness>
+                        <HeatValue>2</HeatValue>
+                    </Illness>
+                </Infectable>
+                <DestructionScore>115</DestructionScore>
+            </IncidentInfectable>
+            <AqueductConsumer />
+            <Buffable />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <EffectSource>
+                <RadiusDistance>24</RadiusDistance>
+                <StreetDistance>28</StreetDistance>
+            </EffectSource>
+            <StreetActivation />
+            <LogisticNode />
+            <DynamicVariation />
+            <Romanization />
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <!-- Change existing market icon to include celtic symbol -->
+    <ModOp Merge="@6724/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_public_celtic_marketplace.png</IconFilename>
+    </ModOp>
+
+    <!-- Add market to wader construction menu after existing market  -->
+    <ModOp Merge="@41329/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='6724'">
+            <Building>1400300680</Building>
+        </ModItem>
+    </ModOp>
+
+    <!-- Create unlock pool -->
+    <!-- <GUID>8056</GUID> -->
+    <Asset>
+        <Template>AssetPool</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300681</GUID>
+                <Name>Unlock Pool Roman Celtic Market</Name>
+            </Standard>
+            <AssetPool>
+                <AssetList>
+                    <Item>
+                        <Asset>1400300680</Asset>
+                    </Item>
+                </AssetList>
+            </AssetPool>
+        </Values>
+    </Asset>
+
+
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>31659</GUID> -->
+    <!-- <GUID>43101</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <ModOp GUID="31659,43101,64413" Add="AssetPool/AssetList">
+        <Item><Asset>1400300680</Asset></Item>
+    </ModOp>
+
+
+    <!-- Independent unhide and unlock triggers -->
+    <!-- <GUID>8066</GUID> -->
+    <!-- <GUID>8067</GUID> -->
+
+    <!-- unhide from either type of wader residence -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300683</GUID>
+                <Name>Trigger Intermediate Level Celtic 1.0 roman celtic market</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionAlwaysTrue</Template>
+                    <Values>
+                        <Condition>
+                            <SubConditionCompletionOrder>MutuallyExclusive</SubConditionCompletionOrder>
+                        </Condition>
+                        <ConditionAlwaysTrue />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>1400300681</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+                <SubTriggers>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <Context>6414</Context>
+                                                <CounterAmount>1</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <Context>1400300520</Context>
+                                                <CounterAmount>1</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                </SubTriggers>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300684</GUID>
+                <Name>Trigger Intermediate Level Celtic 1.1 roman celtic market</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <ConditionPlayerCounter>
+                            <PlayerCounter>PopulationByLevel</PlayerCounter>
+                            <Context>1500</Context>
+                            <CounterAmount>20</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300681</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+</ModOps>

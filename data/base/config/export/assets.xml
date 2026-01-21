@@ -1,0 +1,311 @@
+<ModOps>
+    <!-- <GUID>30743</GUID> -->
+    <!-- <GUID>41330</GUID> -->
+    <!-- <GUID>6471</GUID> -->
+    <!-- <GUID>6475</GUID> -->
+
+    <Include File="includes/public_service_building_changes.include.xml" />
+    <Include File="includes/clan_shields_changes.include.xml" />
+    <Include File="includes/needs.include.xml" />
+
+    <Include File="includes/goods/celtic_wicker_baskets.include.xml" />
+    <Include File="includes/goods/celtic_ornamented_ponies.include.xml" />
+    <Include File="includes/goods/celtic_meal.include.xml" />
+    <Include File="includes/goods/fertiliser.include.xml" />
+
+    <Include File="includes/buildings/roman_celtic_wader_residence.include.xml" />
+    <Include File="includes/buildings/roman_celtic_market.include.xml" />
+    <Include File="includes/buildings/roman_celtic_tavern.include.xml" />
+    <Include File="includes/buildings/roman_celtic_sanctuary.include.xml" />
+    <Include File="includes/buildings/roman_celtic_beer_chain.include.xml" />
+    <Include File="includes/buildings/roman_celtic_chariots_chain.include.xml" />
+
+    <Include File="includes/buildings/celtic_wickerman.include.xml" />
+    <Include File="includes/buildings/celtic_mines.include.xml" />
+    <Include File="includes/buildings/celtic_farms.include.xml" />
+    <Include File="includes/buildings/celtic_bread_chain.include.xml" />
+    <Include File="includes/buildings/celtic_sacred_tree.include.xml" />
+    <Include File="includes/buildings/celtic_wine_chain.include.xml" />
+    <Include File="includes/buildings/celtic_paved_road.include.xml" />
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                                    Celtic Needs swaps                                   -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <!-- Add bread to smiths and aldermen -->
+    <ModOp Merge="@6471/Residence7/NeedsList">
+        <ModItem Merge="Need" Prepend="Need='6430'">
+            <Need>1400300714</Need>
+            <NeedConsumptionRate>0.01102</NeedConsumptionRate>
+        </ModItem>
+    </ModOp>
+    <ModOp Merge="@6472/Residence7/NeedsList">
+        <ModItem Merge="Need" Prepend="Need='6430'">
+            <Need>1400300714</Need>
+            <NeedConsumptionRate>0.00932</NeedConsumptionRate>
+        </ModItem>
+    </ModOp>
+
+    <!-- Replace clan shields with wicker baskets for smiths and aldermen -->
+    <ModOp Replace="@6471/Residence7/NeedsList/Item[Need = '6453']">
+        <Item>
+            <Need>1400300501</Need>
+            <NeedConsumptionRate>0.00695</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+    <ModOp Replace="@6472/Residence7/NeedsList/Item[Need = '6453']">
+        <Item>
+            <Need>1400300501</Need>
+            <NeedConsumptionRate>0.0059</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+    <!-- Replace chariots with ornamented ponies for aldermen -->
+    <ModOp GUID="6472" Replace="Residence7/NeedsList/Item[Need = '6454']">
+        <Item>
+            <Need>1400300511</Need>
+            <NeedConsumptionRate>0.005102</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+    <!-- Replace fine glass with clan shields for aldermen -->
+    <ModOp GUID="6472" Replace="Residence7/NeedsList/Item[Need = '6452']">
+        <Item>
+            <Need>6453</Need>
+            <NeedConsumptionRate>0.0059</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+    <!-- Replace theatre with wickerman for aldermen -->
+    <ModOp GUID="6472" Replace="Residence7/NeedsList/Item[Need = '37175']">
+        <Item>
+            <Need>1400300535</Need>
+        </Item>
+    </ModOp>
+
+    <!-- Replace gambling house with sacred tree for aldermen -->
+    <ModOp GUID="6472" Replace="Residence7/NeedsList/Item[Need = '37176']">
+        <Item>
+            <Need>1400300675</Need>
+        </Item>
+    </ModOp>
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                                 Roman Celtic Needs swaps                                -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <!-- Replace bardic hall with tavern for mercators and nobles -->
+    <ModOp GUID="6475,6514" Replace="Residence7/NeedsList/Item[Need = '6720']">
+        <Item>
+            <Need>1400300575</Need>
+        </Item>
+    </ModOp>
+
+    <!-- Add beer to mercators and nobles -->
+    <ModOp Merge="@6475/Residence7/NeedsList">
+        <ModItem Merge="Need" Append="Need='6435'">
+            <Need>1400300711</Need>
+            <NeedConsumptionRate>0.0118</NeedConsumptionRate>
+        </ModItem>
+    </ModOp>
+    <ModOp Merge="@6514/Residence7/NeedsList">
+        <ModItem Merge="Need" Append="Need='6435'">
+            <Need>1400300711</Need>
+            <NeedConsumptionRate>0.00987</NeedConsumptionRate>
+        </ModItem>
+    </ModOp>
+
+    <!-- Replace fanum with sanctuary for mercators and nobles -->
+    <ModOp GUID="6475,6514" Replace="Residence7/NeedsList/Item[Need = '6721']">
+        <Item>
+            <Need>1400300585</Need>
+        </Item>
+    </ModOp>
+
+    <!-- Replace soap with torcs for mercators and nobles -->
+    <ModOp Replace="@6475/Residence7/NeedsList/Item[Need = '6444']">
+        <Item>
+            <Need>1400300712</Need>
+            <NeedConsumptionRate>0.00922</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+    <ModOp Replace="@6514/Residence7/NeedsList/Item[Need = '6444']">
+        <Item>
+            <Need>1400300712</Need>
+            <NeedConsumptionRate>0.00749</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+    <!-- Remove soap chain from mercator build menu -->
+    <ModOp Remove="@41328/ConstructionCategory/BuildingList/Item[Building = '31812']"></ModOp>
+
+    <!-- Replace togas with cloaks for nobles -->
+    <ModOp Replace="@6514/Residence7/NeedsList/Item[Need = '6446']">
+        <Item>
+            <Need>1400300713</Need>
+            <NeedConsumptionRate>0.008745</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+    <!-- Remove toga chain from nobles build menu -->
+    <ModOp Remove="@41327/ConstructionCategory/BuildingList/Item[Building = '6672']"></ModOp>
+
+    <!-- Replace fine glass with chariots for nobles -->
+    <ModOp Replace="@6514/Residence7/NeedsList/Item[Need = '6452']">
+        <Item>
+            <Need>1400300690</Need>
+            <NeedConsumptionRate>0.005102</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                                    Roman Needs swaps                                    -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <!-- Replace cheese with sausages for equites and patricians -->
+    <ModOp Replace="@3142/Residence7/NeedsList/Item[Need = '2747']">
+        <Item>
+            <Need>1400300710</Need>
+            <NeedConsumptionRate>0.005725</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+    <ModOp Replace="@3145/Residence7/NeedsList/Item[Need = '2747']">
+        <Item>
+            <Need>1400300710</Need>
+            <NeedConsumptionRate>0.004808</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!--                                      Misc Changes                                       -->
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <!-- Change intial celtic unlock to remove the lock on upgrading to the other type of residence to prevent a bricked game state -->
+    <ModOp Add="@8066/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets">
+            <Item><Asset>41213</Asset></Item>
+            <Item><Asset>38024</Asset></Item>
+            <Item><Asset>38025</Asset></Item>
+    </ModOp>
+
+    <!-- Add neptune 4k devotion belief buff to alder councils to compensate for no cisterns on celtic islands -->
+    <ModOp Add="@137876/Effect/Targets">
+        <Item><GUID>6726</GUID></Item>
+    </ModOp>
+
+    <!-- Remove herb fertility requirement for herb farm and disable the fertility on starting a new game. -->
+    <!-- This is needed because sausages are now used in latium instead of cheese -->
+    <!-- As a side effect, this causes the barley fertility to be on every island -->
+    <ModOp Remove="@31764/Factory7/NeededFertility"></ModOp>
+    <ModOp Remove="@31359/FertilityPool/FertilityList/Item[Fertility = '2214']"></ModOp>
+
+    <!-- <GUID>82500</GUID> -->
+    <!-- Swap celtic shrines to using 10 tiles instead of 5 concrete. Tiles can be made by waders rather than needing nobles for concrete -->
+    <ModOp GUID="82486,82487,82488,82490,82491,82492,82489" Merge="Cost/Costs/Item[Ingredient = '2176']">
+        <Amount>10</Amount>
+    </ModOp>
+    <ModOp GUID="82486,82487,82488,82490,82491,82492,82489" Remove="Cost/Costs/Item[Ingredient = '2178']/Amount"></ModOp>
+
+    <!-- Change Albion silo to manual variation control and add two unused celtic variants with muddy ground textures -->
+    <ModOp Merge="@77955/Building">
+        <VariationControl>ByPlayer</VariationControl>
+    </ModOp>
+    <ModOp Add="@77955/Object/Variations">
+        <Item>
+            <Filename>data/jtmzac/graphics/production/celtic_silo/production_module_silo_01.cfg</Filename>
+        </Item>
+        <Item>
+            <Filename>data/jtmzac/graphics/production/celtic_silo/production_module_silo_02.cfg</Filename>
+        </Item>
+    </ModOp>
+
+
+    <!-- Remove changed buildings from optional aqueduct consumers asset pool -->
+    <!-- <GUID>71200</GUID> -->
+    <ModOp Remove="@71200/AssetPool/AssetList/Item[Asset = '2799']"></ModOp>
+    <ModOp Remove="@71200/AssetPool/AssetList/Item[Asset = '2800']"></ModOp>
+    <ModOp Remove="@71200/AssetPool/AssetList/Item[Asset = '5291']"></ModOp>
+    <ModOp Remove="@71200/AssetPool/AssetList/Item[Asset = '5290']"></ModOp>
+    <ModOp Remove="@71200/AssetPool/AssetList/Item[Asset = '5295']"></ModOp>
+
+
+
+
+
+
+    <!-- Compatibility patch for my rocky patron of construction mod -->
+    <Group Condition="#rocky-patron-of-construction-jtmzac">
+        <!-- Add tiles amount to albion version of shrine if tiles is already in list as an ingredient -->
+        <ModOp Merge="@1400300412/Cost/Costs/Item[Ingredient = '2176']" Condition="@1400300412/Cost/Costs/Item[Ingredient = '2176']">
+            <Amount>10</Amount>
+        </ModOp>
+        <!-- Else add new tiles ingredient with amount -->
+        <ModOp Add="@1400300412/Cost/Costs" Condition="!@1400300412/Cost/Costs/Item[Ingredient = '2176']">
+            <Item>
+                <Ingredient>2176</Ingredient>
+                <Amount>10</Amount>
+            </Item>
+        </ModOp>
+        <!-- Remove concrete cost from shrine -->
+        <ModOp Remove="@1400300412/Cost/Costs/Item[Ingredient = '2178']/Amount"></ModOp>
+
+        <!-- Remove aqueduct from granite quarry -->
+        <ModOp Remove="@5295/AqueductConsumer" Condition="@5295/AqueductConsumer"></ModOp>
+    </Group>
+
+
+
+
+
+
+
+<!-- <GUID>8474</GUID> -->
+<!-- <GUID>8475</GUID> -->
+<!-- <GUID>8477</GUID> -->
+<!-- <GUID>62071</GUID> -->
+<!-- <GUID>8479</GUID> -->
+<!-- <GUID>8481</GUID> -->
+<!-- <GUID>8482</GUID> -->
+<!-- <GUID>8483</GUID> -->
+<!-- <GUID>37181</GUID> -->
+
+
+<!-- <GUID>37983</GUID> -->
+<!-- <GUID>8065</GUID> -->
+<!-- <GUID>8066</GUID> -->
+<!-- <GUID>8067</GUID> -->
+<!-- <GUID>8068</GUID> -->
+<!-- <GUID>40513</GUID> -->
+<!-- <GUID>8069</GUID> -->
+<!-- <GUID>8070</GUID> -->
+<!-- <GUID>8071</GUID> -->
+<!-- <GUID>62067</GUID> -->
+<!-- <GUID>8073</GUID> -->
+<!-- <GUID>8074</GUID> -->
+<!-- <GUID>8075</GUID> -->
+<!-- <GUID>8076</GUID> -->
+<!-- <GUID>62069</GUID> -->
+
+
+
+
+
+
+
+<!-- <GUID>80820</GUID> -->
+<!-- <GUID>94598</GUID> -->
+
+
+
+
+
+
+
+
+
+
+
+
+</ModOps>

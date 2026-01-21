@@ -1,0 +1,162 @@
+
+<ModOps>
+
+    <!-- <GUID>6435</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300710</GUID>
+                <Name>Need Roman Food Sausages</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_sausages_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>2153</NeedProduct>
+                <NeedCategoryType>Food</NeedCategoryType>
+                <SupplyWeight>4</SupplyWeight>
+                <NeedAttributes>
+                    <Population>
+                        <Value>2</Value>
+                    </Population>
+                    <Money>
+                        <Value>3</Value>
+                    </Money>
+                    <Prestige>
+                        <Value>2</Value>
+                    </Prestige>
+                </NeedAttributes>
+                <NeedDescription>-6912367697820260536</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+    <!-- <GUID>6431</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300711</GUID>
+                <Name>Need Roman Celtic Food Beer</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_beer_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>2154</NeedProduct>
+                <NeedCategoryType>Food</NeedCategoryType>
+                <SupplyWeight>2</SupplyWeight>
+                <NeedAttributes>
+                    <Population>
+                        <Value>1</Value>
+                    </Population>
+                    <Money>
+                        <Value>1</Value>
+                    </Money>
+                    <Happiness>
+                        <Value>1</Value>
+                    </Happiness>
+                </NeedAttributes>
+                <NeedDescription>-6908239769386779585</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+    <!-- <GUID>6444</GUID> -->
+    <!-- <GUID>6442</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300712</GUID>
+                <Name>Need Roman Celtic Fashion Torcs</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_torcs_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>2157</NeedProduct>
+                <NeedCategoryType>Fashion</NeedCategoryType>
+                <SupplyWeight>2</SupplyWeight>
+                <NeedAttributes>
+                    <Population>
+                        <Value>1</Value>
+                    </Population>
+                    <Health>
+                        <Value>2</Value>
+                    </Health>
+                    <Prestige>
+                        <Value>2</Value>
+                    </Prestige>
+                </NeedAttributes>
+                <NeedDescription>-6914337306616899695</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+
+
+    <!-- <GUID>6446</GUID> -->
+    <!-- <GUID>6441</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300713</GUID>
+                <Name>Need Roman Celtic Fashion Cloaks</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_cloak_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>2161</NeedProduct>
+                <NeedCategoryType>Fashion</NeedCategoryType>
+                <SupplyWeight>4</SupplyWeight>
+                <NeedAttributes>
+                    <Population>
+                        <Value>2</Value>
+                    </Population>
+                    <Prestige>
+                        <Value>5</Value>
+                    </Prestige>
+                </NeedAttributes>
+                <NeedDescription>-6910360705606386279</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+
+    <!-- <GUID>6434</GUID> -->
+    <Asset>
+        <Template>Need</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300714</GUID>
+                <Name>Need Celtic Food Bread</Name>
+                <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_bread_goods.png</IconFilename>
+            </Standard>
+            <Need>
+                <NeedProduct>2137</NeedProduct>
+                <NeedCategoryType>Food</NeedCategoryType>
+                <SupplyWeight>2</SupplyWeight>
+                <NeedAttributes>
+                    <Population>
+                        <Value>1</Value>
+                    </Population>
+                    <Money>
+                        <Value>1</Value>
+                    </Money>
+                </NeedAttributes>
+                <NeedDescription>-6903481816347163941</NeedDescription>
+            </Need>
+            <Locked />
+            <Text />
+        </Values>
+    </Asset>
+
+
+
+
+
+</ModOps>

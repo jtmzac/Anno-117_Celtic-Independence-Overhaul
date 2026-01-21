@@ -1,0 +1,472 @@
+<ModOps>
+
+    <!-- <GUID>3087</GUID> -->
+    <!-- <GUID>6414</GUID> -->
+
+    <Asset>
+        <Template>ResidenceBuilding</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300520</GUID>
+                <Name>Residence Roman Celtic 01 Tribesmen</Name>
+                <IconFilename>data/jtmzac/icons/icon_3d_roman_celtic_residence.png</IconFilename>
+                <InfoDescription>-6908925683646514856</InfoDescription>
+            </Standard>
+            <Blocking />
+            <Building>
+                <BuildingType>Residence</BuildingType>
+                <PickingAsset>1400300520</PickingAsset>
+                <BuildingCategoryName>-6914501071558881813</BuildingCategoryName>
+                <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                <AssociatedRegions>Celtic</AssociatedRegions>
+                <VariationControl>ByPlayer</VariationControl>
+                <InfluencedByNeighbors>
+                    <Item>
+                        <Building>1400300520</Building>
+                    </Item>
+                </InfluencedByNeighbors>
+                <InfluencedVariationDirection>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>1</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>2</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>3</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>4</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>5</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>6</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>7</InheritedIndex>
+                        </VectorElement>
+                        <Type>TCrossing</Type>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>8</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>9</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>10</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>11</InheritedIndex>
+                        </VectorElement>
+                        <Type>TCrossing</Type>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>12</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>13</InheritedIndex>
+                        </VectorElement>
+                        <Direction>3</Direction>
+                        <Type>TCrossing</Type>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>14</InheritedIndex>
+                        </VectorElement>
+                        <Direction>2</Direction>
+                        <Type>TCrossing</Type>
+                    </Item>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>15</InheritedIndex>
+                        </VectorElement>
+                    </Item>
+                </InfluencedVariationDirection>
+                <BuildingBlockPool>
+                    <Corner>
+                        <Pool>
+                            <Item>
+                                <DirectionOffet>2</DirectionOffet>
+                                <Variation>1</Variation>
+                            </Item>
+                            <Item>
+                                <Variation>4</Variation>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>2</DirectionOffet>
+                                <Variation>5</Variation>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>2</DirectionOffet>
+                                <Variation>6</Variation>
+                            </Item>
+                        </Pool>
+                    </Corner>
+                    <Mid>
+                        <Pool>
+                            <Item>
+                                <DirectionOffet>1</DirectionOffet>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>3</DirectionOffet>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>1</DirectionOffet>
+                                <Variation>2</Variation>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>3</DirectionOffet>
+                                <Variation>2</Variation>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>1</DirectionOffet>
+                                <Variation>3</Variation>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>3</DirectionOffet>
+                                <Variation>3</Variation>
+                            </Item>
+                        </Pool>
+                    </Mid>
+                    <TCrossing>
+                        <Pool>
+                            <Item>
+                                <DirectionOffet>1</DirectionOffet>
+                                <Weight>1</Weight>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>3</DirectionOffet>
+                                <Weight>1</Weight>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>3</DirectionOffet>
+                                <Variation>2</Variation>
+                                <Weight>2</Weight>
+                            </Item>
+                            <Item>
+                                <DirectionOffet>1</DirectionOffet>
+                                <Variation>3</Variation>
+                                <Weight>2</Weight>
+                            </Item>
+                        </Pool>
+                    </TCrossing>
+                </BuildingBlockPool>
+            </Building>
+            <Cost>
+                <Costs>
+                    <Item>
+                        <Ingredient>1010017</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>2174</Ingredient>
+                        <Amount>1</Amount>
+                    </Item>
+                    <Item>
+                        <Ingredient>2169</Ingredient>
+                    </Item>
+                    <Item>
+                        <Ingredient>31709</Ingredient>
+                    </Item>
+                </Costs>
+            </Cost>
+            <Mesh />
+            <Object>
+                <Variations>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/residences/roman_celtic_tier01/residence_tier01_estate01/residence_tier01_estate01.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/residences/roman_celtic_tier01/residence_tier01_estate02/residence_tier01_estate02.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/residences/roman_celtic_tier01/residence_tier01_estate03/residence_tier01_estate03.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/residences/roman_celtic_tier01/residence_tier01_estate06/residence_tier01_estate06.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/residences/roman_celtic_tier01/residence_tier01_estate08/residence_tier01_estate08.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/residences/roman_celtic_tier01/residence_tier01_estate04/residence_tier01_estate04.cfg</Filename>
+                    </Item>
+                    <Item>
+                        <Filename>data/jtmzac/graphics/residences/roman_celtic_tier01/residence_tier01_estate07/residence_tier01_estate07.cfg</Filename>
+                    </Item>
+                </Variations>
+                <Skins />
+            </Object>
+            <Selection>
+                <ParticipantMessageArcheType>27085</ParticipantMessageArcheType>
+            </Selection>
+            <Text>
+                <OasisId>-6912447400386588447</OasisId>
+            </Text>
+            <Constructable />
+            <Locked>
+                <DefaultLockedState>0</DefaultLockedState>
+            </Locked>
+            <Upgradable>
+                <PossibleUpgrades>
+                    <Item>
+                        <UpgradeGUID>6475</UpgradeGUID>
+                        <Cost>
+                            <Item>
+                                <Amount>1</Amount>
+                                <Ingredient>2174</Ingredient>
+                            </Item>
+                        </Cost>
+                    </Item>
+                </PossibleUpgrades>
+            </Upgradable>
+            <SoundEmitter>
+                <ConstructionSounds>
+                    <BLD_Downgrade>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                            </VectorElement>
+                            <Sound>83266</Sound>
+                        </Item>
+                    </BLD_Downgrade>
+                </ConstructionSounds>
+                <MaterialType>BLDWood</MaterialType>
+            </SoundEmitter>
+            <Infolayer />
+            <FeedbackController />
+            <Residence7>
+                <PopulationLevel>1500</PopulationLevel>
+                <NeedsList>
+                    <Item>
+                        <Need>6429</Need>
+                        <NeedConsumptionRate>0.02</NeedConsumptionRate>
+                    </Item>
+                    <Item>
+                        <Need>6424</Need>
+                        <NeedConsumptionRate>0.01785</NeedConsumptionRate>
+                    </Item>
+                    <Item>
+                        <Need>6716</Need>
+                    </Item>
+                    <Item>
+                        <Need>1400300575</Need>
+                    </Item>
+                    <Item>
+                        <Need>6437</Need>
+                        <NeedConsumptionRate>0.00847</NeedConsumptionRate>
+                    </Item>
+                    <Item>
+                        <Need>6438</Need>
+                        <NeedConsumptionRate>0.01785</NeedConsumptionRate>
+                    </Item>
+                    <Item>
+                        <Need>71187</Need>
+                        <NeedConsumptionRate>0.01111</NeedConsumptionRate>
+                    </Item>
+                </NeedsList>
+                <UpgradeThreshold>
+                    <Public>
+                        <Value>1</Value>
+                    </Public>
+                    <Food>
+                        <Value>1</Value>
+                    </Food>
+                    <Fashion>
+                        <Value>1</Value>
+                    </Fashion>
+                </UpgradeThreshold>
+                <RomanizationUpgradeType>Regional</RomanizationUpgradeType>
+                <Decay>
+                    <MinDecayHitpoints>80</MinDecayHitpoints>
+                </Decay>
+            </Residence7>
+            <LogisticNode />
+            <AmbientMoodProvider>
+                <Murmur>ResidentialTribesmen</Murmur>
+                <DynamicEnvironmentType>ResidenceCelticT1</DynamicEnvironmentType>
+            </AmbientMoodProvider>
+            <Health>
+                <BaseHealth>400</BaseHealth>
+                <SelfHealPerHealTick>1</SelfHealPerHealTick>
+                <PassiveRuinRepairTime>900000</PassiveRuinRepairTime>
+                <DestructionWarScore>25</DestructionWarScore>
+            </Health>
+            <IncidentInfectable />
+            <Pausable />
+            <Culture />
+            <StreetActivation />
+            <Maintenance />
+            <Buffable />
+            <AttributeProvider>
+                <Population>1500</Population>
+            </AttributeProvider>
+            <Romanization>
+                <RomanizationType>Roman</RomanizationType>
+                <RomanizationValue>1</RomanizationValue>
+            </Romanization>
+            <Threatable />
+        </Values>
+    </Asset>
+
+    <!-- Add to wader build menu before cockles (which should be after the base game celtic residence) if taludas' buildable residences is installed -->
+    <Group Condition="#taludas-buildableresidences">
+        <ModOp Merge="@41329/ConstructionCategory/BuildingList">
+            <ModItem Merge="Building" Prepend="Building='5278'">
+                <Building>1400300520</Building>
+            </ModItem>
+        </ModOp>
+    </Group>
+
+    <!-- Add to general Albion build menu after existing celtic residence -->
+    <ModOp Merge="@55978/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='6414'">
+            <Building>1400300520</Building>
+        </ModItem>
+    </ModOp>
+
+
+    <!-- <GUID>6414</GUID> -->
+
+
+    <!-- add to all asset pools -->
+    <!-- <GUID>31986</GUID> -->
+    <!-- <GUID>31048</GUID> -->
+    <!-- <GUID>64413</GUID> -->
+    <!-- <GUID>92732</GUID> -->
+    <ModOp GUID="31986,31048,64413,92732" Add="AssetPool/AssetList">
+        <Item><Asset>1400300520</Asset></Item>
+    </ModOp>
+
+    <!-- Add to specialist buff target  -->
+    <!-- <GUID>92886</GUID> -->
+    <ModOp Add="@92886/Effect/Targets">
+        <Item><GUID>1400300520</GUID></Item>
+    </ModOp>
+
+
+    <!-- Change existing wader residence icon to include celtic symbol -->
+    <ModOp Merge="@6414/Standard">
+        <IconFilename>data/jtmzac/icons/icon_3d_celtic_residence.png</IconFilename>
+    </ModOp>
+
+    <!-- Change celtic wader upgrade to only be smiths -->
+    <ModOp Replace="@6414/Upgradable/PossibleUpgrades">
+        <PossibleUpgrades>
+            <Item>
+                <UpgradeGUID>6471</UpgradeGUID>
+                <Cost>
+                    <Item>
+                        <Amount>1</Amount>
+                        <Ingredient>2174</Ingredient>
+                    </Item>
+                </Cost>
+            </Item>
+        </PossibleUpgrades>
+    </ModOp>
+
+
+    <!-- Duplicate celtic 1.0 unlock trigger for if player places roman celtic wader residence first -->
+    <Asset>
+        <Template>TriggerIntermediateLevel</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300521</GUID>
+                <Name>Trigger Intermediate Level Celtic 1.0 roman celtic</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionPlayerCounter</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                            <Context>1400300520</Context>
+                            <CounterAmount>1</CounterAmount>
+                        </ConditionPlayerCounter>
+                        <ConditionLocationProps />
+                        <ConditionCounterProps />
+                        <ConditionPropsComparable />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>8029</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>8028</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>43650</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>64733</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                    <UnhideAssets>
+                                        <Item>
+                                            <Asset>8034</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>8056</Asset>
+                                        </Item>
+                                    </UnhideAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+                <UsedByFirstParties>1</UsedByFirstParties>
+            </TriggerSetup>
+            <TrackingData />
+        </Values>
+    </Asset>
+
+
+
+
+
+
+</ModOps>
+
+
+
