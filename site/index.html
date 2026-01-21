@@ -48,11 +48,41 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#detailed-feature-list">Detailed Feature List</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#wip-work-in-progress-features">WIP (work in progress) Features</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#known-issues">Known Issues</a>
+    <li class="toctree-l2"><a class="reference internal" href="#work-in-progress-features">Work in Progress Features</a>
     </li>
     </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="need-changes/">Need Changes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="public-service/">Public Service Buildings</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="fertiliser/">Fertiliser</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="mealhouse/">The Mealhouse</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="new-game-requirement/">New Game Requirement</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="enabling-disabling-mod/">Disabling the Mod so you can Play Other Saves</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="known-issues/">Known Issues</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="other-mod-compatibility/">Compatibility with Other Mods</a>
                 </li>
               </ul>
       </div>
@@ -72,7 +102,6 @@
     <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
       <li class="breadcrumb-item active">Celtic Independence Overhaul</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/jtmzac/Anno-117_Celtic-Independence-Overhaul/edit/master/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -83,53 +112,57 @@
                 <h1 id="celtic-independence-overhaul">Celtic Independence Overhaul</h1>
 <p>Welcome to the documentation for Celtic Independence Overhaul, a mod for Anno 117.</p>
 <p>This mod provides alternative systems and buildings to remove the Roman-ness from Celtic islands in Albion and give them more unique feeling. It also changes the overall needs structure between Celts, Roman-Celts and Latium so that instead of the Celts and Roman-Celts both independently supplying Latium, the Celts supply the Roman-Celts, and the Roman-Celts supply Latium.</p>
+<p>WARNING: Requires a new game. <a href="new-game-requirement/">See this page for more information.</a></p>
 <p>You can download the mod on mod.io here: <a href="https://mod.io/g/anno-117-pax-romana">Celtic Independence Overhaul.</a></p>
 <p>To report bugs or give feedback you can either leave a comment on the mod.io page, or <a href="https://github.com/jtmzac/Anno-117_Celtic-Independence-Overhaul/issues">open an issue on github.</a></p>
 <h2 id="key-feature-overview">Key Feature Overview</h2>
 <ul>
 <li>Aqueducts are no longer useful on Celtic islands. They are replaced by new systems</li>
-<li>New public buildings to replace Roman ones on Celtic islands</li>
-<li>Public buildings only affect matching residence type, with a new Roman-Celtic residence to make this work for waders</li>
-<li>Albion needs are a lot more self-sufficient. Only need to import olive oil and optionally wine</li>
+<li>New public buildings to replace the Roman ones on Celtic islands</li>
+<li>Public buildings only affect matching residence type, with a new Roman-Celtic residence to enable this for waders</li>
+<li>Albion needs are a lot more self-sufficient. Importing from Latium is only needed for olive oil/garum and optionally for wine</li>
 <li>New needs for Celts: wicker baskets and ornamented ponies</li>
-<li>Celts now make and consume bread, Roman-Celts now make and consume beer</li>
-<li>Chariots now made by nobles. Iron added to chariots and ceremonial shields</li>
-<li>Latium residences now consume sausages instead of cheese and wigs instead of cloaks</li>
+<li>Celts now make and consume bread, Roman-Celts now consume and can make beer</li>
+<li>Chariots now made by nobles. Iron has been added to chariots and ceremonial shields</li>
+<li>Latium residences now consume sausages and wigs instead of cheese and cloaks</li>
 </ul>
 <h2 id="detailed-feature-list">Detailed Feature List</h2>
 <ul>
-<li>Celtic mines are now boosted by mealhouses, which are supplied by Celtic meals made from cheese, beer and beef roasts</li>
+<li>Celtic mines (and the granite quarry) are now boosted by mealhouses, which are supplied by Celtic meals made from cheese, beer and beef roasts</li>
 <li>Celtic farms are now boosted by fertiliser silos, which are unlocked at 4k Epona devotion along with fertiliser</li>
-<li>Ochs farms output fertiliser as an additional good, but it can also be produced directly by fertiliser pits in marshes</li>
-<li>Farms and mines that are used by both Celts and Roman-Celts (iron/hemp) now have 2 versions so you can match the boost system to the island type</li>
+<li>Ceres extra fields buff no longer applies to Celtic farms/plantations. Fertiliser boosts productivity by 100% instead.</li>
+<li>Ochs farms output fertiliser as an additional good, but it can also be produced directly by fertiliser pits in marshes. These also take effect/are unlocked at 4k Epona devotion</li>
+<li>Farms and mines that are used by both Celts and Roman-Celts (iron/hemp/grapes) now have 2 versions so you can match the boost system to the island type</li>
 <li>The very Roman theatre and gambling house have been replaced with Celtic alternatives, the wickerman and the sacred tree</li>
 <li>Public buildings now only affect Celtic or Roman-Celtic houses of the matching type. Public building stats have been combined to account for this</li>
 <li>To allow the above for waders, a new Roman-Celtic wader residence has been added. They are mostly the same but use the tavern instead of the bardic hall</li>
+<li>The lock on upgrading to the other type of residence has been removed and each wader residence type only has a single upgrade path</li>
 <li>The Latium market has been added. You can use either it or the existing Celtic version to supply the market need. They had to be split into separate buildings because the Albion market is rotated 90 degrees from the Latium one, which means it doesn't work as a skin</li>
 <li>The Fanum is now a Celtic public building and Roman-Celts have the Sanctuary instead. This helps fix the weird layout mismatch since the Fanum is the same size as the other Celtic public buildings but not the Roman-Celtic ones</li>
 <li>Celts now need and can make bread, but instead of wheat they have rye farms. To support this, wheat has been changed to grain and the rye farm also outputs grain. This way rye can also be used in animal farm silos</li>
 <li>Roman-Celts now need and can make beer, but less efficiently from grain (wheat)</li>
 <li>Celts can now also make wine but with less efficiency at the final vintner stage</li>
-<li>Ceremonial shields have been moved to tier 3 to replace fine glass and are now made from iron, wood and dye. Smiths/aldermen now consume wicker baskets in place of ceremonial shields. These are made from reeds and dye</li>
-<li>Chariots are now produced and consumed by Nobles and are made from wood, iron and horses. They replace Fine Glass</li>
+<li>Ceremonial shields have been moved to tier 3 to replace fine glassware and are now made from iron, wood and dye. Smiths/aldermen now consume wicker baskets in place of ceremonial shields. These are made from reeds and dye</li>
+<li>Chariots are now produced and consumed by Nobles and are made from wood, iron and horses. They replace fine glassware</li>
 <li>Instead of chariots, aldermen now produce and consume ornamented ponies made from bronze and ponies</li>
 <li>Roman-Celts now consume torcs instead of soap and cloaks instead of togas</li>
 <li>Equites and patricians now consume sausages instead of cheese and wigs instead of cloaks</li>
+<li>The herb fertility has been removed to support sausages being used in Latium instead of cheese. A beneficial side effect of this is that every island in Albion now has barley, which should help with the increased beer demand.</li>
+<li>Animal and fertiliser silos can now have their variation manually controlled, and there is two new animal silo variations with a muddy Albion ground texture.</li>
 <li>Paved roads can now also be unlocked and built with granite instead of concrete</li>
 <li>Albion shrines are now built with tiles instead of concrete</li>
 </ul>
-<h2 id="wip-work-in-progress-features">WIP (work in progress) Features</h2>
+<h2 id="work-in-progress-features">Work in Progress Features</h2>
 <ul>
 <li>More tweaks to building graphics are planned. Don't expect too much. Mostly just some tree swaps, colour tweaks, and maybe roof swaps if I can get them working.</li>
-<li>The balancing is probably problematic as you get to end-game. I used existing consumption rates from the same tier but this doesn't account for the massive shift to Roman-Celts supplying everything to Latium instead of it being split with the Celts. This is a pain to test because you actually just need to play the save a long time and build up all the islands, so I welcome any feedback from players. I can easily tweak consumption rates and production times but I need data to base those decisions on.</li>
-</ul>
-<h2 id="known-issues">Known Issues</h2>
-<ul>
-<li>The needs attributes shown in the build menus are not always accurate now that there is 2 versions of some needs in the same region (bread/beer/torcs/cloaks). Always refer to the stats on individual residences for the correct values. I don't think this can be fixed currently because the game "auto" generates the tooltips and wasn't designed with needs providing different stats in the same region.</li>
+<li>The balancing is likely to have issues as you get to end-game. <a href="need-changes/#the-downside">See here for more details</a></li>
 </ul>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="need-changes/" class="btn btn-neutral float-right" title="Need Changes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -156,6 +189,8 @@
     
     
     
+      <span><a href="need-changes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
   </span>
 </div>
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -174,5 +209,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-01-21 02:52:30.349271+00:00
+Build Date UTC : 2026-01-21 11:49:34.724093+00:00
 -->

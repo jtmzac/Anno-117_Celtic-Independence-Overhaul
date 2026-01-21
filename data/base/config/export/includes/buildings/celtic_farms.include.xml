@@ -86,9 +86,13 @@
     <!-- Instead of hardcoding the above asset pools, the following modops copy the all farms/plantations pools from the game and then removes the undesired celtic farms/plantations. This should be more resilient to future game updates. -->
     <!-- NOTE: The following couple of modops will throw path not found errors if you're using the vscode plugin, but do work properly based on my testing.  -->
     <ModOp  Replace="@1400300641/AssetPool/AssetList" Content="@42602/AssetPool/AssetList" ></ModOp>
-    <ModOp  Remove="@1400300641/AssetPool/AssetList/Item[Asset = '2799']"></ModOp>
+    <ModOp  Remove="@1400300641/AssetPool/AssetList/Item[Asset = '2799']" Condition="@1400300641/AssetPool/AssetList/Item[Asset = '2799']"></ModOp>
     <ModOp  Replace="@1400300642/AssetPool/AssetList" Content="@51905/AssetPool/AssetList" ></ModOp>
-    <ModOp  Remove="@1400300642/AssetPool/AssetList/Item[Asset = '2800']"></ModOp>
+    <ModOp  Remove="@1400300642/AssetPool/AssetList/Item[Asset = '2800']" Condition="@1400300642/AssetPool/AssetList/Item[Asset = '2800']"></ModOp>
+
+    <!-- Workaround for if Taludas' community bug fix is installed because it changes the weld/dye plantation to a farm. Won't do anything otherwise -->
+    <ModOp  Remove="@1400300641/AssetPool/AssetList/Item[Asset = '2800']" Condition="@1400300641/AssetPool/AssetList/Item[Asset = '2800']"></ModOp>
+
 
     <!-- Change ceres extra fields buff targets to new asset pools -->
     <ModOp Replace="@43620/Effect/Targets">

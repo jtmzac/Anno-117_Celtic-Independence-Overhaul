@@ -528,8 +528,8 @@
                 <CanPauseManually>1</CanPauseManually>
             </Pausable>
             <EffectSource>
-                <RadiusDistance>4</RadiusDistance>
-                <StreetDistance>4</StreetDistance>
+                <RadiusDistance>6</RadiusDistance>
+                <StreetDistance>6</StreetDistance>
             </EffectSource>
             <Buffable />
             <Threatable />

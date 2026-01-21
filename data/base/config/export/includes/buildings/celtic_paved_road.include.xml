@@ -33,7 +33,7 @@
                         <Amount>1</Amount>
                     </Item>
                 </Costs>
-                <ItemsPerCost>4</ItemsPerCost>
+                <ItemsPerCost>6</ItemsPerCost>
                 <CostFactor>
                     <Unlock>81030</Unlock>
                     <CostFactor>
@@ -375,7 +375,7 @@
                         <Amount>1</Amount>
                     </Item>
                 </Costs>
-                <ItemsPerCost>4</ItemsPerCost>
+                <ItemsPerCost>6</ItemsPerCost>
             </Cost>
             <Constructable />
             <Locked />

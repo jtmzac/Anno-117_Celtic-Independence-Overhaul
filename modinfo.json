@@ -13,7 +13,9 @@
         "Require": [],
         "Optional": [],
         "LoadAfter": [
-            "rocky-patron-of-construction-jtmzac"
+            "rocky-patron-of-construction-jtmzac",
+            "albion-tier-3-public-buildings-fix-jtmzac",
+            "taludas-communitybugfixmod"
         ],
         "Deprecate": [],
         "Incompatible": []

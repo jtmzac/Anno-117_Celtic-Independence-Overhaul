@@ -1,7 +1,24 @@
 site_name: |
   Anno 117: Celtic Independence Overhaul
 
+
+nav:
+  - index.md
+  - Need Changes: need-changes.md
+  - Public Service Buildings: public-service.md
+  - Fertiliser: fertiliser.md
+  - The Mealhouse: mealhouse.md
+  - New Game Requirement: new-game-requirement.md
+  - enabling-disabling-mod.md
+  - Known Issues: known-issues.md
+  - Compatibility with Other Mods: other-mod-compatibility.md
+
+exclude_docs: |
+  /image masters/
+
 repo_url: https://github.com/jtmzac/Anno-117_Celtic-Independence-Overhaul
+
+edit_uri: ''
 
 theme:
   name: readthedocs

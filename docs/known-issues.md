@@ -1,0 +1,3 @@
+# Known Issues
+* The roman/celtic upgrade selection buttons are still shown in the upgrade tool, but no longer do anything.
+* The needs attributes shown in the build menu tooltips for both good category overview and on the specific production building are not always accurate. This is because 2 versions of same needs within Albion was required for balancing (notably: bread/beer/torcs/cloaks). Always refer to the stats shown when hovering over the fulfillment bars on individual residences for the correct values. I don't think this can be fixed currently because the game "auto" generates the tooltips and wasn't designed with needs providing different stats in the same region.
