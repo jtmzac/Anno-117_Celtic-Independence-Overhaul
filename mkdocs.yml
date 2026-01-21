@@ -1,6 +1,7 @@
 site_name: |
   Anno 117: Celtic Independence Overhaul
 
+repo_url: https://github.com/jtmzac/Anno-117_Celtic-Independence-Overhaul
 
 theme:
   name: readthedocs
