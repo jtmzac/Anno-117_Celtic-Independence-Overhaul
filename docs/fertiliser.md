@@ -1,7 +1,7 @@
 # Fertiliser
 ![fertiliser](img/fertiliser_and_rye.png)
 
-Fertiliser serves as a replacement system for aqueducts boosting farm/plantation productivity and the Ceres extra fields buff. By building a fertiliser silo near a Celtic farm and supplying it with fertiliser it boosts the farm productivity by 100%. While this isn't as strong as the Ceres fields + aqueduct 125%, it's more space efficient since a silo only adds 6 tiles instead of the 40-80 tiles the extra fields would require.
+Fertiliser serves as a replacement system for aqueducts boosting farm/plantation productivity and the Ceres extra fields buff. By building a fertiliser silo near a Celtic farm and supplying it with fertiliser it boosts the farm productivity by 100%. While this isn't as strong as the Ceres fields + aqueduct 125%, it's more space efficient since a silo only adds 6 tiles instead of the 40-70 tiles the extra fields would require.
 
 Fertiliser is output as an extra good by ochs farms but can also be produced in marshes by the fertiliser pit.
 

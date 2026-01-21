@@ -1,5 +1,7 @@
 # Celtic Independence Overhaul
 
+![island wide screenshot](img/island_wide_shot.png)
+
 Welcome to the documentation for Celtic Independence Overhaul, a mod for Anno 117.
 
 This mod provides alternative systems and buildings to remove the Roman-ness from Celtic islands in Albion and give them more unique feeling. It also changes the overall needs structure between Celts, Roman-Celts and Latium so that instead of the Celts and Roman-Celts both independently supplying Latium, the Celts supply the Roman-Celts, and the Roman-Celts supply Latium.
@@ -10,6 +12,7 @@ You can download the mod on mod.io here: [Celtic Independence Overhaul.](https:/
 
 To report bugs or give feedback you can either leave a comment on the mod.io page, or [open an issue on github.](https://github.com/jtmzac/Anno-117_Celtic-Independence-Overhaul/issues)
 
+![city screenshot](img/city_shot.png)
 
 ## Key Feature Overview
 * Aqueducts are no longer useful on Celtic islands. They are replaced by new systems
