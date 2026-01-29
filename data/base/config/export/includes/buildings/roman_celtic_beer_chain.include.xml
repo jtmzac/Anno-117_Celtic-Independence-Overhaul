@@ -361,8 +361,15 @@
     </ModOp>
 
 
+    <!-- add beer to intermediate unlock notification -->
+    <ModOp Merge="@8474/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons">
+        <ModItem Merge="Icon" Append="Icon='5959'">
+            <Icon>1400300660</Icon>
+        </ModItem>
+    </ModOp>
 
 
+    <!-- <GUID>8474</GUID> -->
     <Asset>
         <Template>TriggerIntermediateLevel</Template>
         <Values>

@@ -411,7 +411,12 @@
     </Asset>
 
 
-    <!-- Update theatre range tech node description to include wickerman -->
+    <!-- Add to asset pool used for research range upgrade -->
+    <ModOp Add="@81446/AssetPool/AssetList">
+        <Item><Asset>1400300530</Asset></Item>
+    </ModOp>
+
+    <!-- Update theatre range research description to include wickerman -->
     <ModOp Merge="@81444/Standard">
         <InfoDescription>1400300533</InfoDescription>
     </ModOp>
@@ -425,17 +430,21 @@
     <!-- <GUID>81445</GUID> -->
     <!-- <GUID>81446</GUID> -->
 
-    <!-- Change tech icon -->
-    <!-- <ModOp Merge="@71726/Standard">
-        <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_theatre.png</IconFilename>
-    </ModOp> -->
+    <!-- Change tech icon for theatre range upgrade -->
+    <ModOp Merge="@71726/Standard">
+        <IconFilename>data/jtmzac/icons/icon_theatre_wickerman.png</IconFilename>
+    </ModOp>
 
     <!-- Change main tech node image -->
     <!-- <ModOp Merge="@126417/Standard">
-        <IconFilename>data/ui/fhd/base/features/techtree/infotipimages/image_techtree_tech_gambling_house_484x242.png</IconFilename>
+        <IconFilename>data/ui/fhd/base/features/techtree/infotipimages/image_techtree_tech_range_theater_484x242.png</IconFilename>
     </ModOp> -->
 
 
+    <!-- replace theatre with wickerman in intermediate unlock notification -->
+    <ModOp Replace="@8074/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '37178']">
+        <Item><Icon>1400300530</Icon></Item>
+    </ModOp>
 
 
 

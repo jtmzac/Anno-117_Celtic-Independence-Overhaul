@@ -140,7 +140,7 @@
         </Text>
         <Text>
             <LineId>1400300671</LineId>
-            <Text></Text>
+            <Text>Residents enjoy the presence of sacred trees but the caretaker druids demands for tribute lowers happiness.</Text>
         </Text>
         <Text>
             <LineId>1400300672</LineId>
@@ -149,6 +149,17 @@
         <Text>
             <LineId>1400300673</LineId>
             <Text>Adds the Gambling House/Sacred Tree and causes it to become a need for all third tier residents and beyond.</Text>
+        </Text>
+        <Text>
+            <LineId>1400300679</LineId>
+            <Text>House Nobles or Aldermen in your realm</Text>
+        </Text>
+
+
+
+        <Text>
+            <LineId>1400300690</LineId>
+            <Text>Roman Charioteers will pay for thoroughbred horses and well-oiled axles, so as to glide along roads with a stately air.</Text>
         </Text>
 
 

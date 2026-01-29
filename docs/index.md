@@ -44,7 +44,7 @@ To report bugs or give feedback you can either leave a comment on the mod.io pag
 * Chariots are now produced and consumed by Nobles and are made from wood, iron and horses. They replace fine glassware
 * Instead of chariots, aldermen now produce and consume ornamented ponies made from bronze and ponies
 * Roman-Celts now consume torcs instead of soap and cloaks instead of togas
-* Equites and patricians now consume sausages instead of cheese and wigs instead of cloaks
+* Equites and patricians now consume sausages instead of cheese and wigs instead of cloaks. Consumption rate has been changed based on difference in production time
 * The herb fertility has been removed to support sausages being used in Latium instead of cheese. A beneficial side effect of this is that every island in Albion now has barley, which should help with the increased beer demand.
 * Animal and fertiliser silos can now have their variation manually controlled, and there is two new animal silo variations with a muddy Albion ground texture.
 * Paved roads can now also be unlocked and built with granite instead of concrete
@@ -52,7 +52,7 @@ To report bugs or give feedback you can either leave a comment on the mod.io pag
 
 
 ## Work in Progress Features
-* More tweaks to building graphics are planned. Don't expect too much. Mostly just some tree swaps, colour tweaks, and maybe roof swaps if I can get them working.
+* I may tweak the graphics for some things a bit more in future but no promises. I need a break from Anno for now.
 * The balancing is likely to have issues as you get to end-game. [See here for more details](need-changes.md#the-downside)
 
 

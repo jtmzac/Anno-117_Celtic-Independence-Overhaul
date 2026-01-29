@@ -291,6 +291,12 @@
 
 
 
+    <!-- replace clan shields with wicker baskets in intermediate unlock notification -->
+    <ModOp Replace="@62067/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '31773']">
+        <Item><Icon>1400300502</Icon></Item>
+    </ModOp>
+
+
     <!-- Remove clan shields unhide from existing trigger -->
     <ModOp Remove="@8071/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8043']"></ModOp>
     <!-- Remove clan shield unlock from existing trigger -->

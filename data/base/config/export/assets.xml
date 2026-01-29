@@ -36,13 +36,13 @@
     <!-- Add bread to smiths and aldermen -->
     <ModOp Merge="@6471/Residence7/NeedsList">
         <ModItem Merge="Need" Prepend="Need='6430'">
-            <Need>1400300714</Need>
+            <Need>1400300715</Need>
             <NeedConsumptionRate>0.01102</NeedConsumptionRate>
         </ModItem>
     </ModOp>
     <ModOp Merge="@6472/Residence7/NeedsList">
         <ModItem Merge="Need" Prepend="Need='6430'">
-            <Need>1400300714</Need>
+            <Need>1400300715</Need>
             <NeedConsumptionRate>0.00932</NeedConsumptionRate>
         </ModItem>
     </ModOp>
@@ -105,13 +105,13 @@
     <!-- Add beer to mercators and nobles -->
     <ModOp Merge="@6475/Residence7/NeedsList">
         <ModItem Merge="Need" Append="Need='6435'">
-            <Need>1400300711</Need>
+            <Need>1400300712</Need>
             <NeedConsumptionRate>0.0118</NeedConsumptionRate>
         </ModItem>
     </ModOp>
     <ModOp Merge="@6514/Residence7/NeedsList">
         <ModItem Merge="Need" Append="Need='6435'">
-            <Need>1400300711</Need>
+            <Need>1400300712</Need>
             <NeedConsumptionRate>0.00987</NeedConsumptionRate>
         </ModItem>
     </ModOp>
@@ -126,30 +126,48 @@
     <!-- Replace soap with torcs for mercators and nobles -->
     <ModOp Replace="@6475/Residence7/NeedsList/Item[Need = '6444']">
         <Item>
-            <Need>1400300712</Need>
+            <Need>1400300713</Need>
             <NeedConsumptionRate>0.00922</NeedConsumptionRate>
         </Item>
     </ModOp>
     <ModOp Replace="@6514/Residence7/NeedsList/Item[Need = '6444']">
         <Item>
-            <Need>1400300712</Need>
+            <Need>1400300713</Need>
             <NeedConsumptionRate>0.00749</NeedConsumptionRate>
         </Item>
     </ModOp>
-
+    <!-- Add torc chain to mercator build menu after brooches -->
+    <ModOp Merge="@41328/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='6667'">
+            <Building>6666</Building>
+        </ModItem>
+    </ModOp>
     <!-- Remove soap chain from mercator build menu -->
     <ModOp Remove="@41328/ConstructionCategory/BuildingList/Item[Building = '31812']"></ModOp>
+    <!-- replace soap with torcs in intermediate unlock notification -->
+    <ModOp Replace="@8477/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '6444']">
+        <Item><Icon>5606</Icon></Item>
+    </ModOp>
 
     <!-- Replace togas with cloaks for nobles -->
     <ModOp Replace="@6514/Residence7/NeedsList/Item[Need = '6446']">
         <Item>
-            <Need>1400300713</Need>
+            <Need>1400300714</Need>
             <NeedConsumptionRate>0.008745</NeedConsumptionRate>
         </Item>
     </ModOp>
-
+    <!-- Add cloak chain to nobles build menu after wigs -->
+    <ModOp Merge="@41327/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='31813'">
+            <Building>6665</Building>
+        </ModItem>
+    </ModOp>
     <!-- Remove toga chain from nobles build menu -->
     <ModOp Remove="@41327/ConstructionCategory/BuildingList/Item[Building = '6672']"></ModOp>
+    <!-- replace togas with cloaks in intermediate unlock notification -->
+    <ModOp Replace="@8482/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '6446']">
+        <Item><Icon>5614</Icon></Item>
+    </ModOp>
 
     <!-- Replace fine glass with chariots for nobles -->
     <ModOp Replace="@6514/Residence7/NeedsList/Item[Need = '6452']">
@@ -165,19 +183,58 @@
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
     <!-- Replace cheese with sausages for equites and patricians -->
+    <!-- Double consumption to match sausages being produced in at twice the rate of cheese -->
     <ModOp Replace="@3142/Residence7/NeedsList/Item[Need = '2747']">
         <Item>
             <Need>1400300710</Need>
-            <NeedConsumptionRate>0.005725</NeedConsumptionRate>
+            <NeedConsumptionRate>0.01145</NeedConsumptionRate>
         </Item>
     </ModOp>
     <ModOp Replace="@3145/Residence7/NeedsList/Item[Need = '2747']">
         <Item>
             <Need>1400300710</Need>
-            <NeedConsumptionRate>0.004808</NeedConsumptionRate>
+            <NeedConsumptionRate>0.009616</NeedConsumptionRate>
         </Item>
     </ModOp>
 
+    <!-- Add sausage chain to equites build menu after wine -->
+    <ModOp Merge="@41364/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='3261'">
+            <Building>8436</Building>
+        </ModItem>
+    </ModOp>
+    <!-- Remove cheese chain from equites build menu -->
+    <ModOp Remove="@41364/ConstructionCategory/BuildingList/Item[Building = '8894']"></ModOp>
+
+    <!-- replace cheese with sausages in intermediate unlock notification -->
+    <ModOp Replace="@3792/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '2747']">
+        <Item><Icon>5959</Icon></Item>
+    </ModOp>
+
+
+
+    <!-- Replace cloaks with wigs for patricians -->
+    <!-- Reduce consumption to 2/3rds because of 90 sec vs 60 sec production time -->
+    <ModOp Replace="@3145/Residence7/NeedsList/Item[Need = '2775']">
+        <Item>
+            <Need>1400300711</Need>
+            <NeedConsumptionRate>0.005772</NeedConsumptionRate>
+        </Item>
+    </ModOp>
+
+    <!-- Add wigs chain to patricians build menu after necklaces -->
+    <ModOp Merge="@41365/ConstructionCategory/BuildingList">
+        <ModItem Merge="Building" Append="Building='3298'">
+            <Building>31813</Building>
+        </ModItem>
+    </ModOp>
+    <!-- Remove cloaks chain from patricians build menu -->
+    <ModOp Remove="@41365/ConstructionCategory/BuildingList/Item[Building = '31808']"></ModOp>
+
+    <!-- replace cloaks with wigs in intermediate unlock notification -->
+    <ModOp Replace="@3973/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '2775']">
+        <Item><Icon>31769</Icon></Item>
+    </ModOp>
 
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!--                                      Misc Changes                                       -->
@@ -258,8 +315,8 @@
 
 
 
-
-
+<!-- <GUID>3792</GUID> -->
+<!-- <GUID>3973</GUID> -->
 
 <!-- <GUID>8474</GUID> -->
 <!-- <GUID>8475</GUID> -->

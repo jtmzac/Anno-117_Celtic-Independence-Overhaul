@@ -578,10 +578,14 @@
     </ModOp>
 
 
+    <!-- add bread to intermediate unlock notification -->
+    <ModOp Merge="@8069/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons">
+        <ModItem Merge="Icon" Append="Icon='5935'">
+            <Icon>1400300653</Icon>
+        </ModItem>
+    </ModOp>
 
-
-
-
+    <!-- <GUID>8069</GUID> -->
     <Asset>
         <Template>TriggerIntermediateLevel</Template>
         <Values>

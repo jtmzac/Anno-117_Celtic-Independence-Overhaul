@@ -411,14 +411,107 @@
     <!-- <GUID>37176</GUID> -->
 
     <!-- Change tech icon -->
-    <!-- <ModOp Merge="@81191/Standard">
-        <IconFilename>data/ui/fhd/base/icon_content/building/icon_3d_public_roman_gambling_house.png</IconFilename>
-    </ModOp> -->
+    <ModOp Merge="@81191/Standard">
+        <IconFilename>data/jtmzac/icons/icon_gambling_tree.png</IconFilename>
+    </ModOp>
+
+    <!-- Remove roman badge on tech node -->
+    <ModOp Remove="@81191/Tech/AdditionalBadges"></ModOp>
 
     <!-- Change main tech node image -->
     <!-- <ModOp Merge="@134839/Standard">
         <IconFilename>data/ui/fhd/base/features/techtree/infotipimages/image_techtree_tech_gambling_house_484x242.png</IconFilename>
     </ModOp> -->
+
+
+    <!-- Replace unlock requirement string to say aldermen or nobles -->
+    <ModOp Merge="@82396/Standard">
+        <InfoDescription>1400300679</InfoDescription>
+    </ModOp>
+
+    <!-- Extra condition to make the sacred tree tech researchable once you get aldermen -->
+    <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300679</GUID>
+                <Name>Tech Civic 1 9 Need Celtic Sacred Tree Condition</Name>
+                <InfoDescription>1400300679</InfoDescription>
+            </Standard>
+            <Locked />
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionAlwaysTrue</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionAlwaysTrue />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>81191</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+                <SubTriggers>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionTechResearched</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionTechResearched>
+                                                <TechState>NeighborResearched</TechState>
+                                                <TechGuid>81191</TechGuid>
+                                            </ConditionTechResearched>
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionPlayerCounter</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionPlayerCounter>
+                                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                                <Context>1502</Context>
+                                                <CounterAmount>1</CounterAmount>
+                                            </ConditionPlayerCounter>
+                                            <ConditionLocationProps />
+                                            <ConditionCounterProps />
+                                            <ConditionPropsComparable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                </SubTriggers>
+            </Trigger>
+            <TriggerSetup />
+        </Values>
+    </Asset>
 
 
 

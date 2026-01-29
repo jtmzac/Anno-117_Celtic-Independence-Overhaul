@@ -144,7 +144,10 @@
 
 
 
-
+    <!-- replace fine glassware with clan shields in intermediate unlock notification -->
+    <ModOp Replace="@8076/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '6452']">
+        <Item><Icon>31773</Icon></Item>
+    </ModOp>
 
 
     <!-- Remove fine glass unhide from existing trigger -->
@@ -159,7 +162,7 @@
         <Template>TriggerIntermediateLevel</Template>
         <Values>
             <Standard>
-                <GUID>1400300720</GUID>
+                <GUID>1400300600</GUID>
                 <Name>Trigger Intermediate Level Celtic 3.2 clan shields</Name>
             </Standard>
             <Trigger>
@@ -206,7 +209,7 @@
         <Template>TriggerIntermediateLevel</Template>
         <Values>
             <Standard>
-                <GUID>1400300721</GUID>
+                <GUID>1400300601</GUID>
                 <Name>Trigger Intermediate Level Celtic 3.3 clan shields</Name>
             </Standard>
             <Trigger>

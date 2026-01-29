@@ -366,6 +366,13 @@
 
 
 
+
+    <!-- replace chariots with ornamented ponies in intermediate unlock notification -->
+    <ModOp Replace="@8076/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '5616']">
+        <Item><Icon>1400300512</Icon></Item>
+    </ModOp>
+
+
     <!-- Remove chariots unhide from existing trigger -->
     <ModOp Remove="@8075/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8044']"></ModOp>
     <!-- Remove chariots unlock from existing trigger -->

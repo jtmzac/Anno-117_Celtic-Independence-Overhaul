@@ -26,7 +26,7 @@
                         <Value>3</Value>
                     </Prestige>
                 </NeedAttributes>
-                <NeedDescription>-6906884469672466819</NeedDescription>
+                <NeedDescription>1400300690</NeedDescription>
             </Need>
             <Locked />
             <Text />
@@ -396,7 +396,7 @@
                 <GUID>1400300693</GUID>
                 <Name>Production Chain Roman Celtic Chariots</Name>
                 <IconFilename>data/ui/fhd/base/icon_content/production_goods/icon_3d_chariot_goods.png</IconFilename>
-                <InfoDescription>-6906884469672466819</InfoDescription>
+                <InfoDescription>1400300690</InfoDescription>
             </Standard>
             <ProductionChain>
                 <Building>1400300691</Building>
@@ -481,6 +481,11 @@
     <!-- Remove fine glass chain it replaces -->
     <ModOp Remove="@41327/ConstructionCategory/BuildingList/Item[Building = '8437']"></ModOp>
 
+
+    <!-- replace fine glassware with chariots in intermediate unlock notification -->
+    <ModOp Replace="@8483/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '6452']">
+        <Item><Icon>1400300691</Icon></Item>
+    </ModOp>
 
 
 

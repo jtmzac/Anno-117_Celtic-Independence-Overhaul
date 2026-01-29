@@ -503,6 +503,12 @@
     </ModOp>
 
 
+    <!-- Change icon on mine aqueduct research node  -->
+    <ModOp Merge="@26917/Standard">
+        <IconFilename>data/jtmzac/icons/icon_mine_aqueduct_mealhouse.png</IconFilename>
+    </ModOp>
+
+
     <!-- Unlock when mine aqueduct tech is researched -->
     <Asset>
         <Template>FeatureUnlock</Template>

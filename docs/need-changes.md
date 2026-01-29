@@ -12,7 +12,7 @@ NOTE: Beer can now be made less efficiently by Roman-Celts from wheat. Celts can
 ## Why Change it?
 1. It's different and interesting
 2. It allowed moving chariots to the Roman-Celts, adding some new needs, and removed importing soap and fine glassware from Latium
-3. I think it still makes decent sense since the Roman-Celts are now the cultural bridge between the "untamed" Celts and the proper Latium Romans
+3. I think it still makes decent sense since the Roman-Celts are now the cultural bridge between the fully Celtic population and the proper Latium Romans
 
 ## The Downside
 With the Roman-Celts now supplying all the Albion goods to Latium the balancing will probably favour more Roman-Celtic islands to supply enough goods. Some aspects of this will be alleviated a bit because there is now more population and belief buffs [due to how the public buildings have been merged](public-service.md#public-service-buildings-now-only-affect-the-matching-type-of-residence) and the addition of bread/beer to the opposite type of population.

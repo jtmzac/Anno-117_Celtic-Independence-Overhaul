@@ -409,6 +409,16 @@
     </ModOp>
 
 
+
+
+    <!-- add tavern to intermediate unlock notification -->
+    <ModOp Merge="@8067/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons">
+        <ModItem Merge="Icon" Append="Icon='6727'">
+            <Icon>1400300570</Icon>
+        </ModItem>
+    </ModOp>
+
+
     <!-- Independent unhide and unlock triggers -->
     <!-- <GUID>8066</GUID> -->
     <!-- <GUID>8067</GUID> -->

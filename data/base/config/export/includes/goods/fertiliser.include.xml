@@ -546,7 +546,8 @@
             </Standard>
             <Effect>
                 <EffectScope>StreetDistance</EffectScope>
-                <SourceCategory>Adjacency</SourceCategory>
+                <!-- <EffectScope>ModuleOwner</EffectScope> -->
+                <SourceCategory>Religion</SourceCategory>
                 <Buffs>
                     <Item>
                         <GUID>1400300626</GUID>
@@ -579,7 +580,7 @@
             <BuildingUpgrade />
             <DistributionUpgrade />
             <Buff>
-                <SourceCategory>Adjacency</SourceCategory>
+                <SourceCategory>Religion</SourceCategory>
             </Buff>
             <ResidenceUpgrade />
             <FactoryUpgrade>

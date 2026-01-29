@@ -399,6 +399,12 @@
     </ModOp>
 
 
+
+    <!-- replace fanum with sanctuary in intermediate unlock notification -->
+    <ModOp Replace="@8475/Trigger/TriggerActions/Item/TriggerAction/Values/ActionNotification/Notification/Values/MainNotification/IntermediateUnlockIcons/Item[Icon = '6728']">
+        <Item><Icon>1400300580</Icon></Item>
+    </ModOp>
+
     <!-- Remove fanum unhide from roman celts progression trigger -->
     <ModOp Remove="@8474/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets/Item[Asset = '8471']"></ModOp>
     <!-- Remove fanum unlock from roman celts progression trigger -->
