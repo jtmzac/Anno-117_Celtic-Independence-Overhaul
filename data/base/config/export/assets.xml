@@ -288,7 +288,13 @@
     <ModOp Remove="@71200/AssetPool/AssetList/Item[Asset = '5295']"></ModOp>
 
 
-
+    <!-- <GUID>37501</GUID> -->
+    <!-- Change chariot military unit to use ornamented ponies to match aldermen workforce requirement -->
+    <ModOp Merge="@37501/Cost/Costs">
+        <ModItem Merge="Ingredient= '2163'">
+            <Ingredient>1400300510</Ingredient>
+        </ModItem>
+    </ModOp>
 
 
 
