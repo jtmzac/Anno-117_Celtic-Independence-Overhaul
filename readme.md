@@ -4,4 +4,4 @@ This mod provides alternative systems and buildings to remove the Roman-ness fro
 
 See the documentation at: https://jtmzac.github.io/Anno-117_Celtic-Independence-Overhaul/
 
-All art and graphical assets are the property of Ubisoft and Ubisoft Mainz. Their use is not permitted for any commerical or non-commercial purpose, except for non-commercial Anno 117 modding.
+All art and graphical assets are the property of Ubisoft and Ubisoft Mainz. Their use is not permitted for any commerical or non-commercial purpose, except for non-commercial, non-paywalled Anno 117 modding.
