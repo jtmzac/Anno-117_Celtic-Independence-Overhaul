@@ -37,13 +37,13 @@
     <ModOp Merge="@6471/Residence7/NeedsList">
         <ModItem Merge="Need" Prepend="Need='6430'">
             <Need>1400300715</Need>
-            <NeedConsumptionRate>0.01102</NeedConsumptionRate>
+            <NeedConsumptionRate>0.01034</NeedConsumptionRate>
         </ModItem>
     </ModOp>
     <ModOp Merge="@6472/Residence7/NeedsList">
         <ModItem Merge="Need" Prepend="Need='6430'">
             <Need>1400300715</Need>
-            <NeedConsumptionRate>0.00932</NeedConsumptionRate>
+            <NeedConsumptionRate>0.00883</NeedConsumptionRate>
         </ModItem>
     </ModOp>
 
@@ -73,7 +73,7 @@
     <ModOp GUID="6472" Replace="Residence7/NeedsList/Item[Need = '6452']">
         <Item>
             <Need>6453</Need>
-            <NeedConsumptionRate>0.0059</NeedConsumptionRate>
+            <NeedConsumptionRate>0.005303</NeedConsumptionRate>
         </Item>
     </ModOp>
 
@@ -106,13 +106,13 @@
     <ModOp Merge="@6475/Residence7/NeedsList">
         <ModItem Merge="Need" Append="Need='6435'">
             <Need>1400300712</Need>
-            <NeedConsumptionRate>0.0118</NeedConsumptionRate>
+            <NeedConsumptionRate>0.01153</NeedConsumptionRate>
         </ModItem>
     </ModOp>
     <ModOp Merge="@6514/Residence7/NeedsList">
         <ModItem Merge="Need" Append="Need='6435'">
             <Need>1400300712</Need>
-            <NeedConsumptionRate>0.00987</NeedConsumptionRate>
+            <NeedConsumptionRate>0.00968</NeedConsumptionRate>
         </ModItem>
     </ModOp>
 
@@ -127,13 +127,13 @@
     <ModOp Replace="@6475/Residence7/NeedsList/Item[Need = '6444']">
         <Item>
             <Need>1400300713</Need>
-            <NeedConsumptionRate>0.00922</NeedConsumptionRate>
+            <NeedConsumptionRate>0.00909</NeedConsumptionRate>
         </Item>
     </ModOp>
     <ModOp Replace="@6514/Residence7/NeedsList/Item[Need = '6444']">
         <Item>
             <Need>1400300713</Need>
-            <NeedConsumptionRate>0.00749</NeedConsumptionRate>
+            <NeedConsumptionRate>0.007405</NeedConsumptionRate>
         </Item>
     </ModOp>
     <!-- Add torc chain to mercator build menu after brooches -->
@@ -183,17 +183,17 @@
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
     <!-- Replace cheese with sausages for equites and patricians -->
-    <!-- Double consumption to match sausages being produced in at twice the rate of cheese -->
+    <!-- 1.5 times consumption to compensate sausages being produced in at twice the rate of cheese -->
     <ModOp Replace="@3142/Residence7/NeedsList/Item[Need = '2747']">
         <Item>
             <Need>1400300710</Need>
-            <NeedConsumptionRate>0.01145</NeedConsumptionRate>
+            <NeedConsumptionRate>0.0085875</NeedConsumptionRate>
         </Item>
     </ModOp>
     <ModOp Replace="@3145/Residence7/NeedsList/Item[Need = '2747']">
         <Item>
             <Need>1400300710</Need>
-            <NeedConsumptionRate>0.009616</NeedConsumptionRate>
+            <NeedConsumptionRate>0.007212</NeedConsumptionRate>
         </Item>
     </ModOp>
 

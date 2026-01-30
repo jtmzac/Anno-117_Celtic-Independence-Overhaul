@@ -8,7 +8,7 @@ This mod provides alternative systems and buildings to remove the Roman-ness fro
 
 WARNING: Requires a new game. [See this page for more information.](new-game-requirement.md)
 
-You can download the mod on mod.io here: [Celtic Independence Overhaul.](https://mod.io/g/anno-117-pax-romana)
+You can download the mod on mod.io here: [Celtic Independence Overhaul.](https://mod.io/g/anno-117-pax-romana/m/celtic-independence-overhaul)
 
 To report bugs or give feedback you can either leave a comment on the mod.io page, or [open an issue on github.](https://github.com/jtmzac/Anno-117_Celtic-Independence-Overhaul/issues)
 
