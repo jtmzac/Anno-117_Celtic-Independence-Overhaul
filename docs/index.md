@@ -21,7 +21,7 @@ To report bugs or give feedback you can either leave a comment on the mod.io pag
 * Albion needs are a lot more self-sufficient. Importing from Latium is only needed for olive oil/garum and optionally for wine
 * New needs for Celts: wicker baskets and ornamented ponies
 * Celts now make and consume bread, Roman-Celts now consume and can make beer
-* Chariots now made by nobles. Iron has been added to chariots and ceremonial shields
+* Chariots are now Roman Celtic instead of Celtic and use horses instead of ponies. Iron has been added to chariots and ceremonial shields
 * Latium residences now consume sausages and wigs instead of cheese and cloaks
 
 

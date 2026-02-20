@@ -545,8 +545,8 @@
                 <IconFilename>data/jtmzac/icons/fertiliser_silo.png</IconFilename>
             </Standard>
             <Effect>
-                <EffectScope>StreetDistance</EffectScope>
-                <!-- <EffectScope>ModuleOwner</EffectScope> -->
+                <!-- <EffectScope>StreetDistance</EffectScope> -->
+                <EffectScope>ModuleOwner</EffectScope>
                 <SourceCategory>Religion</SourceCategory>
                 <Buffs>
                     <Item>
