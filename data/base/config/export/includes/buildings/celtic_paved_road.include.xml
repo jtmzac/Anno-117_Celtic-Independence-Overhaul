@@ -990,6 +990,80 @@
         </Values>
     </Asset>
 
+    <!-- Unlock the granite roads once the normal Albion paved road is unlocked.
+         Being in pool 38992 is not enough: the granite road stays locked ("Research required for construction") -->
+    <Asset>
+        <Template>Trigger</Template>
+        <Values>
+            <Standard>
+                <GUID>1400300727</GUID>
+                <Name>Unlock Granite Paved Roads Trigger</Name>
+            </Standard>
+            <Trigger>
+                <TriggerCondition>
+                    <Template>ConditionAlwaysTrue</Template>
+                    <Values>
+                        <Condition />
+                        <ConditionAlwaysTrue />
+                    </Values>
+                </TriggerCondition>
+                <TriggerActions>
+                    <Item>
+                        <TriggerAction>
+                            <Template>ActionUnlockAsset</Template>
+                            <Values>
+                                <Action />
+                                <ActionUnlockAsset>
+                                    <UnlockAssets>
+                                        <Item>
+                                            <Asset>1400300720</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>1400300721</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>1400300722</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>1400300723</Asset>
+                                        </Item>
+                                        <Item>
+                                            <Asset>1400300724</Asset>
+                                        </Item>
+                                    </UnlockAssets>
+                                </ActionUnlockAsset>
+                            </Values>
+                        </TriggerAction>
+                    </Item>
+                </TriggerActions>
+                <SubTriggers>
+                    <Item>
+                        <SubTrigger>
+                            <Template>AutoCreateTrigger</Template>
+                            <Values>
+                                <Trigger>
+                                    <TriggerCondition>
+                                        <Template>ConditionUnlocked</Template>
+                                        <Values>
+                                            <Condition />
+                                            <ConditionUnlocked>
+                                                <UnlockNeeded>24357</UnlockNeeded>
+                                            </ConditionUnlocked>
+                                            <ConditionPropsNegatable />
+                                        </Values>
+                                    </TriggerCondition>
+                                </Trigger>
+                            </Values>
+                        </SubTrigger>
+                    </Item>
+                </SubTriggers>
+            </Trigger>
+            <TriggerSetup>
+                <AutoRegisterTrigger>1</AutoRegisterTrigger>
+            </TriggerSetup>
+        </Values>
+    </Asset>
+
 <!--
     <Asset>
         <Template>Production</Template>
