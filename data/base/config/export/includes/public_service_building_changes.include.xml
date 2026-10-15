@@ -19,7 +19,7 @@
     <!-- <GUID>68475</GUID> -->
     <!-- <GUID>68474</GUID> -->
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300540</GUID>
@@ -47,7 +47,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300541</GUID>
@@ -76,7 +76,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300542</GUID>
@@ -104,7 +104,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300543</GUID>
@@ -140,7 +140,7 @@
 
     <!-- Special pool used for the single overlap building, the market -->
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300544</GUID>
@@ -163,7 +163,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300545</GUID>
@@ -183,7 +183,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300546</GUID>
@@ -202,7 +202,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300547</GUID>
@@ -220,7 +220,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300548</GUID>
@@ -240,7 +240,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300549</GUID>
@@ -259,7 +259,7 @@
     </Asset>
 
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300550</GUID>

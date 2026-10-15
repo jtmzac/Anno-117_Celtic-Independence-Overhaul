@@ -133,7 +133,7 @@
     </Asset>
 
     <Asset>
-        <Template>Module Polygon Field</Template>
+        <Template>ModulePolygonField</Template>
         <Values>
             <Standard>
                 <GUID>1400300651</GUID>

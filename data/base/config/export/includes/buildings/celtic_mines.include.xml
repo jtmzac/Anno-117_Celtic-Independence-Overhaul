@@ -2,7 +2,7 @@
 
     <!-- Celtic mines asset pool used to determine what the mealhouse buff targets -->
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300610</GUID>
@@ -208,7 +208,7 @@
     <!-- <GUID>50225</GUID> -->
     <!-- <GUID>64413</GUID> -->
     <!-- <GUID>32002</GUID> -->
-    <ModOp GUID="80564,38370,50237,107522,81258,50620,50225,64413,32002" Add="AssetPool/AssetList">
+    <ModOp GUID="80564,38370,50237,81258,50620,50225,64413,32002" Add="AssetPool/AssetList">
         <Item><Asset>1400300611</Asset></Item>
     </ModOp>
 

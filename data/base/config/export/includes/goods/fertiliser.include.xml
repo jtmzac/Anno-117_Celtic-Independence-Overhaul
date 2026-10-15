@@ -33,9 +33,9 @@
 
     <!-- Add new good to all categories -->
     <!-- <GUID>3415</GUID> -->
-    <ModOp Add="@3415/ProductStorageList/ProductList">
+    <!-- <ModOp Add="@3415/ProductStorageList/ProductList">
         <Item><Product>1400300620</Product></Item>
-    </ModOp>
+    </ModOp> -->
 
     <!-- <GUID>28750</GUID> -->
     <!-- <GUID>37672</GUID> -->

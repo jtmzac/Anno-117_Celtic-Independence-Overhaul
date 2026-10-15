@@ -42,11 +42,11 @@
     <!-- <GUID>93817</GUID> -->
 
     <!-- Add to global good list after chariots -->
-    <ModOp Merge="@3415/ProductStorageList/ProductList">
+    <!-- <ModOp Merge="@3415/ProductStorageList/ProductList">
         <ModItem Merge="Product" Append="Product='2163'">
             <Product>1400300510</Product>
         </ModItem>
-    </ModOp>
+    </ModOp> -->
 
     <!-- Add new good to all categories -->
     <ModOp GUID="29326,8497,37670,28750,3409,28752" Add="ProductList/List">

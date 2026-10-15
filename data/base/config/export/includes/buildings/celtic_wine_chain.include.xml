@@ -142,7 +142,7 @@
 
 
     <Asset>
-        <Template>Module Polygon Field</Template>
+        <Template>ModulePolygonField</Template>
         <Values>
             <Standard>
                 <GUID>1400300701</GUID>
@@ -705,7 +705,7 @@
 
 
     <!-- Remove roman celtic wine from existing unlock trigger -->
-    <ModOp Remove="@8073/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '41927']"></ModOp>
+    <!-- <ModOp Remove="@8075/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets/Item[Asset = '41927']"></ModOp> -->
 
 
 

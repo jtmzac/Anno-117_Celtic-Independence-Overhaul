@@ -10,7 +10,7 @@
 
     <!-- Asset pool used for targeting the new fertiliser silo buff -->
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300640</GUID>
@@ -53,7 +53,7 @@
 
     <!-- The ceres extra fields buff targets the "all farm" and "all plantations" asset pools by default. Because these pools are also used by other buffs, they need to be swapped out for new, different asset pools -->
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300641</GUID>
@@ -68,7 +68,7 @@
         </Values>
     </Asset>
     <Asset>
-        <Template>AssetPoolNamed</Template>
+        <Template>AssetPool</Template>
         <Values>
             <Standard>
                 <GUID>1400300642</GUID>

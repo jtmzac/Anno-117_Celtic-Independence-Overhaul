@@ -1,6 +1,7 @@
 
 <ModOps>
 
+    <!-- <GUID>145102</GUID> -->
     <Asset>
         <Template>Product</Template>
         <Values>
@@ -31,22 +32,22 @@
     <!-- <GUID>3415</GUID> -->
     <!-- <GUID>29326</GUID> -->
     <!-- <GUID>8497</GUID> -->
-    <!-- <GUID>37670</GUID> -->
-    <!-- <GUID>28750</GUID> -->
     <!-- <GUID>3409</GUID> -->
     <!-- <GUID>28752</GUID> -->
-
+    <!-- <GUID>37670</GUID> -->
+    <!-- <GUID>28750</GUID> -->
     <!-- <GUID>130659</GUID> -->
     <!-- <GUID>91326</GUID> -->
+
     <!-- <GUID>93817</GUID> -->
 
 
     <!-- Add to global good list after drinking horns -->
-    <ModOp Merge="@3415/ProductStorageList/ProductList">
+    <!-- <ModOp Merge="@3415/ProductStorageList/ProductList">
         <ModItem Merge="Product" Append="Product='55954'">
             <Product>1400300500</Product>
         </ModItem>
-    </ModOp>
+    </ModOp> -->
 
     <!-- Add new good to all categories -->
     <ModOp GUID="29326,8497,37670,28750,3409,28752" Add="ProductList/List">
@@ -221,7 +222,7 @@
     <!-- <GUID>107522</GUID> -->
     <!-- <GUID>64413</GUID> -->
     <!-- <GUID>32002</GUID> -->
-    <ModOp GUID="38370,107522,64413,32002" Add="AssetPool/AssetList">
+    <ModOp GUID="38370,64413,32002" Add="AssetPool/AssetList">
         <Item><Asset>1400300502</Asset></Item>
     </ModOp>
 

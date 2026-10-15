@@ -382,7 +382,7 @@
     <!-- <GUID>50612</GUID> -->
     <!-- <GUID>64413</GUID> -->
     <!-- <GUID>31996</GUID> -->
-    <ModOp GUID="38370,107522,50576,50612,64413,31996" Add="AssetPool/AssetList">
+    <ModOp GUID="38370,50576,50612,64413,31996" Add="AssetPool/AssetList">
         <Item><Asset>1400300692</Asset></Item>
     </ModOp>
 
