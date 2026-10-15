@@ -990,6 +990,7 @@
         </Values>
     </Asset>
 
+    <!-- Thank you to loispostula for this fix for the granite roads -->
     <!-- Unlock the granite roads once the normal Albion paved road is unlocked.
          Being in pool 38992 is not enough: the granite road stays locked ("Research required for construction") -->
     <Asset>
